@@ -1,0 +1,38 @@
+.media
+    position: relative
+    width: 100% 
+    height: 300px
+    @include sm
+        height: 600px
+    @include paddings
+    @include marginbottom
+    
+    figure
+        position: relative
+        overflow: hidden
+        margin: 0
+        padding: 0
+        display: block
+        width: 100%
+        height: 100%
+        max-width: $max-width-graph
+        width: 100%
+        margin-left: auto
+        margin-right: auto 
+
+        img
+            display: block
+            object-fit: cover
+            width: 100%
+            height: 100%
+
+    &[data-id="1"]
+        height: 300px
+        @include md
+            height: 500px
+        @include lg
+            height: 300px
+
+
+
+

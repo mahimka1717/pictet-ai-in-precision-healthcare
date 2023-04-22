@@ -1,0 +1,48 @@
+// @import 'base/normalize'
+@import '~/src/styles/base/typography'
+
+
+.main,
+.main *,
+.main *::before,
+.main *::after
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.tmp
+  position: absolute
+  top: 56px
+  left: 50%
+  transform: translate(-50%, 0)
+  opacity: 0.5
+  user-select: none
+  pointer-events: none
+  display: none
+  width: 1440px
+  min-width: 1440px
+  height: 9642px
+  min-height: 9642px
+
+.main
+  position: relative
+  color: $color-primary
+  font-family: $font-copy
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  overflow: hidden
+  opacity: 1
+
+
+.main a
+  word-wrap: break-word
+  text-decoration: underline!important
+  color: $color-primary!important
+  outline-color: $color-secondary!important
+  @include animate((color), 0.2*$speed, ease-out)
+  &:hover, &:focus, &:focus-visible
+    color: $color-secondary!important
+  
+
+      

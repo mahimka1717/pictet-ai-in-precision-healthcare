@@ -1,0 +1,124 @@
+@import "~/src/styles/utils/variables"
+  
+// sizes
+@mixin xs 
+  @media (min-width: 320px)
+    @content
+
+@mixin sm 
+  @media (min-width: 640px)
+    @content
+
+@mixin md 
+  @media (min-width: 768px)
+    @content
+
+@mixin lg
+  @media (min-width: 1024px)
+    @content
+
+@mixin xl
+  @media (min-width: 1280px)
+    @content
+
+@mixin xxl
+  @media (min-width: 1536px)
+    @content
+
+
+
+@mixin mobile
+  @media (max-width: 639px)
+    @content
+
+@mixin notdesktop
+  @media (max-width: 1023px)
+    @content
+
+
+// touch
+@mixin touch
+  @media (hover: none)
+    @content
+
+@mixin notouch
+  @media (hover: hover)
+    @content
+
+
+
+// animation & preferences
+@mixin animate($prop: transform, $spd: 1ms, $ease: linear, $delay: 0s)
+  transition-property: $prop
+  will-change: $prop
+  transition-duration: $spd!important
+  @media (prefers-reduced-motion: reduce)
+    transition-duration: 1ms!important 
+  transition-timing-function: $ease
+  transition-delay: $delay
+
+
+// shadowbox
+@mixin shadowbox
+  &:before,
+  &:after
+    position: absolute
+    content: ""
+  &:before
+    box-shadow: 0px 3px $shadowWidth rgba(0,0,0,0.15)
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+  &:after
+    background: linear-gradient(to right, rgba(255,255,255,0) 40%,rgba(255,255,255,0) 100%)
+    left: 0
+    right: 0
+    @include sm
+      left: -$shadowWidth
+      right: -$shadowWidth
+      top: -$shadowWidth
+      bottom: -$shadowWidth
+
+@mixin shadowbox-all
+  &:after
+    background: linear-gradient(to right, rgba(255,255,255,0) 40%,rgba(255,255,255,0) 100%)
+  
+@mixin shadowbox-left
+  &:after
+    background: linear-gradient(to left, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%)
+
+@mixin shadowbox-right
+  &:after
+    background: linear-gradient(to right, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%)
+
+@mixin shadowbox-top
+  &:after
+    background: linear-gradient(to top, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%)
+
+@mixin shadowbox-bottom
+  &:after
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%)
+
+
+
+
+// margins
+@mixin margintop
+  margin-top: $marginV
+  margin-block-start: $marginV
+
+@mixin marginbottom
+  margin-bottom: $marginV
+  margin-block-end: $marginV
+
+
+
+// paddings
+
+@mixin paddings
+  padding-left: $paddingH
+  padding-right: $paddingH
+  @include sm
+    padding-left: calc(2*$paddingH)
+    padding-right: calc(2*$paddingH)

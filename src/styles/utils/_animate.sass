@@ -1,0 +1,44 @@
+$animdelta: 30px
+    
+.ag-fromfade
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    opacity: 0
+    &.ag-inview
+        opacity: 1
+
+.ag-fromfade2
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    opacity: 0
+    &.ag-inview
+        opacity: 1
+
+.ag-fromleft
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    transform: translate(-$animdelta, 0)
+    &.ag-inview
+        transform: translate(0, 0px)
+
+.ag-fromright
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    transform: translate($animdelta, 0)
+    &.ag-inview
+        transform: translate(0, 0px)
+
+.ag-frombottom
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    transform: translate(0, $animdelta)
+    &.ag-inview
+        transform: translate(0, 0px)
+
+.ag-fromtop
+    @include animate((opacity, transform), 0.75*$speed, ease-out, 0.2s)
+    transform: translate(0, -$animdelta)
+    &.ag-inview
+        transform: translate(0, 0px)
+
+.ag-fromscale
+    @include animate((opacity, transform), 0.5*$speed, ease-out, 0.2s)
+    transform: scale(0)
+    transform-origin: 50% 50%
+    &.ag-inview
+        transform: scale(1)  

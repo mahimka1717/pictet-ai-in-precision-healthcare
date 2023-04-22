@@ -1,0 +1,108 @@
+
+
+.box
+    position: relative
+    padding-left: 20px
+    padding-bottom: 50px
+    padding-top: 30px
+    @include sm
+        padding-left: 50px
+
+    .chart
+        position: relative
+        width: 100%
+        .greed
+            position: relative
+            width: 100%
+            height: 356px
+            @include sm
+                height: 356px
+            
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .axis
+                position: relative
+                width: 100%
+                height: 1px
+                background-color: rgba(0, 0, 0, 0.1)
+                .label
+                    position: absolute
+                    top: 0
+                    left: 0
+                    transform: translate(calc(-100% - 3px), -50%)
+                    font-size: 10px
+                    font-family: $font-copy !important
+                    font-weight: 300 !important
+                    @include sm
+                        font-size: 16px
+                        transform: translate(calc(-100% - 20px), -50%)
+        .field
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            width: 100%
+            height: 100% 
+            // background-color: rgba(255, 255, 0, 0.1)
+            display: flex
+            justify-content: space-around
+
+            .bar
+                position: relative
+                width: 100%
+                height: 100%
+                max-width: 76px
+                margin-left: 10px
+                margin-right: 10px
+                @include lg
+                    margin-left: 20px
+                    margin-right: 20px
+                .barvals
+                    position: relative
+                    width: 100%
+                    height: 100%
+                    display: flex
+                    flex-direction: column-reverse
+                    justify-content: flex-start
+                    
+
+                    .sbar
+                        position: relative
+                        width: 100%
+                .p
+                    position: absolute
+                    left: 50%
+                    bottom: -10px
+                    transform: translate(-50%, 100%)
+                    font-size: 10px
+                    font-family: $font-copy !important
+                    font-weight: 300 !important
+                    @include sm
+                        font-size: 16px
+              
+        
+
+
+.legend
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 16px
+    padding-left: 0px
+    @include sm
+        padding-left: 50px
+    .name
+        display: flex
+        align-items: center
+        margin-right: 20px
+        .color
+            position: relative
+            width: 10px
+            height: 10px
+            margin-right: 10px
+        .p
+            position: relative
+            font-family: $font-copy !important
+            font-weight: 300 !important

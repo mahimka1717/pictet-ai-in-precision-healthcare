@@ -1,0 +1,100 @@
+.art
+    @include paddings
+    .box
+        // margin-left: auto
+        // margin-right: auto
+        // max-width: $max-width
+        // width: 100%
+        position: relative
+        left: 50%
+        .artobject
+            display: inline-block
+            position: absolute
+            line-height: 0
+
+
+// .art[data-id="100"]
+//     .box
+//         .artobject[data-id="0"]
+//             position: relative
+//             @include lg
+//                 position: absolute
+//                 bottom:0
+//                 right: 0%
+//                 transform: translate(calc(100% + 60px), 0)
+//         .artobject[data-id="1"]
+//             position: relative
+//             right: -100%
+//             transform: translate(-100%, -50px)
+//             @include lg
+//                 position: absolute
+//                 top:0
+//                 right: 0%
+//                 transform: translate(calc(100% - 0px), 0px)
+
+
+.art[data-id="0"]
+    height: 540px
+    @include marginbottom 
+    .box
+        .artobject
+            position: absolute
+        & [data-id="0-0"]
+            top: 172px
+            left: -472px
+            @include sm
+                left: calc(-151px - 384px)
+        & [data-id="0-1"]
+            top: 50px
+            left: -200px
+            width: 400px
+            @include sm
+                top: 50px
+                left: calc(200px - 384px)
+        & [data-id="0-2"]
+            top: 216px
+            left: 40px
+            width: 278px
+            @include sm
+                left: calc(583px - 384px)
+            @include lg
+                top: 287px
+                left: calc(264px - 384px)
+        & [data-id="0-3"]
+            top: 102px
+            left: calc(-353px - 384px)
+        & [data-id="0-4"]
+            top: 261px
+            left: -359px
+            @include lg
+                left: calc(79px - 384px)
+        & [data-id="0-5"]
+            top: 348px
+            left: calc(120px - 384px)
+        & [data-id="0-6"]
+            top: 50px
+            left: calc(640px - 384px)
+        & [data-id="0-7"]
+            top: 287px
+            left: calc(264px - 384px)
+            @include lg
+                top: 216px
+                left: calc(583px - 384px)
+
+
+
+.art[data-id="1"]
+    height: 0px
+    .box
+        .artobject
+            position: absolute
+
+        & [data-id="1-0"]
+            top: -17px
+            left: 411px
+        & [data-id="1-1"]
+            top: 17px
+            left: 446px
+
+
+

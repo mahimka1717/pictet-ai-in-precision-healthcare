@@ -1,0 +1,321 @@
+{
+	"content": [
+
+		{
+			"type": "hero",
+			"h1": "How green, social and sustainability bonds could change the world",
+			"desc": "Achieving global climate and sustainability goals will cost trillions. Can GSS bonds fill the funding gap?"
+		},
+
+		{
+			"type": "chapter",
+			"h2": "",
+			"data": [
+				
+				{
+					"type":"text",
+					"data":"<span><span>H</span></span>ow much will it cost to save humanity? The UN estimates a funding gap of US$4trn<sup>1</sup> a year to meet the Sustainable Development Goals (SDGs), and Stanford scientists suggest <span>a price tag of US$62trn<sup>2</sup> to globally transition to 100 per cent clean, renewable energy.</span>"
+				},
+
+				{
+					"type":"text",
+					"data":"But the returns speak for themselves. <span>Achieving the SDGs could open up US$12trn<sup>3</sup> in market opportunities while creating almost 400mn jobs by 2030</span> (all while eliminating hunger and poverty, and fostering inclusive, circular economies and a healthy, thriving planetary ecosystem). Switching to a worldwide clean energy system would supposedly pay for itself within five to eight years and be less costly, more energy efficient, and create millions more jobs than sticking with oil and gas. <span>We have the solutions. Now we just need to fund and facilitate them.</span>"
+				},
+
+				{
+					"type":"graph",
+					"id":0,
+					"h3": "Sustainable bond issuance of 2022 by label ($bn value)",
+					"data": [
+						{
+							"val":55,
+							"name":"Green bond <span><span>55%</span></span>"
+						},
+						{
+							"val":19,
+							"name":"Social bond <span><span>19%</span></span>"
+						},
+						{
+							"val":17,
+							"name":"Sustainability bond <span><span>17%</span></span>"
+						},
+						{
+							"val":9,
+							"name":"Sustainability-linked bond <span><span>9%</span></span>"
+						},
+						{
+							"val":1,
+							"name":"Transition bond <span><span><1%</span></span>"
+						}
+					],
+					"source": "EF Data as of 18/01/2023"
+				},
+
+				{
+					"type":"text",
+					"data": "“Climate change, the need for social advancement, and elimination of social inequalities and biodiversity loss are all examples of today’s global challenges, which require collaboration between the private and public sector,” explains Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management. “Debt financing is one possible instrument that can play a part in the low carbon transition and promote social advancement.”"
+				},
+
+				{
+					"type":"quote",
+					"id":0,
+					"h3":" Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management",
+					"quote":"Debt financing is one possible instrument that can play a part in the low carbon transition and promote social advancement"
+				},
+
+				{
+					"type":"text",
+					"data": "Green, social and sustainability (GSS) bonds, as well as a number of emerging bonds including sustainability-linked, blue, and transition bonds (collectively known as GSS+ bonds), are one such set of evolving financial instruments. <span>GSS+ bonds help companies, countries, multilateral institutions and supranational organisations such as the EU meet their ESG, climate and sustainability targets while creating an attractive market for ESG and ethical investment.</span>"
+				},
+
+				{
+					"type":"art",
+					"id":1
+				}
+
+			]
+		},
+
+		{
+			"type": "chapter",
+			"h2": "What are GSS+ bonds?",
+			"data": [
+
+				{
+					"type":"text",
+					"data":"Unlike traditional bonds, GSS+ bonds, called ‘use of proceeds’ bonds, must be linked to projects that have positive environmental outcomes (green bonds), social benefits (social bonds), or a mixture of both (sustainability bonds)."
+				},
+
+				{
+					"type":"text",
+					"data":"Despite a slight dip in issuance in 2022 due to adverse market conditions, the market<sup>4</sup> for GSS+ bonds has seen rapid growth over recent years — <span>with green bond issuance alone hitting a high of US$596bn in 2021</span> — driven by the “permacrisis” of Covid 19, geopolitical risk and climate change."
+				},
+
+				{
+					"type":"graph",
+					"id": 1,
+					"h3": "Regional breakdown of green bond issuance",
+					"desc": "By volume of issuance ($B)",
+					"data":[
+
+						{
+							"val": [47, 41, 70, 92, 171, 115],
+							"name": "Europe",
+							"col": "#f9a825"
+						},
+						{
+							"val": [18, 26, 37, 29, 66, 66],
+							"name": "Asia-Pacific",
+							"col": "#f9a825"
+						},
+						{
+							"val": [12, 10, 20, 33, 57, 32],
+							"name": "North America",
+							"col": "#f9a825"
+						},
+						{
+							"val": [0, 4, 7, 3, 16, 20],
+							"name": "Supranational",
+							"col": "#f9a825"
+						},
+						{
+							"val": [4, 3, 4, 7, 7, 2],
+							"name": "Latin America",
+							"col": "#f9a825"
+						},
+						{
+							"val": [0, 0, 1, 1, 1, 0],
+							"name": "Africa",
+							"col": "#f9a825"
+						}
+					],
+					"source": "S&P Global Market Intelligence, 2023 "
+				},
+
+				{
+					"type":"text",
+					"data": "“Broadly speaking, it is cheaper for a company to issue a bond with a green sustainability label on it than it is to issue a bond without, because investors value that label and are willing to pay more for it,” explains Caroline Harrison, Head of Marketing and Intelligence Research at the Climate Bonds Initiative, a trusted data platform that aims to mobilise global capital for climate action and beyond."
+				},
+
+				{
+					"type":"quote",
+					"id":1,
+					"h3":"Caroline Harrison, Head of Marketing and Intelligence Research at the Climate Bonds Initiative",
+					"quote":"It is cheaper for a company to issue a bond with a green sustainability label on it than it is to issue a bond without because investors value that label and are willing to pay more for it"
+				},
+
+				{
+					"type":"text",
+					"data": "For companies, sovereigns and other institutions, issuing <span>GSS+ bonds can play directly into ESG and net zero strategies.</span> Carbon-heavy industries can issue a green bond to raise capital for a decarbonisation project and thus accelerate the clean energy transition. The company could go further and commit to providing employment opportunities to local communities, turning a green bond into a sustainability bond (while also feeding into a “just transition”)."
+				},
+
+				{
+					"type":"text",
+					"data": "“Issuing GSS+ bonds can act like a green light to investors,” says Harrison. “And GSS+ bonds will always attract new investors, because there’s a limited number of bonds, and there are many funds out there who have mandates to buy green or socially responsible investments.”"
+				},
+
+				{
+					"type":"graph",
+					"id":2,
+					"h3": "GSS + bonds in 2022 reached: <span>US$635.7bn</span>",
+					"data": [
+						{
+							"val":52.3,
+							"name":"<span>52.3%</span> Green bonds - <span><span>US$332.5bn</span></span>"
+						},
+						{
+							"val":22.4,
+							"name":"<span>22.4%</span> Sustainability bonds - <span><span>US$142.1bn</span></span>"
+						},
+						{
+							"val":14.8,
+							"name":"<span>14.8%</span> Social-only bonds - <span><span>US$94.2bn</span></span>"
+						},
+						{
+							"val":10,
+							"name":"<span>10%</span> Sustainability-linked bonds - <span><span>US$63.6bn</span></span>"
+						},
+						{
+							"val":1,
+							"name":"<span>0.4%</span> Transition bonds - <span><span>US$3.4bn</span></span>"
+						}
+					],
+					"source": "Climate Bonds Initiative"
+				}
+			]
+		},
+
+		{
+			"type": "chapter",
+			"h2": "GSS+ bonds: less market volatility, less greenwashing",
+			"data": [
+
+				{
+					"type":"text",
+					"data":"“The level of scrutiny attached to GSS+ bonds sets them apart from other types of debt financing,” says Liam Moore, Investment Specialist in the Global Fixed Income, Currency & Commodities (GFICC) group at J.P. Morgan Asset Management. “Investors can now gain additional visibility over their investments so they can actually understand where their money is going.”"
+				},
+
+				{
+					"type":"quote",
+					"id":2,
+					"h3":"Liam Moore, Investment Specialist in the Global Fixed Income, Currency & Commodities (GFICC) group at J.P. Morgan Asset Management",
+					"quote":"Investors can now gain additional visibility over their investments so they can actually understand where their money is going"
+				},
+
+				{
+					"type":"text",
+					"data": "While this makes it easier to avoid greenwashing, investors still need to take an active management approach. Encouraging issuers to align with the International Capital Markets Association (ICMA) guidelines on GSS+ bonds is one way that investors can stay clear of greenwashing and ensure their bonds are fit for purpose."
+				},
+
+				{
+					"type":"text",
+					"data": "One potential investment challenge of GSS+ bonds is that <span>their sheer popularity can result in a slightly higher price versus traditional bonds</span>. This is known as the “greenium”. On the flipside, while an investor might get lower yields compared to traditional bonds, GSS+ bonds can exhibit lower volatility in a tough market."
+				},
+
+				{
+					"type":"text",
+					"data": "“It’s a tradeoff,” says Moore. “But the sustainable nature of these bonds can sometimes act as an offset, so it’s really up to managers to be active about how they find the value spots in this market.”"
+				}
+			]
+		},
+
+		{
+			"type": "chapter",
+			"h2": "Resilient investing: the future of GSS+ bonds",
+			"data": [
+
+				{
+					"type":"text",
+					"data":"What’s next for the budding GSS+ bonds market? Bonds related to clean energy, energy efficiency and clean transportation are currently the top performing GSS+ bond categories, but sustainability bonds and bonds linked to adaptation and resilience are some of the fastest-growing labels in the GSS+ market. <span>Emerging economies such as Belize, Fiji and the Seychelles, for example, have issued some of the world’s first “blue bonds”, directly linked to biodiversity conservation, adaptation and community resilience.</span>"
+				},
+
+				{
+					"type":"graph",
+					"id":3,
+					"h3": ["Blue bond commitment by country&nbsp;(%)", "Blue bond commitment by objective&nbsp;(%)"],
+					"data": [
+						[
+							{
+								"val":54.5,
+								"name":"China <span><span>54.5%</span></span>"
+							},
+
+							{
+								"val":23.8,
+								"name":"Bangladesh <span><span>23.8%</span></span>"
+							},
+
+							{
+								"val":9.2,
+								"name":"Cambodia <span><span>9.2%</span></span>"
+							},
+				
+							{
+								"val":6.8,
+								"name":"Regional <span><span>6.8%</span></span>"
+							},
+
+							{
+								"val":5.7,
+								"name":"Maldives <span><span>5.7%</span></span>"
+							}
+						],
+						[
+							{
+								"val":66.4,
+								"name":"Wastewater management <span><span>66.4%</span></span>"
+							},
+
+							{
+								"val":22.3,
+								"name":"Nonpoint source pollution management <span><span>22.3%</span></span>"
+							},
+
+							{
+								"val":11.3,
+								"name":"Solid waste management <span><span>11.3%</span></span>"
+							}
+						]
+					],
+					"source": "Asian Development Bank estimates"
+				},
+
+				{
+					"type":"text",
+					"data":"“Tackling the negative consequences arising from the risks of climate change has long been overlooked by investors,” emphasises Stadtelmeyer-Petru. “But investments focused on climate adaptation are essential to mitigate climate impacts that are already happening. GSS+ bonds specifically focused on climate resilience can provide a source of financing for public sectors’ infrastructure projects and more.”"
+				},
+
+				{
+					"type":"quote",
+					"id":3,
+					"h3":" Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management",
+					"quote":"Investments focused on climate adaptation are essential to mitigate climate impacts that are already happening. GSS+ bonds specifically focused on climate resilience can provide a source of financing for public sectors’ infrastructure projects and more"
+				}
+			]
+		},
+
+
+		{
+			"type": "sources",
+			"data": [
+				{
+					"name":"UN Human Rights Office of the High Commissioner, Trillions needed to close finance gap on Sustainable Development Goals (2022)",
+					"url":"https://www.ohchr.org/en/press-releases/2022/10/trillions-needed-close-finance-gap-sustainable-development-goals-says-un "
+				},
+				{
+					"name":"Dept. of Civil and Environmental Engineering at Stanford University, Low-cost solutions to global warming, air pollution, and energy insecurity for 145 countries (2022)",
+					"url":"https://pubs.rsc.org/en/content/articlelanding/2022/EE/D2EE00722C"
+				},
+				{
+					"name":"UN, The Sustainable Development Agenda (2022)",
+					"url":"https://www.un.org/sustainabledevelopment/development-agenda/"
+				},
+				{
+					"name":"S&P Global Market Intelligence, Global green bond issuance poised for rebound in 2023 amid policy push (2023)",
+					"url":"https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/global-green-bond-issuance-poised-for-rebound-in-2023-amid-policy-push-73931433 "
+				}
+			]
+		}
+
+	]
+}

@@ -1,0 +1,29 @@
+VSCode hotkeys:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+
+Command (или Cmd) ⌘
+Shift ⇧
+Option (или Alt) ⌥
+Control (или Ctrl) ⌃
+Caps Lock ⇪
+Fn 
+
+
+
+
+cmd + shift + f = find in files
+
+cmd + k then cmd + s = shortcuts
+
+shift + cmd + p = command palette
+
+shift + ctrl + f = beautify js
+
+shift + option + f = beautify sass
+
+option + arrow = move line
+
+shift + option + arrow = duplicate line
+
+option + cmd + n = next suggestion
+

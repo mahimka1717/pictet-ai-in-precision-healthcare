@@ -1,0 +1,61 @@
+{
+  "name": "tmp",
+  "domain": "https://alphagridinfographics.com",
+  "version": "1.0.0",
+  "private": true,
+  "imageQuality": 80,
+  "ftwrapper": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  },
+  "scripts": {
+    "dev": "next dev",
+    "exportimg": "next-export-optimize-images",
+    "build": "next build && next export && next-export-optimize-images",
+    "prod": "next build && next export && next-export-optimize-images && node ./postbuild.js && webpack --config webpack.config.js",
+    "deploy": "scp -r /Users/maxim/work/tmp mahimka@alphagridinfographics.com:/home/tmp/tmp111",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
+    "clean": "rm -rf out"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.1.1",
+    "@next/font": "13.1.1",
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.3",
+    "next": "13.1.1",
+    "next-compose-plugins": "^2.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rellax": "^1.12.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "css-loader": "^6.7.3",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "mini-css-extract-plugin": "^2.7.2",
+    "next-export-optimize-images": "^2.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^8.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "sass-resources-loader": "^2.2.5",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

@@ -1,0 +1,31 @@
+// CSS Font Smoothing
+body
+  padding: 0
+  margin: 0
+
+#ag-infographic
+  position: relative
+  overflow: hidden
+  will-change: opacity
+  opacity: 0
+  &.ag-inview
+    opacity: 1 !important
+    transition: opacity 0.5s ease-in-out
+  
+  ol li 
+    counter-increment: muffins
+
+  ol li:before 
+    content: counter(muffins) ". "
+
+  ol 
+    list-style: none
+    counter-reset: muffins
+
+  sup, sub
+    vertical-align: baseline
+    position: relative
+    top: -0.4em
+
+  sub
+    top: 0.4em

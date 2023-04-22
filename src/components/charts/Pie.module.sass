@@ -1,0 +1,102 @@
+.pie
+    position: relative
+    display: flex
+    justify-content: center
+    padding-top: 0px
+    padding-bottom: 30px
+    @include lg
+        padding-top: 50px
+        padding-bottom: 20px
+
+    .box
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        @include lg
+            display: block
+        .chart
+            position: relative
+            width: 100%
+            max-width: 240px
+            height: auto
+            @include sm
+                max-width: 300px
+        .legend
+            position: relative
+            display: flex
+            flex-wrap: wrap
+            margin-top: 20px
+            @include lg
+                margin-top: 0
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+            .name
+                position: relative
+                @include lg
+                    position: absolute
+                @include notdesktop
+                    left: 0 !important
+                    top: 0 !important
+                    display: flex
+                    align-items: center
+                    margin-right: 20px
+                .color
+                    display: block
+                    position: relative
+                    width: 10px
+                    height: 10px
+                    margin-right: 10px
+                    @include lg
+                        display: none
+                
+                .p
+                    position: relative
+                    font-family: $font-copy !important
+                    font-weight: 300 !important
+                    @include lg
+                        min-width: 180px
+                        // white-space: nowrap
+
+                    @include mobile
+                        text-align: left !important
+
+                    @include notdesktop     
+                        transform: translate(0, 0) !important
+
+                    & span
+                        font-weight: bold !important
+                        & span
+                            color: $color-secondary
+
+
+.pie[data-id="0"]
+    .box
+        .legend
+            .name
+                .p
+                    @include lg
+                        min-width: 180px
+
+
+
+.pie[data-id="2"]
+    .box
+        .legend
+            .name
+                .p
+                    @include lg
+                        min-width: 80px
+
+.pie[data-id="3"]
+    .box
+        .legend
+            .name
+                .p
+                    @include lg
+                        min-width: 80px
+                    & span
+                        & span
+                            color: $color-tertiary
