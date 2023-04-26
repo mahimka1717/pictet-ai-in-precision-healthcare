@@ -25,14 +25,13 @@ const Hero = (p) => {
 			<div className={s.content}>
 				<div className={s.box}>
 					<h1 className={s.h1}>{p.data.h1}</h1>
-					<div className={s.hr} />
+					<div className={s.hr  + ` ag-fromfade ag-fromscale2`} />
 					<p className={s.desc}>{p.data.desc}</p>
 				</div>
 			</div>
 
 			<div className={s.art} data-id={0}>
 				<div className={s.box}>
-
 					<NextImage 
 						className={s.image + ` ag-fromfade ag-fromscale2`}
 						src={`./img/art0.png`}

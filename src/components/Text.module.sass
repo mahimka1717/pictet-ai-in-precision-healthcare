@@ -5,7 +5,6 @@
     position: relative
     font-size: 18px
     line-height: 30px
-    display: inline-block
     @include sm
       font-size: 20px
       line-height: 35px
@@ -17,18 +16,42 @@
     b
       font-family: $font-title !important
 
-  img
-    position: relative
-    opacity: 0
-    @include sm
-      display: none
+    span
+      width: 50%
+      display: inline-block
+      @include sm
+        width: auto
+        display: inline
+
+    br
+      @include sm
+        display: none
+        height:0px
 
 
-  img[data-id="1-2"]
+
+.text[data-id="1-11"]:before
+  @include mobile
+    content: ""
+    display: inline-block
+    width:50%
+    height:200px
     float: right
-    width: 50%
-    height: auto
+
+.text[data-id="2-6"]:before
+  @include mobile
+    content: ""
+    display: inline-block
+    width:50%
+    height:260px
+    float: right
           
 
-
+.text[data-id="3-4"]:before
+  @include mobile
+    content: ""
+    display: inline-block
+    width:50%
+    height:260px
+    float: right
 

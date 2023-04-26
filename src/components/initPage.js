@@ -1,10 +1,10 @@
-import Rellax from "rellax";
+// import Rellax from "rellax";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
+// import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
+// gsap.registerPlugin(ScrollToPlugin);
 
 let Page
 
@@ -41,11 +41,9 @@ export function initPage() {
 			const val = document.querySelectorAll(`[data-ag="g0val"]`);
 
 			const legend = document.querySelector(`[data-ag="g0legend"]`);
-			const svg = legend.querySelector(`svg`);
+			const svg = legend.querySelector(`[data-ag="g0mask"]`);
 			const span = legend.querySelector(`span`);
 			const p = legend.querySelector(`p`);
-
-
 
 			const off = function(){
 				gsap.killTweensOf([name, bar, val, svg, span, p]);
@@ -53,7 +51,7 @@ export function initPage() {
 				gsap.set(bar, {scaleX: 0, transformOrigin: 'left center'});
 				gsap.set(val, {x: 10, opacity: 0});
 				
-				gsap.set(svg, {y: 0, opacity: 0, clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"});
+				gsap.set(svg, {scaleY: 0, transformOrigin: 'center bottom'});
 				gsap.set(span, {scale: 0, opacity: 0, transformOrigin: 'center center'});
 				gsap.set(p, {opacity: 0});
 
@@ -65,7 +63,7 @@ export function initPage() {
 				gsap.to(val, {x: 0, opacity: 1,  ease: 'power1.out', duration: 1, stagger: 0.1, delay: 0})
 				
 				gsap.to(span, {scale: 1, opacity: 1,  ease: 'power1.out', duration: 0.5, delay: 0.5})
-				gsap.to(svg, {y: 0, opacity: 1,  clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: 'power1.out', duration: 0.5, delay: 0.6})
+				gsap.to(svg, {scaleY: 1, ease: 'power1.out', duration: 0.5, delay: 0.6})
 				gsap.to(p, {opacity: 1,  ease: 'power1.out', duration: 0.5, delay: 0.6})
 
 
@@ -90,21 +88,21 @@ export function initPage() {
 			const bar = document.querySelectorAll(`[data-ag="g1bar"]`);
 			const val = document.querySelectorAll(`[data-ag="g1val"]`);
 			const year = document.querySelectorAll(`[data-ag="g1year"]`);
-			const arrow = g.querySelector(`svg`);
+			const arrow = g.querySelector(`[data-ag="g1mask"]`);
 
 			const off = function(){
 				gsap.killTweensOf([bar, val, year, arrow]);
 				gsap.set(bar, {scaleY: 0, transformOrigin: 'center bottom'});
 				gsap.set(val, {opacity: 0, y: 10});
 				gsap.set(year, {opacity: 0, y: 0});
-				gsap.set(arrow, {clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+				gsap.set(arrow, {scaleX: 0, transformOrigin: 'left center'});
 			}
 			const on = function(){
 				gsap.killTweensOf([bar, val, year, arrow]);
 				gsap.to(bar, {scaleY: 1, ease: 'power1.out', duration: 0.5, stagger: 0.1, delay: 0})
 				gsap.to(val, {opacity: 1, y: 0, ease: 'power1.out', duration: 0.5, stagger: 0.1, delay: 0})
 				gsap.to(year, {opacity: 1, y: 0, ease: 'power1.out', duration: 0.5, stagger: 0.1, delay: 0})
-				gsap.to(arrow, {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: 'power1.out', duration: 2.5, delay: 0})
+				gsap.to(arrow, {scaleX: 1, ease: 'power1.out', duration: 2.0, delay: 0})
 			}
 
 			off();

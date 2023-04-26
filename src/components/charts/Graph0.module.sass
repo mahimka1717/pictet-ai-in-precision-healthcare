@@ -6,7 +6,7 @@
     .line
         position: absolute
         top: 0
-        left: 170px
+        left: 150px
         height: 100%
         border-left: 1px solid #707070
         @include sm
@@ -16,20 +16,23 @@
         position: relative
         display: flex
         width: 100%
-        margin-bottom: 5px
         height: 38px
+        margin-bottom: 5px
         @include sm
+            margin-bottom: 0px
             height: 43px
 
         .name
             font-size: 12px
             line-height: 12px
-            width: 170px
-            padding-right: 20px
+            width: 150px
+            min-width: 150px
+            padding-right: 5px
             @include sm
                 width: 260px
                 font-size: 14px
                 line-height: 16px
+                padding-right: 20px
             display: flex
             align-items: center
             justify-content: flex-start
@@ -39,21 +42,27 @@
             position: relative
             color: white
             font-size: 16px
-            width: 308px         
+            width: 100%
+            max-width: 308px
+            @include sm
+                width: 308px      
+            
+            .valbox
+                position: relative
 
-            .bar
-                position: absolute
-                width: 100%
-                top: 8px
-                left: 0
-                height: 24px
-                opacity: 0.55
-                background-color: $color-secondary
+                .bar
+                    position: absolute
+                    width: 100%
+                    top: 8px
+                    left: 0
+                    height: 24px
+                    opacity: 0.55
+                    background-color: $color-secondary
 
-            .span
-                position: absolute
-                right: 10px
-                top: 8px
+                .span
+                    position: absolute
+                    right: 10px
+                    top: 8px
 
 
 
@@ -65,11 +74,12 @@
                 font-size: 16px
                 line-height: 16px
         .val
-            .span
-                opacity: 0
-                display: none
-            .bar
-                opacity: 1
+            .valbox
+                .span
+                    opacity: 0
+                    display: none
+                .bar
+                    opacity: 1
 
 .box::before
     content: ''
@@ -88,16 +98,16 @@
 
 .legend
     position: absolute
-    right: 0px
-    top: 105px
+    right: -10px
+    top: 125px
     color: $color-secondary
     width: 80px
-    opacity: 1
+    // opacity: 0
     @include sm
-        opacity: 1
         width: 140px
         right: 40px
         top: 54px
+        right: -20px
 
     svg
         position: absolute
