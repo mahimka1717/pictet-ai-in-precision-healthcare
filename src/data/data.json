@@ -3,318 +3,313 @@
 
 		{
 			"type": "hero",
-			"h1": "How green, social and sustainability bonds could change the world",
-			"desc": "Achieving global climate and sustainability goals will cost trillions. Can GSS bonds fill the funding gap?"
+			"h1": "A life of learning",
+			"desc": "The acceleration of technology has placed a growing importance on upskilling within the professional environment, creating a powerful long-term driver for the global education sector"
 		},
 
 		{
 			"type": "chapter",
 			"h2": "",
 			"data": [
-				
 				{
-					"type":"text",
-					"data":"<span><span>H</span></span>ow much will it cost to save humanity? The UN estimates a funding gap of US$4trn<sup>1</sup> a year to meet the Sustainable Development Goals (SDGs), and Stanford scientists suggest <span>a price tag of US$62trn<sup>2</sup> to globally transition to 100 per cent clean, renewable energy.</span>"
+					"type":"art",
+					"id":2,
+					"w":894,
+					"h":1096
 				},
 
 				{
 					"type":"text",
-					"data":"But the returns speak for themselves. <span>Achieving the SDGs could open up US$12trn<sup>3</sup> in market opportunities while creating almost 400mn jobs by 2030</span> (all while eliminating hunger and poverty, and fostering inclusive, circular economies and a healthy, thriving planetary ecosystem). Switching to a worldwide clean energy system would supposedly pay for itself within five to eight years and be less costly, more energy efficient, and create millions more jobs than sticking with oil and gas. <span>We have the solutions. Now we just need to fund and facilitate them.</span>"
-				},
-
-				{
-					"type":"graph",
-					"id":0,
-					"h3": "Sustainable bond issuance of 2022 by label ($bn value)",
-					"data": [
-						{
-							"val":55,
-							"name":"Green bond <span><span>55%</span></span>"
-						},
-						{
-							"val":19,
-							"name":"Social bond <span><span>19%</span></span>"
-						},
-						{
-							"val":17,
-							"name":"Sustainability bond <span><span>17%</span></span>"
-						},
-						{
-							"val":9,
-							"name":"Sustainability-linked bond <span><span>9%</span></span>"
-						},
-						{
-							"val":1,
-							"name":"Transition bond <span><span><1%</span></span>"
-						}
-					],
-					"source": "EF Data as of 18/01/2023"
+					"data":"Just decades ago, formal education stopped as soon as employment began, confining the sector’s potential market to the global population’s youngest cohorts. Now, as technology continues to shake up almost every industry and sector on the planet, workers embark on lifelong journeys of learning and upskilling as their roles – and the skills required to perform them – evolve rapidly and continuously."
 				},
 
 				{
 					"type":"text",
-					"data": "“Climate change, the need for social advancement, and elimination of social inequalities and biodiversity loss are all examples of today’s global challenges, which require collaboration between the private and public sector,” explains Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management. “Debt financing is one possible instrument that can play a part in the low carbon transition and promote social advancement.”"
-				},
-
-				{
-					"type":"quote",
-					"id":0,
-					"h3":" Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management",
-					"quote":"Debt financing is one possible instrument that can play a part in the low carbon transition and promote social advancement"
-				},
-
-				{
-					"type":"text",
-					"data": "Green, social and sustainability (GSS) bonds, as well as a number of emerging bonds including sustainability-linked, blue, and transition bonds (collectively known as GSS+ bonds), are one such set of evolving financial instruments. <span>GSS+ bonds help companies, countries, multilateral institutions and supranational organisations such as the EU meet their ESG, climate and sustainability targets while creating an attractive market for ESG and ethical investment.</span>"
+					"data":"Implications for the global education sector are huge. Companies and individuals of all ages increasingly perceive work as an ongoing quest to keep up-to-date with the latest technology and how it impacts working practices – creating a powerful long-term growth engine. <i>“The march of technology now requires permanent upskilling in the workplace, and that makes education a lifelong pursuit,”</i> says Phyllis Jordan, Associate Director of FutureEd, an independent think tank at Georgetown University’s McCourt School of Public Policy."
 				},
 
 				{
 					"type":"art",
-					"id":1
-				}
-
-			]
-		},
-
-		{
-			"type": "chapter",
-			"h2": "What are GSS+ bonds?",
-			"data": [
-
-				{
-					"type":"text",
-					"data":"Unlike traditional bonds, GSS+ bonds, called ‘use of proceeds’ bonds, must be linked to projects that have positive environmental outcomes (green bonds), social benefits (social bonds), or a mixture of both (sustainability bonds)."
+					"id":3,
+					"w":898,
+					"h":990
 				},
 
 				{
-					"type":"text",
-					"data":"Despite a slight dip in issuance in 2022 due to adverse market conditions, the market<sup>4</sup> for GSS+ bonds has seen rapid growth over recent years — <span>with green bond issuance alone hitting a high of US$596bn in 2021</span> — driven by the “permacrisis” of Covid 19, geopolitical risk and climate change."
+					"type":"art",
+					"id":4,
+					"w":890,
+					"h":505
 				},
 
 				{
 					"type":"graph",
-					"id": 1,
-					"h3": "Regional breakdown of green bond issuance",
-					"desc": "By volume of issuance ($B)",
-					"data":[
-
+					"id":0,
+					"h3": "Reasons for pursuing additional education",
+					"desc": "% of respondents (n=3709)",
+					"info": "Of respondents cite a <b>stalling career</b> as the key event driving consideration of further education",
+					"data": [
 						{
-							"val": [47, 41, 70, 92, 171, 115],
-							"name": "Europe",
-							"col": "#f9a825"
+							"val":35,
+							"name":"Current career or career search stalling"
 						},
 						{
-							"val": [18, 26, 37, 29, 66, 66],
-							"name": "Asia-Pacific",
-							"col": "#f9a825"
+							"val":20,
+							"name":"Pivotal life event"
 						},
 						{
-							"val": [12, 10, 20, 33, 57, 32],
-							"name": "North America",
-							"col": "#f9a825"
+							"val":18,
+							"name":"Looking to build community"
 						},
 						{
-							"val": [0, 4, 7, 3, 16, 20],
-							"name": "Supranational",
-							"col": "#f9a825"
+							"val":18,
+							"name":"Friend or family member completed a similar program"
 						},
 						{
-							"val": [4, 3, 4, 7, 7, 2],
-							"name": "Latin America",
-							"col": "#f9a825"
+							"val":16,
+							"name":"Facing a difficult problem that requires more learning to solve"
 						},
 						{
-							"val": [0, 0, 1, 1, 1, 0],
-							"name": "Africa",
-							"col": "#f9a825"
+							"val":16,
+							"name":"Saw advertisement for a school programme"
+						},
+						{
+							"val":16,
+							"name":"Not engaged at work"
+						},
+						{
+							"val":15,
+							"name":"Overlooked for a promotion"
+						},
+						{
+							"val":15,
+							"name":"New Years’ resolution"
 						}
 					],
-					"source": "S&P Global Market Intelligence, 2023 "
+					"source": "McKinsey"
+				},
+
+				{
+					"type":"art",
+					"id":5,
+					"w":997,
+					"h":850
 				},
 
 				{
 					"type":"text",
-					"data": "“Broadly speaking, it is cheaper for a company to issue a bond with a green sustainability label on it than it is to issue a bond without, because investors value that label and are willing to pay more for it,” explains Caroline Harrison, Head of Marketing and Intelligence Research at the Climate Bonds Initiative, a trusted data platform that aims to mobilise global capital for climate action and beyond."
+					"data": "The digital revolution has already produced acute shortages in the skills that employers need to fill jobs. According to Manpower Group, the global recruitment firm, the global talent shortage reached a 16-year high last year, with three in four employers reporting difficulty in matching vacancies with people. <i>“From manufacturing to marketing, transport to trade, employers cannot find the people they need with the right blend of technical skills and human strengths,”</i> it concluded in its annual report of the talent-shortage landscape."
 				},
 
 				{
-					"type":"quote",
+					"type":"art",
+					"id":6,
+					"w":751,
+					"h":730
+				},
+
+				{
+					"type":"graph",
 					"id":1,
-					"h3":"Caroline Harrison, Head of Marketing and Intelligence Research at the Climate Bonds Initiative",
-					"quote":"It is cheaper for a company to issue a bond with a green sustainability label on it than it is to issue a bond without because investors value that label and are willing to pay more for it"
+					"h3": "The global talent shortage is intensifying",
+					"desc": "Three in four employers struggle to find talent",
+					"info": "",
+					"data": [ 40, 41, 31, 30, 31, 34, 34, 35, 36, 38, 40, 45, 54, 69, 75 ],
+					"source": "ManpowerGroup"
+				},
+
+				{
+					"type":"art",
+					"id":7,
+					"w":1096,
+					"h":892
 				},
 
 				{
 					"type":"text",
-					"data": "For companies, sovereigns and other institutions, issuing <span>GSS+ bonds can play directly into ESG and net zero strategies.</span> Carbon-heavy industries can issue a green bond to raise capital for a decarbonisation project and thus accelerate the clean energy transition. The company could go further and commit to providing employment opportunities to local communities, turning a green bond into a sustainability bond (while also feeding into a “just transition”)."
+					"data": "At the same time, workers increasingly see upskilling as a highway to full-time employment. As McKinsey noted recently, <i>“Employers in fields from healthcare to cyber security are struggling to find qualified workers, and online education can help adults of all ages quickly gain the skills needed to fill these positions.”</i>"
 				},
 
 				{
 					"type":"text",
-					"data": "“Issuing GSS+ bonds can act like a green light to investors,” says Harrison. “And GSS+ bonds will always attract new investors, because there’s a limited number of bonds, and there are many funds out there who have mandates to buy green or socially responsible investments.”"
+					"data": "Offering the opportunity to upskill while on the job could be a powerful tool for companies seeking to attract and retain talent. According to a recent report by Microsoft, 76 per cent of employees said they would stay longer at a company if they could benefit from learning and development support."
+				},
+
+				{
+					"type":"art",
+					"id":8,
+					"w":1096,
+					"h":1177
 				},
 
 				{
 					"type":"graph",
 					"id":2,
-					"h3": "GSS + bonds in 2022 reached: <span>US$635.7bn</span>",
-					"data": [
+					"h3": "Talent shortage across industries",
+					"desc": "Three in four employers struggle to find talent",
+					"info": "",
+					"data": [ 
 						{
-							"val":52.3,
-							"name":"<span>52.3%</span> Green bonds - <span><span>US$332.5bn</span></span>"
+							"val":76,
+							"name":"Education, Health and Government"
 						},
 						{
-							"val":22.4,
-							"name":"<span>22.4%</span> Sustainability bonds - <span><span>US$142.1bn</span></span>"
+							"val":76,
+							"name":"IT & Technology"
 						},
 						{
-							"val":14.8,
-							"name":"<span>14.8%</span> Social-only bonds - <span><span>US$94.2bn</span></span>"
+							"val":76,
+							"name":"Manufacturing"
 						},
 						{
-							"val":10,
-							"name":"<span>10%</span> Sustainability-linked bonds - <span><span>US$63.6bn</span></span>"
+							"val":75,
+							"name":"Banking & Finance"
 						},
 						{
-							"val":1,
-							"name":"<span>0.4%</span> Transition bonds - <span><span>US$3.4bn</span></span>"
+							"val":75,
+							"name":"Wholesale & Retail Trade"
+						},
+						{
+							"val":74,
+							"name":"Restaurants & Hotels"
+						},
+						{
+							"val":72,
+							"name":"Construction"
+						}
+					 ],
+					"source": "ManpowerGroup"
+				},			
+
+				{
+					"type":"art",
+					"id":9,
+					"w":771,
+					"h":1024
+				}
+
+			]
+		},
+
+		{
+			"type": "chapter",
+			"h2": "The rise of the machines",
+			"data": [
+
+				{
+					"type":"text",
+					"data":"All this has coincided with at least three factors that are helping to fuel demand for education. <b>First</b>, the Covid-19 pandemic forced companies to invest heavily in digitisation, which has, in turn, created new requirements for workers to acquire the latest digital skills."
+				},
+
+				{
+					"type":"text",
+					"data":"<b>Second</b>, the gender-equality movement is gaining ground, helping and encouraging millions of girls and women to access the education system, often for the first time. According to Unicef, only 49 per cent of countries have achieved gender parity in primary education; the story is similar or worse in the case of lower-secondary and secondary education."
+				},
+
+				{
+					"type":"text",
+					"data":"Yet studies show that investing in girls’ education has a profound effect on national growth rates; ensuring that all girls complete secondary education by 2030 could boost developing countries’ gross domestic product by 10 per cent, on average, over the next decade."
+				},
+
+				{
+					"type":"art",
+					"id":10,
+					"w":541,
+					"h":619
+				},
+
+				{
+					"type":"graph",
+					"id": 3,
+					"h3": "Potential contributions to NET GDP as a result of reaching 100% secondary completion rate for girls by 2030",
+					"desc": "",
+					"info": "% Incraease level to GDP level",
+					"data":[
+					],
+					"legend":["Ghana", "Uganda", "Mali", "El Salvador", "Bolivia", "India", "Lao PDR", "Egypt"],
+					"source": "WEF"
+				},
+
+				{
+					"type":"art",
+					"id":11,
+					"w":1105,
+					"h":931
+				},
+
+				{
+					"type":"text",
+					"data": "<b>Third</b>, the technology boom within the education sector itself has opened the door to remote learning – a development that has the potential to eliminate traditional barriers such as limits to infrastructure or the distance students might have to travel. The e-learning market surpassed $315bn in 2021, and is projected to expand at a compound annual growth rate of 20 per cent between this year and 2028. "
+				}
+			]
+		},
+
+		{
+			"type": "chapter",
+			"h2": "Hurdles remain",
+			"data": [
+
+				{
+					"type":"text",
+					"data":"Despite education’s renewed potential, several challenges remain. Investment in new technology in the sector remains woefully low. According to Holon IQ, a research firm, less than 4 per cent of total sector spending is allocated to digital. <i>“As a sector, education is a digital laggard”</i> says the firm. <i>“The knowledge economy and future skills require massive digital transformation, and, while accelerated through Covid-19, there is still far to go.”</i>"
+				},
+
+				{
+					"type":"art",
+					"id":12,
+					"w":1984,
+					"h":1672
+				},
+
+				{
+					"type":"graph",
+					"id": 4,
+					"h3": "Less than 4% digital spend in education & training",
+					"desc": "Global digital spend in education as a proportion of total global educationnand training expenditure in USD",
+					"info": "Digital Spend",
+					"data":[
+						{
+							"val":"$227bn education technology spend (3.6%)",
+							"desc":"Hardware, software and technology enabled services"
+						},
+						{
+							"val":"$6.2tn non-digital spend (96.4%)",
+							"desc":"Labour, physical equipment, analogue content, real estate & building works, utilities etc."
 						}
 					],
-					"source": "Climate Bonds Initiative"
+					"source": "HolonIQ"
+				},
+
+				{
+					"type":"art",
+					"id":13,
+					"w":1023,
+					"h":981
+				},
+
+				{
+					"type":"text",
+					"data":"Perhaps the biggest single challenge to the sector is governance and, in particular, regulation. Last year in China, ed-tech’s biggest market, the government’s sweeping changes to laws governing tutoring wiped billions of dollars off a swath of education start-ups – a stark reminder of the sector’s highly regulated nature. Holon IQ recently dropped 11 Chinese ed-tech start-ups from its list of the sector’s unicorns (start-ups valued at or above $1bn) citing <i>“major changes in the Chinese education regulatory environment”</i> as the cause."
+				},
+
+				{
+					"type":"text",
+					"data":"Yet, as Jordan of FutureEd notes, the growing demand for learning and upskilling in the jobs market, the increasing demand for women’s education as a central pillar of the gender-equality movement, and the potential of technology and e-learning to deliver new learning and skills to a widening market, mark deep and long-term trends that are likely to play out over decades. <i>“These trends are coming together, creating greater demand for education not only for young people but throughout people’s careers,”</i> she says. <i>“That is a terrific opportunity for the sector.”</i>"
+				},
+
+				{
+					"type":"art",
+					"id":14,
+					"w":1522,
+					"h":1672
 				}
+
 			]
 		},
-
-		{
-			"type": "chapter",
-			"h2": "GSS+ bonds: less market volatility, less greenwashing",
-			"data": [
-
-				{
-					"type":"text",
-					"data":"“The level of scrutiny attached to GSS+ bonds sets them apart from other types of debt financing,” says Liam Moore, Investment Specialist in the Global Fixed Income, Currency & Commodities (GFICC) group at J.P. Morgan Asset Management. “Investors can now gain additional visibility over their investments so they can actually understand where their money is going.”"
-				},
-
-				{
-					"type":"quote",
-					"id":2,
-					"h3":"Liam Moore, Investment Specialist in the Global Fixed Income, Currency & Commodities (GFICC) group at J.P. Morgan Asset Management",
-					"quote":"Investors can now gain additional visibility over their investments so they can actually understand where their money is going"
-				},
-
-				{
-					"type":"text",
-					"data": "While this makes it easier to avoid greenwashing, investors still need to take an active management approach. Encouraging issuers to align with the International Capital Markets Association (ICMA) guidelines on GSS+ bonds is one way that investors can stay clear of greenwashing and ensure their bonds are fit for purpose."
-				},
-
-				{
-					"type":"text",
-					"data": "One potential investment challenge of GSS+ bonds is that <span>their sheer popularity can result in a slightly higher price versus traditional bonds</span>. This is known as the “greenium”. On the flipside, while an investor might get lower yields compared to traditional bonds, GSS+ bonds can exhibit lower volatility in a tough market."
-				},
-
-				{
-					"type":"text",
-					"data": "“It’s a tradeoff,” says Moore. “But the sustainable nature of these bonds can sometimes act as an offset, so it’s really up to managers to be active about how they find the value spots in this market.”"
-				}
-			]
-		},
-
-		{
-			"type": "chapter",
-			"h2": "Resilient investing: the future of GSS+ bonds",
-			"data": [
-
-				{
-					"type":"text",
-					"data":"What’s next for the budding GSS+ bonds market? Bonds related to clean energy, energy efficiency and clean transportation are currently the top performing GSS+ bond categories, but sustainability bonds and bonds linked to adaptation and resilience are some of the fastest-growing labels in the GSS+ market. <span>Emerging economies such as Belize, Fiji and the Seychelles, for example, have issued some of the world’s first “blue bonds”, directly linked to biodiversity conservation, adaptation and community resilience.</span>"
-				},
-
-				{
-					"type":"graph",
-					"id":3,
-					"h3": ["Blue bond commitment by country&nbsp;(%)", "Blue bond commitment by objective&nbsp;(%)"],
-					"data": [
-						[
-							{
-								"val":54.5,
-								"name":"China <span><span>54.5%</span></span>"
-							},
-
-							{
-								"val":23.8,
-								"name":"Bangladesh <span><span>23.8%</span></span>"
-							},
-
-							{
-								"val":9.2,
-								"name":"Cambodia <span><span>9.2%</span></span>"
-							},
-				
-							{
-								"val":6.8,
-								"name":"Regional <span><span>6.8%</span></span>"
-							},
-
-							{
-								"val":5.7,
-								"name":"Maldives <span><span>5.7%</span></span>"
-							}
-						],
-						[
-							{
-								"val":66.4,
-								"name":"Wastewater management <span><span>66.4%</span></span>"
-							},
-
-							{
-								"val":22.3,
-								"name":"Nonpoint source pollution management <span><span>22.3%</span></span>"
-							},
-
-							{
-								"val":11.3,
-								"name":"Solid waste management <span><span>11.3%</span></span>"
-							}
-						]
-					],
-					"source": "Asian Development Bank estimates"
-				},
-
-				{
-					"type":"text",
-					"data":"“Tackling the negative consequences arising from the risks of climate change has long been overlooked by investors,” emphasises Stadtelmeyer-Petru. “But investments focused on climate adaptation are essential to mitigate climate impacts that are already happening. GSS+ bonds specifically focused on climate resilience can provide a source of financing for public sectors’ infrastructure projects and more.”"
-				},
-
-				{
-					"type":"quote",
-					"id":3,
-					"h3":" Soňa Stadtelmeyer-Petru, Lead Sustainable Investing Strategist at J.P. Morgan Asset Management",
-					"quote":"Investments focused on climate adaptation are essential to mitigate climate impacts that are already happening. GSS+ bonds specifically focused on climate resilience can provide a source of financing for public sectors’ infrastructure projects and more"
-				}
-			]
-		},
-
 
 		{
 			"type": "sources",
-			"data": [
-				{
-					"name":"UN Human Rights Office of the High Commissioner, Trillions needed to close finance gap on Sustainable Development Goals (2022)",
-					"url":"https://www.ohchr.org/en/press-releases/2022/10/trillions-needed-close-finance-gap-sustainable-development-goals-says-un "
-				},
-				{
-					"name":"Dept. of Civil and Environmental Engineering at Stanford University, Low-cost solutions to global warming, air pollution, and energy insecurity for 145 countries (2022)",
-					"url":"https://pubs.rsc.org/en/content/articlelanding/2022/EE/D2EE00722C"
-				},
-				{
-					"name":"UN, The Sustainable Development Agenda (2022)",
-					"url":"https://www.un.org/sustainabledevelopment/development-agenda/"
-				},
-				{
-					"name":"S&P Global Market Intelligence, Global green bond issuance poised for rebound in 2023 amid policy push (2023)",
-					"url":"https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/global-green-bond-issuance-poised-for-rebound-in-2023-amid-policy-push-73931433 "
-				}
-			]
+			"data": "19 April 2023"
 		}
 
 	]

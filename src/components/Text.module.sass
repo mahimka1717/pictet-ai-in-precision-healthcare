@@ -2,36 +2,32 @@
   @include paddings
   @include marginbottom
   p
-    font-weight: 400
-    line-height: 1.75
-    font-size: 17px
     position: relative
+    font-size: 18px
+    line-height: 30px
+    display: inline-block
     @include sm
       font-size: 20px
+      line-height: 35px
+      display: block
     max-width: $max-width
     width: 100%
     margin-left: auto
     margin-right: auto
-    sup
-      cursor: pointer
-      @include animate((color), 0.2*$speed, ease-out)
-      &:hover
-        color: $color-secondary
-    span
-      color: $color-secondary
-      font-weight: bold !important
-      font-family: $font-copy !important
-      span
-        position: relative
-        top: -3px
-        float: left
-        padding-right: 10px
-        color: $color-primary
-        font-family: $font-title !important
-        line-height: 1
-        font-size: 54px
-        @include sm
-          font-size: 70px
+    b
+      font-family: $font-title !important
+
+  img
+    position: relative
+    opacity: 0
+    @include sm
+      display: none
+
+
+  img[data-id="1-2"]
+    float: right
+    width: 50%
+    height: auto
           
 
 

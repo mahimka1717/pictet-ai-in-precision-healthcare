@@ -44,7 +44,7 @@ export default function Home() {
             })}
           </article>
 
-          {/* <img alt="" className={s.tmp} src="img/preview.jpg" /> */}
+          {/* <img alt="" className={s.tmp} src="img/xd.jpg" /> */}
 
         </div>
     </>

@@ -1,80 +1,67 @@
 .graph
     position: relative 
-    padding-left: 0
-    padding-right: 0
+    padding-left: calc(1*$paddingH)
+    padding-right: calc(1*$paddingH) 
+    z-index: 1
     @include sm
         padding-left: calc(2*$paddingH)
         padding-right: calc(2*$paddingH)    
-    @include marginbottom
+    margin-top: 40px
+    margin-bottom: 40px
+    @include sm
+        margin-top: 110px
+        margin-bottom: 110px
 
     .shadowbox
         position: relative
-        z-index: 1
         display: block
-        max-width: $max-width-graph
+        max-width: $max-width
         width: 100%
         margin-left: auto
         margin-right: auto
-        padding: $paddingH
-        @include sm
-            padding: $shadowPadding
-        @include shadowbox
-        &[data-id="0"]
-            max-width: $max-width
-            @include sm
-                @include shadowbox-right
-                margin-top: calc(2*$marginV)
-                margin-bottom: calc(2*$marginV)
-            @include md
-                padding-left: 0
-            .figure
-                .h3
-                    max-width: 500px
         &[data-id="1"]
-            max-width: 980px
-            @include sm
-                margin-top: calc(2*$marginV)
-                margin-bottom: calc(2*$marginV)
-                @include shadowbox-right
+            .figure::before
+                content: ''
+                position: absolute
+                top: -16px
+                left: -40px
+                right: -40px
+                bottom: -16px
+                background-color: #F4F4F4
+                opacity: 1
+        &[data-id="3"]
+            .source
+                @include sm
+                    text-align: right  
 
-        &[data-id="2"]
-            max-width: 920px
-            @include sm
-                margin-top: calc(2*$marginV)
-                margin-bottom: calc(2*$marginV)
-                @include shadowbox-left
+        &[data-id="4"]
             .figure
                 .h3
-                    max-width: 350px
-                    & span
-                        color: $color-secondary
-        &[data-id="3"]
-            max-width: 1200px
-            @include sm
-                margin-top: calc(2*$marginV)
-                margin-bottom: calc(2*$marginV)
-                @include shadowbox-right
+                    @include sm
+                        padding-right: 200px
+                .desc
+                    @include sm
+                        padding-right: 200px   
+
         .figure
             position: relative
-            z-index: 1
+            // z-index: 1
 
             .h3
-                font-family: $font-title
-                font-weight: bold
-                line-height: 1.5
-                font-size: 20px
+                position: relative
+                font-family: $font-copy
                 margin-bottom: 16px
+                font-size: 25px
+                line-height: 30px
                 @include sm
-                    font-size: 25px
+                    font-size: 30px
+                    line-height: 40px
             .desc
-                font-family: $font-copy !important
-                font-weight: 300 !important
-                line-height: 1.5
+                position: relative
+                line-height: 24px
                 margin-top: -8px
                 margin-bottom: 16px
-                font-size: 12px
-                @include sm
-                    font-size: 17px
+                font-size: 16px
 
             .infobox
                 display: flex
@@ -99,13 +86,10 @@
                         display: block
 
             .source
-                text-align: end
-                font-family: $font-copy !important
-                font-weight: 300 !important
+                position: relative
+                margin-top: 16px
                 line-height: 1.5
                 font-size: 12px
-                @include sm
-                    font-size: 17px
 
             > svg
                 // background-color: #f5f5f5

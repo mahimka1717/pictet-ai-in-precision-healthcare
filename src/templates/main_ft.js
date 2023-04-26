@@ -381,7 +381,7 @@ export default function Main_ft() {
           <div className="pc-wrapper o-grid-container">
             <div className="pc__client">
               <div className="pc__client-title">
-                JPMorgan
+                Pictet
               </div>
               <div className="pc__client-disclaimers">
                 <div className="pc__title-button">
@@ -397,7 +397,7 @@ export default function Main_ft() {
                 </div>
               </div>
               <div className="pc__client-title">
-                JPMorgan
+              Pictet
               </div>
             </div>
             <div className="pc__share">
@@ -412,9 +412,9 @@ export default function Main_ft() {
               <div className="pc__disclaimer-btn">
                 <img alt="" src="https://www.ft.com/partnercontent/cms/_resources/themes/simpleBC/dist/static/pcHeader/close.svg?m=1628000569" />
               </div>
-              <div id="clientname-disclaimer" style={{display: 'none'}}>JPMorgan</div>
+              <div id="clientname-disclaimer" style={{display: 'none'}}>Pictet</div>
               <div className="pc__disclaimer-content">
-                This content was paid for by JPMorgan and produced in partnership with the Financial Times
+                This content was paid for by Pictet and produced in partnership with the Financial Times
                 Commercial department.
               </div>
             </div>

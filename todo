@@ -1,56 +1,17 @@
-- md readme
+https://www.pictet.ft.com/has-hydrogen-finally-come-of-age
 
-components:
-	audio
-	video
-	sequence
-	lottie
-	modal
-	navigation
-
-- imgs
-	+ layer with big iamge
-		- make it access only in develop mode
-		- switch layer with this image on hot key in chrome
-	- show image on load
-	- develop compress
-
-- font
-	- font optimisation
-
-- css
-	- tailwind
-
-- js
-	- tippy
-	- js queries
+- mobile, iphone
+- ipad
+- firefox, safari
 
 
 
+	- выложить на альфагрид
+	- выложить инжект хтмл на драйв
+	
+	- график 2 года на мобильном последние 2 цифры
+	- починить первый график на десктопе
 
-
-- react dev tools
-- prettie 
-https://www.robinwieruch.de/how-to-use-prettier-vscode/
-- es lint
-https://eslint.org/
-- html tag semantic
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-- code snippets
-- copylot test
-https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-visual-studio-code
-- https://www.webpagetest.org/
-
-
-
-
-
-
-- сервис для запоминания слов английских
-	- сгенерить к каждому слову иллюстрацию
-	- ввод нового слова
-	- база слов
-	- озвучка
-	- по хоткею выделеный текст в базу
-	- тест
-		рандомное количество слов из базы без картнок - давать верный перевод
+	- safari - clip-path 
+	
+	- вставить артф в мобильные тексты

@@ -1,0 +1,131 @@
+.box
+    position: relative
+    margin-top: 32px
+    margin-bottom: 32px
+
+    .line
+        position: absolute
+        top: 0
+        left: 170px
+        height: 100%
+        border-left: 1px solid #707070
+        @include sm
+            left: 260px
+
+    .item
+        position: relative
+        display: flex
+        width: 100%
+        margin-bottom: 5px
+        height: 38px
+        @include sm
+            height: 43px
+
+        .name
+            font-size: 12px
+            line-height: 12px
+            width: 170px
+            padding-right: 20px
+            @include sm
+                width: 260px
+                font-size: 14px
+                line-height: 16px
+            display: flex
+            align-items: center
+            justify-content: flex-start
+
+
+        .val
+            position: relative
+            color: white
+            font-size: 16px
+            width: 308px         
+
+            .bar
+                position: absolute
+                width: 100%
+                top: 8px
+                left: 0
+                height: 24px
+                opacity: 0.55
+                background-color: $color-secondary
+
+            .span
+                position: absolute
+                right: 10px
+                top: 8px
+
+
+
+    .item:nth-child(1)
+        .name
+            font-size: 12px
+            line-height: 12px
+            @include sm
+                font-size: 16px
+                line-height: 16px
+        .val
+            .span
+                opacity: 0
+                display: none
+            .bar
+                opacity: 1
+
+.box::before
+    content: ''
+    position: absolute
+    top: -16px
+    left: -16px
+    right: -16px
+    bottom: -16px
+    background-color: #F4F4F4
+    opacity: 0.65
+
+
+
+
+
+
+.legend
+    position: absolute
+    right: 0px
+    top: 105px
+    color: $color-secondary
+    width: 80px
+    opacity: 1
+    @include sm
+        opacity: 1
+        width: 140px
+        right: 40px
+        top: 54px
+
+    svg
+        position: absolute
+        left: 100%
+        top: -90px
+        margin-left: -60px
+        @include sm
+            margin-left: -30px
+            top: -40px
+
+    span
+        font-family: $font-title
+        font-size: 30px
+        display: block
+        @include sm
+            font-size: 70px
+
+    p
+        position: relative
+        font-size: 12px
+        line-height: 16px
+        @include sm
+            font-size: 16px
+            line-height: 24px
+
+        b
+            font-family: $font-title
+
+
+
+

@@ -11,7 +11,7 @@ body
   &.ag-inview
     opacity: 1 !important
     transition: opacity 0.5s ease-in-out
-  
+
   ol li 
     counter-increment: muffins
 
@@ -29,3 +29,16 @@ body
 
   sub
     top: 0.4em
+
+
+
+
+.ag-mobile
+  display: block
+  @include sm
+    display: none
+
+.ag-desktop
+  display: none
+  @include sm
+    display: block
