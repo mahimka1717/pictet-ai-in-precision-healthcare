@@ -63,7 +63,7 @@
 
 .art[data-id="7"]
     @include mobile
-        margin-bottom: 100px  
+        margin-bottom: 50px  
     .box
         left: 50%
         .image
@@ -118,7 +118,7 @@
                 position: absolute
                 width: 400px
                 height: auto
-                left: 0px
+                left: 20px
                 top: -50px
 
 
@@ -132,19 +132,26 @@
 
 .art[data-id="13"]
     .box
-        left: 50%
         .image
-            position: absolute
             left: 211px
             top: -600px
-            @include mobile
-                width: 50%
-                height: auto
-                left: 0px
-                top: 0px
 
 .art[data-id="14"]
     .box
         .image
             left: 308px
             top: -303px
+
+.art[data-id="15"]
+    margin-bottom: 40px
+    display: none
+    @include mobile
+        display: flex
+        justify-content: center
+    .box
+        left: unset
+        .image
+            left: 0px
+            top: 0px
+            @include mobile
+                position: relative

@@ -1,25 +1,32 @@
 .box
+    position: relative
     display: flex
     margin-top: 30px
-    margin-bottom: 60px
+    margin-bottom: 30px
+    padding-top: 20px
+    padding-bottom: 30px
     @include sm
-        margin-top: 60px
-        margin-bottom: 60px
+        padding-top: 40px
+        padding-bottom: 40px
+        margin-top: 32px
+        margin-bottom: 32px
 
     .line
         position: absolute
         border-top: 1px solid #2E2E2E
-        bottom: 70px
+        top: 190px
         width: 100%
+        @include sm
+            top: 210px
 
     svg
         position: absolute
         left: 0
         transform: translate(0, -12px)
-        width: 270px
-        // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)
-        @include sm
-            width: 537px
+        width: 85%
+        // width: 270px
+        // @include sm
+            // width: 537px
 
     .item
         position: relative
@@ -71,7 +78,7 @@
             .barr
                 background-color: $color-secondary
             .val
-                top: -40px
+                top: -50px
                 font-family: $font-title
                 font-size: 16px
                 color: $color-secondary
@@ -80,3 +87,14 @@
                     font-size: 50px
                     top: -100px
                     // transform: translateX(-30%)
+
+
+.box::before
+    content: ''
+    position: absolute
+    top: -16px
+    left: -40px
+    right: -40px
+    bottom: -16px
+    background-color: #F4F4F4
+    opacity: 0.65
