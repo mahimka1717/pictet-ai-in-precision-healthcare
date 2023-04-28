@@ -16,6 +16,7 @@ const Hero = (p) => {
                         src={`./img/hero.jpg`} 
                         alt={p.data.h1}
 						fill
+						sizes="(max-width: 768px) 300vw, 100vw"
                         quality={imageQuality} 
                         priority
 						loading="eager"
