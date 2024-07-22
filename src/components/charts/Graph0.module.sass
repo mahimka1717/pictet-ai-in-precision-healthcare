@@ -1,141 +1,174 @@
-.box
+.graph
     position: relative
-    margin-top: 32px
-    margin-bottom: 32px
+    // overflow: hidden
+    background: #F8F6F2
+    width: 100%
+    max-width: 640px
+    display: flex
+    flex-direction: column
+    margin-top: 35px
+    margin-bottom: 35px
 
-    .line
-        position: absolute
-        top: 0
-        left: 150px
-        height: 100%
-        border-left: 1px solid #707070
-        @include sm
-            left: 260px
+    @include lg
+        flex-direction: row
+        align-items: center
 
-    .item
-        position: relative
-        display: flex
+
+    .box
+        // border: 1px solid red
         width: 100%
-        height: 38px
-        margin-bottom: 5px
-        @include sm
-            margin-bottom: 0px
-            height: 43px
+        height: 250px
+        display: flex
+        position: relative  
+        padding-left: 20px
+        @include lg
+            height: 350px
 
-        .name
-            font-size: 12px
-            line-height: 12px
-            width: 150px
-            min-width: 150px
-            padding-right: 5px
-            @include sm
-                width: 260px
-                font-size: 14px
-                line-height: 16px
-                padding-right: 20px
+
+        svg
+            width: calc(100% - 30px)
+            height: 100%
+            // border: 1px solid red
+            position: absolute
+            left: 15px
+            top: 0
+            // z-index: 1
+            transform: translate(0px, -20px)
+
+        .years
+            position: absolute
             display: flex
-            align-items: center
-            justify-content: flex-start
+            width: calc(100% - 0px)
+            left: 0px
+            bottom: -20px
+            justify-content: space-between
+            font-size:12px
 
+            .year
+                width: 30px
+                min-width: 30px
+                text-align: center
 
-        .val
-            position: relative
-            color: white
-            font-size: 16px
-            width: 100%
-            max-width: 308px
-            @include sm
-                width: 308px      
-            
-            .valbox
+        .values
+            position: absolute
+            display: flex
+            width: calc(100% - 0px)
+            height: 100%
+            left: 0px
+            top: 0px
+            justify-content: space-between
+            align-items: flex-end
+            font-size:12px
+            font-weight: bold
+            // border: 1px solid blue
+
+            .value
+                height: 100%
+                width: 30px
+                min-width: 30px
+                text-align: center
                 position: relative
+                transform-origin: center bottom
+
+                .dot
+                    border: 2px solid #804940
+                    border-radius: 50%
+                    width: 10px
+                    height: 10px
+                    position: absolute
+                    transform: translate(calc(15px - 50%), calc(-20px + 50%))
+                    background: #F8F6F2
+                    box-shadow: 0 0 0 10px #F8F6F2
+
 
                 .bar
+                    background: #c3aaa6
                     position: absolute
                     width: 100%
-                    top: 8px
-                    left: 0
-                    height: 24px
-                    opacity: 0.55
-                    background-color: $color-secondary
+                    bottom: 0
 
-                .span
-                    position: absolute
-                    right: 10px
-                    top: 8px
-
-
-
-    .item:nth-child(1)
-        .name
+        .yaxis
+            position: absolute
+            top: 0
+            left: 0
+            transform-origin: 50% 50%
+            transform: translate(calc(-50% - 18px), 120px) rotate(-90deg)
+            // transform-origin: left bottom
+            white-space: nowrap
+            // color: rgba(46,46,46,0.7)
+            color: #999
             font-size: 12px
-            line-height: 12px
-            @include sm
-                font-size: 16px
-                line-height: 16px
-        .val
-            .valbox
-                .span
-                    opacity: 0
-                    display: none
-                .bar
-                    opacity: 1
+            @include lg
+                 transform: translate(calc(-50% - 40px), 165px) rotate(-90deg)
 
-.box::before
-    content: ''
-    position: absolute
-    top: -16px
-    left: -16px
-    right: -16px
-    bottom: -16px
-    background-color: #F4F4F4
-    opacity: 0.65
+        .axisesbox
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            padding-left: 0px
+            padding-right: 0px
+
+            .axises
+                position: relative
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+                .axis
+                    position: relative
+                    width: 100%
+                    height: 1px
+                    background: #ddd
+
+                    .axisval
+                        position: absolute
+                        top: -15px
+                        left: -5px
+                        font-size: 12px
+                        @include sm
+                            left: 0px
+                        @include lg
+                            left: auto
+                            right: calc(100% + 5px)
 
 
 
 
 
 
-.legend
-    position: absolute
-    right: -10px
-    top: 125px
-    color: $color-secondary
-    width: 80px
-    // opacity: 0
-    @include sm
-        width: 140px
-        right: 40px
-        top: 54px
-        right: -20px
-
-    svg
+    .legend
         position: absolute
-        left: 100%
-        top: -90px
-        margin-left: -60px
+        top: 0
+        // margin-bottom: 35px
+        display: flex
+        justify-content: space-between
+        width: 100%
+        height: 100%
+        padding-top: 50px
+        padding-bottom: 50px
+        // flex-wrap: wrap
+        // max-width: 300px
         @include sm
-            margin-left: -30px
-            top: -40px
-
-    span
-        font-family: $font-title
-        font-size: 30px
-        display: block
-        @include sm
-            font-size: 70px
-
-    p
-        position: relative
-        font-size: 12px
-        line-height: 16px
-        @include sm
-            font-size: 16px
-            line-height: 24px
-
-        b
-            font-family: $font-title
-
-
-
-
+            max-width: 100%
+        @include lg
+            width: 100%
+            // margin-right: 100px
+            // flex-direction: column
+            margin-bottom: 0px
+        .country
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            &[data-id="0"]
+                align-items: flex-end
+            &[data-id="2"]
+                align-items: flex-start
+            .text
+                font-size: 16px
+                line-height: 24px
+                color: #804940

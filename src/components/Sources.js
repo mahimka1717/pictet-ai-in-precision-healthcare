@@ -6,7 +6,7 @@ const Sources = (p) => {
 	return (
 		<div className={s.sources} id={"ag-sources"}>
 			<div className={s.hr + ` ag-fromfade ag-fromscale2`} />
-			<p className={s.date + ` ag-fromfade`}>{p.data.data}</p>
+			<div className={s.date + ` ag-fromfade`}>{p.data.data}</div>
 		</div>
 	);
 };

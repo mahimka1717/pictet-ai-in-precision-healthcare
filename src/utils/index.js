@@ -6,3 +6,8 @@ export function isValidUrl (urlString) {
 		return false; 
 	}
 }
+
+export function getSections (){
+	// return [1];
+	return [1,2,3,4,5,6,7];
+}

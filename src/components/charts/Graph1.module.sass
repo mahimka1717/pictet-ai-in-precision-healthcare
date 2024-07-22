@@ -1,100 +1,88 @@
-.box
+.graph
     position: relative
-    display: flex
-    margin-top: 30px
-    margin-bottom: 30px
-    padding-top: 20px
-    padding-bottom: 30px
-    @include sm
-        padding-top: 40px
-        padding-bottom: 40px
-        margin-top: 32px
-        margin-bottom: 32px
+    background: #F8F6F2
+    width: 100%
+    max-width: 700px
+    margin-top: 135px
+    margin-bottom: 135px
 
-    .line
-        position: absolute
-        border-top: 1px solid #2E2E2E
-        top: 190px
-        width: 100%
-        @include sm
-            top: 210px
+    // min-height: 500px
 
-    svg
-        position: absolute
-        left: 0
-        transform: translate(0, -12px)
-        width: 85%
-        // width: 270px
-        // @include sm
-            // width: 537px
-
-    .item
+    .box
         position: relative
-        margin-left: 3px
-        margin-right: 3px
-        height: 160px
         display: flex
-        flex-direction: column
-        justify-content: flex-end
-        width: 100%
-        @include sm
-            margin-left: 2px
-            margin-right: 2px       
-        .bar
-            position: relative
+        justify-content: space-between
+        align-items: center
 
-            .barr
-                position: absolute
-                bottom: 0
-                left: 0
-                width: 100%
-                height: 100%
-                background-color: white
-                border: 1px solid $color-secondary
-                @include sm
-                    border: 2px solid $color-secondary
 
-            .val
-                position: absolute
-                top: -24px
-                left: 50%
-                transform: translateX(-50%)
-                font-size: 10px
-                @include sm
-                    font-size: 16px
+        .item
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 200px
+            height: 200px
+            background: #fff
+            border-radius: 50%
 
-        .year
-            position: absolute
-            font-size: 10px
-            left: 50%
-            transform: translateX(-50%)
-            bottom: -30px
-            @include sm
-                font-size: 14px
-                bottom: -40px
 
-    .item[data-id="14"]
-        .bar
-            .barr
-                background-color: $color-secondary
-            .val
-                top: -50px
-                font-family: $font-title
+            .name
                 font-size: 16px
-                color: $color-secondary
-                // transform: translateX(100px) !important
-                @include sm
-                    font-size: 50px
-                    top: -100px
-                    // transform: translateX(-30%)
+                line-height: 18px 
+            
+
+            .absoluteContainer
+                .svgContainer
+                    width: 100%
+                    height: 100px
+                    // border: 1px solid red
 
 
-.box::before
-    content: ''
-    position: absolute
-    top: -16px
-    left: -40px
-    right: -40px
-    bottom: -16px
-    background-color: #F4F4F4
-    opacity: 0.65
+            &[data-id="1"]
+                .absoluteContainer
+                    position: absolute
+                    width: 400px
+                    top: 60%
+                    display: flex
+                    flex-direction: column
+
+                    .flexContainer
+                        display: flex
+                        align-items: flex-start
+                        justify-content: center
+                        div
+                            width: 25%
+                            display: flex
+                            flex-direction: column
+
+                            div
+                                text-align: center
+                                width: 100%
+                            .value
+                                color: $color-secondary
+
+            &[data-id="2"]
+                .absoluteContainer
+                    position: absolute
+                    width: 300px
+                    bottom: 60%
+                    display: flex
+                    flex-direction: column-reverse
+                    .flexContainer
+                        display: flex
+                        align-items: flex-end
+                        justify-content: center
+                        div
+                            width: 50%
+                            display: flex
+                            flex-direction: column-reverse
+                            div
+                                text-align: center
+                                width: 100%
+
+                            .value
+                                color: $color-secondary
+        .arrow
+            width: 20px
+            height: 20px     
+
+              

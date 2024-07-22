@@ -12,37 +12,52 @@
 
 .tmp
   position: absolute
-  top: -88px
+  top: 44px
   left: 50%
   transform: translate(-50%, 0)
   opacity: 0.5
   user-select: none
   pointer-events: none
   display: none
-  width: 1440px
-  min-width: 1440px
-  height: 8872px
-  min-height: 8872px
+  // width: 375px
+  min-width: 375px
+  height: 9128px
+  min-height: 9128px
 
 .main
+  background: #F8F8F4
   position: relative
   color: $color-primary
   font-family: $font-copy
   font-size: 16px
   -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
-  overflow: hidden
   opacity: 1
+  overflow: hidden
+  // will-change: transform
+
+  .paths
+    width: 100%
+    height: 100%
+    position: absolute
+    -webkit-transform: translateZ(0)
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    transform: translateZ(0)
 
 
 .main a
   word-wrap: break-word
   text-decoration: underline!important
-  color: $color-primary!important
+  // color: $color-primary!important
+  color: $color-secondary!important
   outline-color: $color-secondary!important
   @include animate((color), 0.2*$speed, ease-out)
   &:hover, &:focus, &:focus-visible
     color: $color-secondary!important
+
+
+
   
 
       

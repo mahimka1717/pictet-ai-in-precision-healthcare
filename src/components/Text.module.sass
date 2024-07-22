@@ -2,56 +2,249 @@
   @include paddings
   @include marginbottom
   p
+    font-family: $font-copy
     position: relative
+    margin-bottom: 0
+    max-width: 474px
+    width: 100%
+    margin-left: auto
+    margin-right: auto 
+
     font-size: 18px
     line-height: 30px
     @include sm
       font-size: 20px
       line-height: 35px
-      display: block
-    max-width: $max-width
-    width: 100%
-    margin-left: auto
-    margin-right: auto
-    b
-      font-family: $font-title !important
-
-    span
-      width: 50%
-      display: inline-block
-      @include sm
-        width: auto
-        display: inline
-
-    br
-      @include sm
-        display: none
-        height:0px
+      
+    mark
+      font-weight: 700
+      background-color: transparent
 
 
 
-.text[data-id="1-11"]:before
-  @include mobile
-    content: ""
-    display: inline-block
-    width:45%
-    height:200px
-    float: right
 
-.text[data-id="2-6"]:before
-  @include mobile
-    content: ""
-    display: inline-block
-    width:40%
-    height:260px
-    float: right
-          
+  &[data-id="1-0-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
 
-// .text[data-id="3-4"]:before
-//   @include mobile
-//     content: ""
-//     display: inline-block
-//     width:50%
-//     height:260px
-//     float: right
 
+
+
+  &[data-id="2-0-0"]
+    p
+      margin-right: calc(50% + 70px)
+      color: #804941
+      font-size: 35px
+      line-height: 45px
+      @include lg
+        font-size: 80px
+        line-height: 90px
+
+  &[data-id="2-0-1"]
+    p
+      margin-right: calc(50% + 70px)
+      
+  &[data-id="2-0-2"]
+    p
+      margin-right: calc(50% + 70px)  
+
+      
+
+  &[data-id="2-1-0"]
+    p
+      margin-right: calc(50% + 70px)
+
+  &[data-id="2-1-1"]
+    p
+      margin-right: calc(50% + 70px)
+
+
+
+
+
+  &[data-id="3-0-0"]
+    p
+      margin-right: calc(50% + 70px - 30px)
+      color: #804941
+      max-width: 474px
+      max-width: 504px
+
+      font-size: 35px
+      line-height: 45px
+      @include lg
+        font-size: 80px
+        line-height: 90px
+
+
+
+  &[data-id="3-1-0"]
+    p
+      margin-right: calc(50% + 70px)
+      font-size: 25px
+      line-height: 45px
+      color: #BC5A1D
+      font-style: italic
+
+  &[data-id="3-1-1"]
+    p
+      margin-right: calc(50% + 70px)
+      font-size: 15px
+      line-height: 20px
+
+
+
+
+  &[data-id="3-2-0"]
+    p
+      @include lg
+        margin-left: calc(50% + 70px)
+
+  &[data-id="3-2-1"]
+    p
+      @include lg
+        margin-left: calc(50% + 70px)
+
+
+  &[data-id="3-3-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+
+  &[data-id="3-4-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+      
+
+
+
+      
+
+
+  &[data-id="4-0-0"]
+    p
+      margin-right: calc(50% + 70px)
+
+  &[data-id="4-0-1"]
+    p
+      margin-right: calc(50% + 70px)
+
+
+
+
+
+
+  &[data-id="5-0-0"]
+    p
+      margin-right: calc(50% + 70px)
+      font-size: 25px
+      line-height: 45px
+      color: #BC5A1D
+      font-style: italic
+
+  &[data-id="5-0-1"]
+    p
+      margin-right: calc(50% + 70px)
+      font-size: 15px
+      line-height: 20px
+
+
+
+  &[data-id="5-1-0"]
+    p
+      margin-right: calc(50% + 70px)
+
+  &[data-id="5-1-1"]
+    p
+      margin-right: calc(50% + 70px)
+
+
+  &[data-id="5-2-0"]
+    p
+      margin-right: calc(50% + 70px)
+
+  &[data-id="5-2-1"]
+    p
+      margin-right: calc(50% + 70px)
+
+
+
+
+  &[data-id="5-3-0"]
+    p
+      font-size: 25px
+      line-height: 45px
+      color: #BC5A1D
+      font-style: italic
+      @include lg
+        margin-left: calc(50% + 70px)
+
+  &[data-id="5-3-1"]
+    p
+      font-size: 15px
+      line-height: 20px
+      @include lg
+        margin-left: calc(50% + 70px)
+
+
+
+
+
+
+  &[data-id="6-0-0"]
+    p
+      margin-right: calc(50% + 70px - 30px)
+      color: #804941
+
+      max-width: 474px
+      max-width: 504px
+      font-size: 35px
+      line-height: 45px
+      @include lg
+        font-size: 80px
+        line-height: 90px
+
+  &[data-id="6-1-0"]
+    p
+      @include lg
+        margin-left: calc(50% + 70px)
+
+  &[data-id="6-2-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+
+  &[data-id="6-2-1"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+
+
+
+
+
+
+
+
+  &[data-id="7-0-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+
+  &[data-id="7-1-0"]
+    p
+      @include lg
+        margin-right: calc(50% + 70px)
+
+  &[data-id="7-2-0"]
+    p
+      @include lg
+        margin-left: calc(50% + 70px)
+
+  &[data-id="7-2-1"]
+    p
+      margin-bottom: 70px
+      @include lg
+        margin-bottom: 35px
+        margin-left: calc(50% + 70px)

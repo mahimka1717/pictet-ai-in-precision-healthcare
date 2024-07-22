@@ -1,34 +1,53 @@
 .hero
   position: relative
   width: 100%
-  margin-bottom: 40px
-  @include sm
-    margin-bottom: 90px
+  z-index: 8
+  background: #F8F8F4
 
   .media
     position: relative
     width: 100% 
-    height: 507px
+    height: calc(100lvh - 120px)
+    // height: auto
     overflow: hidden
-    @include sm
-      height: 507px
+    @include lg
+      height: 100%
+      height: calc(100vh - 96px)
+      min-height: calc(100vh - 96px)
 
     figure
+      top: -57px
       position: relative
       margin: 0
-      padding: 0
+      padding: 0  
       display: block
       width: 100%
       height: 100%
+      min-height: calc(100vh - 40px)
       img
+        position: relative
         display: block
         object-fit: cover
+        // background-position: 100% 50%
+        object-position: 100% 50%
         width: 100%
-        height: 120% !important
-        margin-top: -20px
+        height: 100%
+        transform: scale(1.1)
+
+    .gradient
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: rgb(0,0,0, 0.1)
+      background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 100%)
+      @include lg
+        background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%)
 
 
   .content
+    color: white
     position: absolute
     left: 0
     right: 0
@@ -36,87 +55,60 @@
     bottom: 0
     display: flex
     justify-content: flex-end
-    align-items: center
+    align-items: flex-start
     flex-direction: column
+    padding: 16px 16px
+    @include lg
+      padding: 65px 150px
 
-    .box
-      display: block
-      @include paddings
-      padding-bottom: 30px
+
+    .mask
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)  
 
       .h1
-        font-family: $font-copy
-        color: $white
-        font-size: 40px
-        line-height: 1
-        text-shadow: 0 3px 20px rgb(0 0 0 / 75%)
-        max-width: 712px
-        text-align: center
-        padding-bottom: 20px
-        @include sm
-          font-size: 60px
-
-      .hr
-        width: 220px
         position: relative
-        display: block
-        margin-left: auto
-        margin-right: auto
-        height: 1px
-        background-color: $white
-        margin-bottom: 20px
-        &::before
-          background-color: $white
-          border-radius: 50%
-          content: ""
-          display: inline-block
-          height: 5px
-          left: -2px
-          position: absolute
-          top: -2px
-          width: 5px
-        &::after
-          background-color: $white
-          border-radius: 50%
-          content: ""
-          display: inline-block
-          height: 5px
-          right: -2px
-          position: absolute
-          top: -2px
-          width: 5px
-
+        font-family: $font-copy !important
+        font-size: 50px
+        line-height: 60px
+        width: 100%
+        max-width: 530px
+        margin-bottom: 15px
+        font-weight: 400
+        z-index: 1
+        @include lg
+          font-size: 100px
+          line-height: 120px
+          max-width: 800px
+          margin-bottom: 30px
+          // text-shadow: 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4
 
       .desc
-        color: $white
+        position: relative
+        color: #E4C0AA
+        font-size: 18px
+        line-height: 27px
+        @include lg
+          font-size: 20px
+          line-height: 27px
+
+      .text
+        color: #E7DDE5
+        position: relative
+        max-width: 582px
+        margin-bottom: 20px
+        font-family: $font-title
         font-size: 18px
         line-height: 24px
-        text-shadow: 0 3px 20px rgb(0 0 0 / 75%)
-        max-width: 476px
-        margin-left: auto
-        margin-right: auto
-        text-align: center
-        @include sm
-          line-height: 27px
+        z-index: 1
+
+        @include lg
           font-size: 20px
+          line-height: 27px
+          margin-bottom: unset
 
-
-.art
-    position: relative
-    .box
-        position: relative
-        left: 50%
-        .image
-            position: absolute
-
-.art[data-id="0"]
-    .box
-        .image
-          left: -817px
-          top: -551px
-          
-.art[data-id="1"]
-    .box
-        .image
-          left: 378px
-          top: -534px
+    svg
+      position: relative
+      align-self: flex-end
+      transform-origin: 50% 50%
+        
+  

@@ -1,72 +1,115 @@
-.box
-    .item
-        display: flex
+.graph
+    position: relative
+    background: #F8F6F2
+    width: 100%
+    display: flex
+
+    .legend
         width: 100%
-        margin-bottom: 5px
-        height: 24px
-        @include sm
-            height: 42px
-        background-color: $color-tertiary
-        .icon
-            width: 40px
-            @include sm
-                width: 60px
+        max-width: 180px
+        mark
+            color: $color-secondary
+            background: none
+     
+    .header
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 15px
+        .headertxt
+            position: relative
+            font-size: 20px
+            line-height: 20px
+            height: 28px
             display: flex
             align-items: center
             justify-content: center
-            background-color: $color-tertiary
 
-            & svg
-                height: 20px
-                width: auto
-                @include sm
-                    height: unset
-                    width: unset
-        .name
-            position: relative
-            color: white
-            font-size: 12px
-            line-height: 12px
-            @include sm
-                font-size: 20px
-                line-height: 20px
+        .button
+            margin-left: 20px
+            width: 100%
+            max-width: 66px
+            height: 28px
             display: flex
             align-items: center
-            justify-content: flex-start
-            padding-left: 10px
-            &[data-id="0"],
-            &[data-id="1"],
-            &[data-id="2"]
-                width: 78%
-            &[data-id="3"],
-            &[data-id="4"]
-                width: 73%
-            &[data-id="5"]
-                width: 68%
-            &[data-id="6"]
-                width: 58%
-
+            justify-content: center
+            color: #000
+            background: #fff
+            border: 1px solid #aaa
+            cursor: pointer
+            transition: all 0.3s ease-out
+            cursor: pointer
             span
-                position: relative
+                font-size: 20px
+                line-height: 1
 
-            .bar
-                position: absolute
-                background-color: $color-secondary
+    .box
+        position: relative
+        height: 231px
+        width: calc(100% - 0px)
+        background: #fff
+        margin-bottom: 25px
+        @include lg
+            height: 300px
+
+
+        .axisesbox
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+
+            .axises
+                position: relative
                 width: 100%
                 height: 100%
-                top: 0
-                left: 0
+                display: flex
+                justify-content: space-between
 
-        .value
-            color: $color-secondary
-            font-size: 30px
-            line-height: 35px
-            font-family: $font-title
-            display: flex
-            align-items: center
-            justify-content: flex-start
-            padding-left: 10px
-            padding-right: 10px
-            font-size: 16px
-            @include sm
-               font-size: 30px          
+                .axis
+                    position: relative
+                    width: 1px
+                    height: 100%
+                    background: #ddd
+                    &:first-child
+                        background: #aaa
+                    &:last-child
+                        background: #aaa
+
+                    .axisval
+                        position: absolute
+                        bottom: -18px
+                        left: 0
+                        transform: translateX(-50%)
+                        font-size: 12px
+                        // font-weight: bold
+
+        .agebox
+            position: absolute
+            top: 0
+            left: -33px
+
+
+            .ages
+                position: relative
+                display: flex
+                flex-direction: column
+
+                .age
+                    font-size: 10px
+                    line-height: 1
+                    height: 11px
+                    text-align: right
+                    @include lg
+                        height: 14.5px
+
+
+        .greed
+            width: 100%
+            height: 100%
+            position: relative
+
+            svg
+                width: 100%
+                height: 100%
+

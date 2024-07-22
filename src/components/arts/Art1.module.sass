@@ -1,0 +1,211 @@
+.illustration
+    position: relative
+    height: 100%
+    width: 100%
+    
+    .frame
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        &[data-id="1-0"]
+     
+            .artheader
+                text-align: center
+                margin-bottom: 30px
+            .text
+                text-align: center
+                max-width: 440px
+                margin-bottom: 20px
+            .roundel
+                right: 0
+                top: 42%
+                @include lg
+                    top: 46%
+
+        &[data-id="1-1"]
+            
+            .artheader
+                max-width: 220px
+                position: absolute
+                top: 0
+                left: 0
+                font-weight: 400
+                mark
+                    font-weight: 500
+            .text
+                max-width: 180px
+                position: absolute
+                right: unset
+                left: 0 
+                top: 130px
+                @include lg
+                    max-width: 220px
+                    right: 0
+                    left: unset
+                    top: 50%
+            .roundel
+                right: calc(50% - 40px)
+                bottom: 5%
+                @include lg
+                    bottom: 55%
+                    right: 130px
+
+        &[data-id="1-2"]
+            .text
+                max-width: 180px
+                position: absolute
+                right: unset
+                left: 0 
+                top: 60px
+                @include lg
+                    max-width: 220px
+                    right: unset
+                    left: 0
+                    top: 60px
+                    background: #F8F8F4
+            .roundel
+                padding: 18px
+                right: 0
+                bottom: 20px
+                @include lg
+                    padding: 5px
+                    bottom: 5%
+                    right: unset
+                    left: 0
+
+        
+        
+        
+        .artheader
+            font-family: Metric
+            font-weight: 500
+            font-size: 25px
+            line-height: 30px
+            @include lg
+                font-size: 30px
+                line-height: 35px
+            & mark
+                background: transparent
+
+
+        .cell
+            z-index: -1
+            position: relative
+            margin-bottom: 40px
+            svg
+                width: 100%
+                height: auto
+                @include lg
+                    width: unset
+                    height: unset
+
+        .dna
+            z-index: -1
+            position: absolute
+            top: 0%
+            left: 0%
+            // transform: translate(0%, -50%)
+            width: 100%
+            @include lg
+                width: unset
+                right: unset
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+            svg
+                transform-origin: center center
+                position: relative
+                width: 60%
+                height: auto
+                left: 55%
+                
+                // width: 50%
+                // left: 50%
+
+                @include lg
+                    right: unset
+                    left: unset
+                    width: unset
+                    // transform: translateY(35px)
+                    transform: translateY(35px) scale(0.80)
+
+        .text
+            font-family: Metric
+            font-weight: 400
+            font-size: 17px
+            line-height: 20px
+            @include lg
+                font-size: 20px
+                line-height: 24px
+
+        .roundel
+            text-align: center
+            font-family: Metric
+            position: absolute
+            color: #E4C0AA
+            background-color: #000
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 5px
+            font-size: 17px
+            line-height: 20px 
+            width: 160px
+            height: 160px
+            transform-origin: center center
+            @include lg
+                font-size: 20px
+                line-height: 22px
+                width: 184px
+                height: 184px
+            div
+                mark
+                    color: #E4C0AA
+                    font-weight: 700
+                    background: transparent
+                    display: inline-block
+            
+        .chemestry
+            position: absolute
+            right: unset
+            top: unset
+            left: 0
+            bottom: 0   
+            @include lg
+                right: 0
+                top: 0
+                left: unset
+                bottom: unset   
+            .chemestryHeader
+                font-size: 20px
+                line-height: 25px
+                font-weight: 500
+                font-family: Metric
+
+            .chemestryBox
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                max-width: 240px
+                @include lg
+                    max-width: unset
+                    flex-direction: column
+                svg
+                    margin: 2px 2px
+                    display: block
+                    background: #fff
+                    border: 0.5px solid #000
+                    width: 100px
+                    height: auto
+                    @include lg
+                        margin: 2px 0
+                        width: 160px
+                        height: auto

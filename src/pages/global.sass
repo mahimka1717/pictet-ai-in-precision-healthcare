@@ -5,12 +5,15 @@ body
 
 #ag-infographic
   position: relative
-  overflow: hidden
+  // overflow: hidden
   will-change: opacity
   opacity: 0
   &.ag-inview
     opacity: 1 !important
     transition: opacity 0.5s ease-in-out
+
+  // @media (max-width: 1310px)
+  //   padding-top: 80px
 
   ol li 
     counter-increment: muffins
@@ -30,7 +33,10 @@ body
   sub
     top: 0.4em
 
-
+  
+@media (min-resolution: 2ddpx)
+  svg
+    shape-rendering: optimizeSpeed
 
 
 .ag-mobile
@@ -42,3 +48,12 @@ body
   display: none
   @include sm
     display: block
+
+
+.o-footer
+  margin-top: 0 !important
+
+.active
+  background: #aaa !important
+  color: #fff !important
+  cursor: unset !important

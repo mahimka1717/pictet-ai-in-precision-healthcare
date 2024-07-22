@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+  <!-- <rect width="160" height="160" fill="#fff"/> -->
+  <line id="Line_40" data-name="Line 40" x1="8.448" y1="13.17" transform="translate(99.902 106.95)" fill="#fcf5ef"/>
+  <line id="Line_41" data-name="Line 41" x1="8.448" y1="13.17" transform="translate(99.902 106.95)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_42" data-name="Line 42" x1="8.448" y1="13.17" transform="translate(101.898 105.262)" fill="#fcf5ef"/>
+  <line id="Line_43" data-name="Line 43" x1="8.448" y1="13.17" transform="translate(101.898 105.262)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <path id="Path_58" data-name="Path 58" d="M108.7,60H77.485L61.942,86.926l15.544,26.923h31.088l15.67-26.923Z" transform="translate(-6.423 -6.222)" fill="#9daec3" opacity="0.573"/>
+  <path id="Path_59" data-name="Path 59" d="M108.7,60H77.485L61.942,86.926l15.544,26.923h31.088l15.67-26.923Z" transform="translate(-6.423 -6.222)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_44" data-name="Line 44" x1="17.62" y2="30.518" transform="translate(58.425 54.345)" fill="#fcf5ef"/>
+  <line id="Line_45" data-name="Line 45" x1="17.62" y2="30.518" transform="translate(58.425 54.345)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_46" data-name="Line 46" x2="17.62" y2="30.518" transform="translate(97.279 54.345)" fill="#fcf5ef"/>
+  <line id="Line_47" data-name="Line 47" x2="17.62" y2="30.518" transform="translate(97.279 54.345)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_48" data-name="Line 48" x1="9.447" y1="12.473" transform="translate(61.615 41.309)" fill="#fcf5ef"/>
+  <line id="Line_49" data-name="Line 49" x1="9.447" y1="12.473" transform="translate(61.615 41.309)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_50" data-name="Line 50" x1="8.372" y2="9.656" transform="translate(58.637 109.581)" fill="#fcf5ef"/>
+  <line id="Line_51" data-name="Line 51" x1="8.372" y2="9.656" transform="translate(58.637 109.581)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <path id="Path_60" data-name="Path 60" d="M82.106,119.252a7.143,7.143,0,1,1-7.144-7.144,7.143,7.143,0,0,1,7.144,7.144" transform="translate(-7.032 -11.624)" fill="#fff"/>
+  <text id="N" transform="translate(64.58 110.07)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">N</tspan></text>
+  <path id="Path_61" data-name="Path 61" d="M138.246,90.171a7.143,7.143,0,1,1-7.144-7.144,7.143,7.143,0,0,1,7.144,7.144" transform="translate(-12.853 -8.609)" fill="#fff"/>
+  <text id="N-2" data-name="N" transform="translate(114.899 84.004)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">N</tspan></text>
+  <text id="O" transform="translate(111.673 128.07)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">O</tspan></text>
+  <text id="H" transform="translate(30.359 83.1)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <text id="H-2" data-name="H" transform="translate(51.494 129.242)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <text id="C" transform="translate(76.045 88.947)" fill="#37598e" font-size="34" font-family="Metric-Regular, Metric"><tspan x="0" y="0">C</tspan></text>
+  <text id="H-3" data-name="H" transform="translate(52.513 35.871)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <line id="Line_52" data-name="Line 52" y1="12.473" x2="9.447" transform="translate(103.122 40.674)" fill="#fcf5ef"/>
+  <line id="Line_53" data-name="Line 53" y1="12.473" x2="9.447" transform="translate(103.122 40.674)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <text id="NH" transform="translate(112.57 34.965)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">NH</tspan></text>
+  <text id="_2" data-name="2" transform="translate(126.272 38.028)" font-size="5" font-family="Metric-Regular, Metric"><tspan x="0" y="0">2</tspan></text>
+  <line id="Line_54" data-name="Line 54" x1="13.919" transform="translate(40.937 80.705)" fill="#fcf5ef"/>
+  <line id="Line_55" data-name="Line 55" x1="13.919" transform="translate(40.937 80.705)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <!-- <rect id="Rectangle_15" data-name="Rectangle 15" width="158.97" height="158.97" transform="translate(0.224 0.224)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/> -->
+  <text id="Cytosine-2" data-name="Cytosine" transform="translate(84.393 150.31)" font-size="20" font-family="Metric-Light, Metric" font-weight="300"><tspan x="0" y="0">Cy</tspan><tspan y="0" letter-spacing="-0.005em">t</tspan><tspan y="0">osine</tspan></text>
+  </svg>
+  

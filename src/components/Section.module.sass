@@ -1,0 +1,186 @@
+.section
+	position: relative
+	border: 1px solid transparent
+	// border: 1px solid red
+	background: #F8F8F4
+	// background: repeating-linear-gradient(to bottom, #F8F8F4 0, #F8F8F4 100vh, #fff 100vh, #fff 200vh)
+	padding-top: 70px
+	@include lg
+		padding-top: 100vh
+
+	.textgroup
+		position: relative
+
+.section[data-id="1"]
+	z-index: 7
+	@include lg
+		height: calc(8 * 100vh)
+
+
+.section[data-id="2"]
+	z-index: 6
+	padding-top: 70px
+	@include lg
+		height: calc(4 * 100vh)
+		padding-top: 50vh
+
+	.textgroup[data-id="2-0"]
+		@include lg
+			margin-bottom: 100vh
+
+
+.section[data-id="3"]
+	z-index: 5
+	display: flex
+	flex-direction: column
+	@include lg
+		display: block
+		height: calc(7 * 100vh)
+		padding-top: 0vh
+
+	.textgroup
+		border: 0px solid blue
+	.textgroup[data-id="3-0"]
+		@include lg
+			margin-top: -100vh
+			margin-bottom: 100vh
+	.textgroup[data-id="3-1"]
+		opacity: 1
+		position: relative
+		display: none
+		@include lg
+			display: block
+
+		.svg
+			padding-left: 35px
+			padding-right: 35px
+			@include lg
+				padding-left: 0px
+				padding-right: 0px
+			position: relative
+			max-width: 474px
+			width: 100%
+			margin-left: auto
+			margin-right: auto 
+			margin-right: calc(50% + 70px)
+			margin-bottom: 20px
+			svg
+				position: relative
+	.textgroup[data-id="3-2"]
+		@include lg
+			margin-bottom: 100vh
+	.textgroup[data-id="3-3"]
+		order: 3
+		@include lg
+			margin-bottom: 100vh
+
+	.textgroup[data-id="3-4"]
+		order: 4
+
+
+
+.section[data-id="4"]
+	z-index: 4
+	@include lg
+		height: calc(8 * 100vh)
+
+.section[data-id="5"]
+	z-index: 3
+	display: flex
+	flex-direction: column
+	@include lg
+		padding-top: 50vh
+		display: block
+		min-height: calc(4 * 100vh)
+	
+	.textgroup[data-id="5-0"]
+		opacity: 1
+		position: relative
+		margin-bottom: 70px
+		@include lg
+			margin-bottom: 300px
+		.svg
+			padding-left: 35px
+			padding-right: 35px
+			@include lg
+				padding-left: 0px
+				padding-right: 0px
+			position: relative
+			max-width: 474px
+			width: 100%
+			margin-left: auto
+			margin-right: auto 
+			margin-right: calc(50% + 70px)
+			margin-bottom: 20px
+			svg
+				position: relative
+
+	.textgroup[data-id="5-1"]
+		opacity: 1
+		position: relative
+		margin-bottom: 0px
+		@include lg
+			margin-bottom: 300px
+
+	.textgroup[data-id="5-3"]
+		order: 4
+		opacity: 1
+		position: relative
+		margin-top: 70px
+		@include lg
+			margin-top: -30px
+		.svg
+			padding-left: 35px
+			padding-right: 35px
+			@include lg
+				padding-left: 0px
+				padding-right: 0px
+			position: relative
+			max-width: 474px
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			@include lg
+				margin-left: calc(50% + 70px)
+			margin-bottom: 20px
+			svg
+				position: relative
+
+
+
+
+
+.section[data-id="6"]
+	z-index: 2
+	@include lg
+		height: calc(5 * 100vh)
+		padding-top: 0vh
+
+	.textgroup[data-id="6-0"]
+		@include lg
+			margin-top: -100vh
+			margin-bottom: 100vh
+
+	.textgroup[data-id="6-1"]
+		@include lg
+			margin-bottom: 100vh
+
+
+
+
+
+.section[data-id="7"]
+	z-index: 1
+	display: flex
+	flex-direction: column
+	@include lg
+		display: block
+		min-height: calc(3 * 100vh)
+
+	.textgroup[data-id="7-0"]
+		@include lg
+			margin-bottom: 50vh
+	.textgroup[data-id="7-1"]
+		order: 3	
+	.textgroup[data-id="7-2"]
+		order: 4

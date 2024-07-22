@@ -20,8 +20,8 @@ export default function Document() {
           {ftwrapper && <Main_ft />}
           <Main />
           <NextScript />
+          {ftwrapper && <Footer_ft />}
         </main>
-        {ftwrapper && <Footer_ft />}
       </body>
     </Html>
   )

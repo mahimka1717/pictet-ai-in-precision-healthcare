@@ -1,157 +1,47 @@
 .art
+    
     position: relative
-    .box
+    min-width: 100vw
+    
+    height: 100vh
+    top: unset
+    left: unset
+    z-index: -1
+    overflow: hidden
+    padding: 80px 16px 16px 16px
+    @include lg
+        position: absolute
+        min-width: 50vw
+        width: 50vw !important
+        top: -100vh
+        left: 50%
+        padding: 80px 40px 40px 40px
+
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        opacity: 0
+        transform: translate(-50%, -50%)
+        transition: opacity 0.5s ease-in-out
+
+
+    .artbox
         position: relative
-        left: 50%
-        .image
-            position: absolute
-
-.art[data-id="2"]
-    .box
-        .image
-            left: -862px
-            top: -100px
-
-.art[data-id="3"]
-    .box
-        .image
-            left: -741px
-            top: 125px
-
-
-.art[data-id="4"]
-    .box
-        left: unset
-        @include sm
-            left: 50%
-        .image
-            position: absolute
-            left: 233px
-            top: 89px
-            @include mobile
-                position: absolute
-                margin-left: 20%
-                margin-right: 20%
-                width: 60%
-                max-width: 400px
-                height: auto
-                left: 120px
-                top: -220px
-
-
-        
-.art[data-id="5"]
-    .box
-        .image
-            left: 411px
-            top: -310px
-
-.art[data-id="6"]
-    @include mobile
-        margin-bottom: 120px
-    .box
-        left: 50%
-        .image
-            position: absolute
-            left: -705px
-            top: -50px
-            @include mobile
-                width: 220px        
-                height: auto
-                left: -40px
-                top: -170px
-
-.art[data-id="7"]
-    @include mobile
-        margin-bottom: 50px  
-    .box
-        left: 50%
-        .image
-            position: absolute
-            left: 297px
-            top: -353px
-            @include mobile
-                position: absolute
-                width: 400px
-                height: auto
-                left: -20px
-                top: -90px
-
-
-.art[data-id="8"]
-    .box
-        .image
-            left: -852px
-            top: -218px
-
-.art[data-id="9"]
-    .box
-        left: 50%
-        .image
-            position: absolute
-            left: 295px
-            top: -501px
-            @include mobile
-                position: absolute
-                left: 50px
-                top: -100px
-                width: 200px
-                height: auto
-                opacity: 0.5
-
-
-.art[data-id="10"]
-    .box
-        .image
-            left: -664px
-            top: 99px
-
-
-.art[data-id="11"]
-    .box
-        left: 50%
-        .image
-            position: absolute
-            left: 303px
-            top: -524px
-            @include mobile
-                position: absolute
-                width: 400px
-                height: auto
-                left: 20px
-                top: -50px
-
-
-
-
-.art[data-id="12"]
-    .box
-        .image
-            left: -1030px
-            top: -307px
-
-.art[data-id="13"]
-    .box
-        .image
-            left: 211px
-            top: -600px
-
-.art[data-id="14"]
-    .box
-        .image
-            left: 308px
-            top: -303px
-
-.art[data-id="15"]
-    margin-bottom: 40px
-    display: none
-    @include mobile
         display: flex
-        justify-content: center
-    .box
-        left: unset
-        .image
-            left: 0px
-            top: 0px
-            @include mobile
-                position: relative
+        flex-direction: column
+        height: 100%
+        // background-color: rgba(0, 0, 0, 0.02)
+
+        .source
+            text-align: right
+            align-self: flex-end
+            font-size: 15px
+            line-height: 18px
+            background: #F8F8F4
+
+
+.art[data-id="1"]
+    // opacity: 0.1
+    img
+        opacity: 0 !important

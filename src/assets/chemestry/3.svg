@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+  <!-- <rect id="Rectangle_31" data-name="Rectangle 31" width="160" height="160" fill="#fff"/> -->
+  <line id="Line_69" data-name="Line 69" y1="13.17" x2="8.448" transform="translate(97.921 43.819)" fill="#fcf5ef"/>
+  <line id="Line_70" data-name="Line 70" y1="13.17" x2="8.448" transform="translate(97.921 43.819)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_71" data-name="Line 71" y1="13.17" x2="8.448" transform="translate(95.925 42.132)" fill="#fcf5ef"/>
+  <line id="Line_72" data-name="Line 72" y1="13.17" x2="8.448" transform="translate(95.925 42.132)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <text id="O" transform="translate(108.195 35.671)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">O</tspan></text>
+  <line id="Line_73" data-name="Line 73" x1="8.448" y1="13.17" transform="translate(96.026 106.496)" fill="#fcf5ef"/>
+  <line id="Line_74" data-name="Line 74" x1="8.448" y1="13.17" transform="translate(96.026 106.496)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_75" data-name="Line 75" x1="8.448" y1="13.17" transform="translate(98.022 104.809)" fill="#fcf5ef"/>
+  <line id="Line_76" data-name="Line 76" x1="8.448" y1="13.17" transform="translate(98.022 104.809)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <path id="Path_71" data-name="Path 71" d="M104.375,59.5H73.161L57.618,86.42l15.544,26.923h31.088l15.67-26.923Z" transform="translate(-5.974 -6.169)" fill="#cd8b61" opacity="0.537"/>
+  <path id="Path_72" data-name="Path 72" d="M104.375,59.5H73.161L57.618,86.42l15.544,26.923h31.088l15.67-26.923Z" transform="translate(-5.974 -6.169)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_77" data-name="Line 77" x1="17.62" y2="30.518" transform="translate(54.55 53.891)" fill="#fcf5ef"/>
+  <line id="Line_78" data-name="Line 78" x1="17.62" y2="30.518" transform="translate(54.55 53.891)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_79" data-name="Line 79" x2="17.62" y2="30.518" transform="translate(93.404 53.891)" fill="#fcf5ef"/>
+  <line id="Line_80" data-name="Line 80" x2="17.62" y2="30.518" transform="translate(93.404 53.891)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_81" data-name="Line 81" x1="9.447" y1="12.473" transform="translate(57.74 40.855)" fill="#fcf5ef"/>
+  <line id="Line_82" data-name="Line 82" x1="9.447" y1="12.473" transform="translate(57.74 40.855)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <line id="Line_83" data-name="Line 83" x1="8.372" y2="9.656" transform="translate(54.761 109.127)" fill="#fcf5ef"/>
+  <line id="Line_84" data-name="Line 84" x1="8.372" y2="9.656" transform="translate(54.761 109.127)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <path id="Path_73" data-name="Path 73" d="M77.782,118.747a7.143,7.143,0,1,1-7.144-7.144,7.143,7.143,0,0,1,7.144,7.144" transform="translate(-6.584 -11.572)" fill="#fff"/>
+  <text id="N" transform="translate(60.704 109.618)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">N</tspan></text>
+  <path id="Path_74" data-name="Path 74" d="M133.922,89.665a7.143,7.143,0,1,1-7.144-7.144,7.143,7.143,0,0,1,7.144,7.144" transform="translate(-12.405 -8.557)" fill="#fff"/>
+  <text id="N_-_H" data-name="N - H" transform="translate(111.023 83.55)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">N - H</tspan></text>
+  <text id="O-2" data-name="O" transform="translate(107.797 127.616)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">O</tspan></text>
+  <text id="H" transform="translate(26.484 82.647)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <text id="H-2" data-name="H" transform="translate(47.619 128.789)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <text id="T" transform="translate(72.17 88.494)" fill="#bc5a1d" font-size="34" font-family="Metric-Regular, Metric"><tspan x="0" y="0">T</tspan></text>
+  <text id="H-3" data-name="H" transform="translate(39.674 35.418)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">H</tspan></text>
+  <text id="_3" data-name="3" transform="translate(46.676 38.481)" font-size="5" font-family="Metric-Regular, Metric"><tspan x="0" y="0">3</tspan></text>
+  <text id="C" transform="translate(49.417 35.418)" font-size="10" font-family="Metric-Regular, Metric"><tspan x="0" y="0">C</tspan></text>
+  <line id="Line_85" data-name="Line 85" x1="13.919" transform="translate(37.062 80.251)" fill="#fcf5ef"/>
+  <line id="Line_86" data-name="Line 86" x1="13.919" transform="translate(37.062 80.251)" fill="none" stroke="#3e3e3e" stroke-miterlimit="10" stroke-width="0.5"/>
+  <!-- <rect id="Rectangle_25" data-name="Rectangle 25" width="158.97" height="158.97" transform="translate(0.224 0.224)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/> -->
+  <text id="Thymine-2" data-name="Thymine" transform="translate(83.771 150.055)" font-size="20" font-family="Metric-Light, Metric" font-weight="300"><tspan x="0" y="0">T</tspan><tspan y="0" letter-spacing="-0.004em">h</tspan><tspan y="0">ymine</tspan></text>
+</svg>

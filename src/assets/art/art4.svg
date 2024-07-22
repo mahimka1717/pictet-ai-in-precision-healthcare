@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298.216" height="389.952" viewBox="0 0 298.216 389.952">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2048 1381">
+      <image width="2048" height="1381" xlink:href="https://alphagridinfographics.com/pictet-asias-new-economic-engine/img/gettyimages-155440038-2048x2048.jpg" />
+    </pattern>
+  </defs>
+  <g id="Image_cluster" data-name="Image cluster" transform="translate(-47 -4675.462)">
+    <g data-ag="circleimg">
+    <rect id="gettyimages-155440038-2048x2048" width="298.216" height="167.184" rx="83.592" transform="translate(47 4675.462)" fill="url(#pattern)"/>
+    </g>
+    <g data-ag="circle1">
+    <g id="Animated_Illustration_03_Operator" data-name="Animated_Illustration 03_Operator" transform="translate(56.102 1534.731)">
+      <g id="Group_48155" data-name="Group 48155" transform="translate(76.003 3335.717)">
+        <circle id="Ellipse_65" data-name="Ellipse 65" cx="64.004" cy="64.004" r="64.004" fill="#f8f6f2"/>
+      </g>
+    </g>
+    </g>
+
+    <g data-ag="circle1">
+    <g id="Animated_Illustration_03_Operator-2" data-name="Animated_Illustration 03_Operator" transform="translate(98.102 1685.731)">
+      <g id="Group_48155-2" data-name="Group 48155" transform="translate(76.003 3335.717)">
+        <circle id="Ellipse_65-2" data-name="Ellipse 65" cx="21.983" cy="21.983" r="21.983" fill="#f8f6f2"/>
+      </g>
+    </g>
+    </g>
+  </g>
+</svg>

@@ -1,18 +1,18 @@
 import NextImage from 'next/image'
 import s from '~/src/components/Hero.module.sass'
 
+
+import Arrow from '~/src/assets/arrow.svg'
+
 const { imageQuality } = require('~/package.json');
 
 const Hero = (p) => {
 	return (
-		<div className={`${s.hero} ag-fadein`}>
+		<div className={`${s.hero} ag-fadein`} data-ag={`hero`}>
+			
 			<div className={s.media}>
-				<figure>
+				<figure data-ag={`herofigure`}>
 					<NextImage
-						// className={`rellax`}
-						// data-rellax-speed="-2"
-						// data-rellax-desktop-speed="-4"
-						// data-rellax-percentage="-0.15"
                         src={`./img/hero.jpg`} 
                         alt={p.data.h1}
 						fill
@@ -22,51 +22,16 @@ const Hero = (p) => {
 						loading="eager"
                       /> 
 				</figure>
-			</div>
-			<div className={s.content}>
-				<div className={s.box}>
-					<h1 className={s.h1}>{p.data.h1}</h1>
-					<div className={s.hr  + ` ag-fromfade ag-fromscale2`} />
-					<p className={s.desc}>{p.data.desc}</p>
-				</div>
+				<div className={s.gradient} data-ag={`hero-gradient`}/>
 			</div>
 
-			<div className={s.art} data-id={0}>
-				<div className={s.box}>
-					<NextImage 
-						className={s.image + ` ag-fromfade ag-fromscale2`}
-						src={`./img/art0.png`}
-						alt={`img`}
-						width={977/2}
-						height={1196/2}
-						loading='lazy'
-						quality={imageQuality}
-						onLoadingComplete={() => {
-							// console.log('Image loaded!!!!!!')
-						}}
-					/>
-			
+			<div className={s.content} data-ag={`hero-content`}>
+				<div className={s.mask} data-ag={`hero-mask`}>
+					<div className={s.desc} data-ag={`hero-desc`}>{p.data.desc}</div>
+					<h1 className={s.h1} data-ag={`hero-h1`}>{p.data.h1}</h1>
+					<div className={s.text} data-ag={`hero-text`}>{p.data.text}</div>
 				</div>
-			</div>
-
-
-			<div className={s.art} data-id={1}>
-				<div className={s.box}>
-
-					<NextImage 
-						className={s.image + ` ag-fromfade ag-fromscale2`}
-						src={`./img/art0.png`}
-						alt={`img`}
-						width={825/2}
-						height={1025/2}
-						loading='lazy'
-						quality={imageQuality}
-						onLoadingComplete={() => {
-							// console.log('Image loaded!!!!!!')
-						}}
-					/>
-			
-				</div>
+				<Arrow data-lag="0.3" />
 			</div>
 
 		</div>
