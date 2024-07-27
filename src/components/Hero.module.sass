@@ -7,9 +7,12 @@
   .media
     position: relative
     width: 100% 
-    height: calc(100lvh - 120px)
+    min-height: calc(100lvh - 120px)
+    height: 200px
     // height: auto
     overflow: hidden
+    @include xs
+      min-height: calc(100lvh - 96px)
     @include lg
       height: 100%
       height: calc(100vh - 96px)
@@ -28,11 +31,12 @@
         position: relative
         display: block
         object-fit: cover
-        // background-position: 100% 50%
-        object-position: 100% 50%
+        object-position: 60% 50%
         width: 100%
         height: 100%
         transform: scale(1.1)
+        @include lg
+          object-position: 100% 50%
 
     .gradient
       position: absolute
@@ -57,58 +61,86 @@
     justify-content: flex-end
     align-items: flex-start
     flex-direction: column
-    padding: 16px 16px
+    padding: 16px 16px 16px 16px
+    @include xs
+      padding: 16px 16px 96px 16px
+    @include sm
+      padding: 96px 70px 96px 70px
     @include lg
       padding: 65px 150px
-
-
     .mask
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)  
+
+      .desc
+        position: relative
+        font-weight: 700
+        color: #E4C0AA
+        font-size: 18px
+        line-height: 27px
+        font-family: $font-title
+        @include lg
+          font-size: 20px
+          line-height: 27px
 
       .h1
         position: relative
         font-family: $font-copy !important
-        font-size: 50px
-        line-height: 60px
+        font-size: 48px
+        line-height: 55px
+        @include xs
+          font-size: 55px
+          line-height: 65px
         width: 100%
-        max-width: 530px
         margin-bottom: 15px
         font-weight: 400
         z-index: 1
+        @include sm
+          max-width: 500px
         @include lg
           font-size: 100px
           line-height: 120px
           max-width: 800px
           margin-bottom: 30px
-          // text-shadow: 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4, 0 0 50px #F8F8F4
-
-      .desc
-        position: relative
-        color: #E4C0AA
-        font-size: 18px
-        line-height: 27px
-        @include lg
-          font-size: 20px
-          line-height: 27px
-
+      
       .text
         color: #E7DDE5
         position: relative
-        max-width: 582px
+        @include xs
+          max-width: 240px
         margin-bottom: 20px
-        font-family: $font-title
         font-size: 18px
         line-height: 24px
         z-index: 1
+        font-weight: 400
 
+        @include sm
+          max-width: 340px
         @include lg
+          max-width: 582px
           font-size: 20px
           line-height: 27px
           margin-bottom: unset
 
     svg
+      min-width: 60px
+      min-height: 60px
       position: relative
       align-self: flex-end
       transform-origin: 50% 50%
+      g[data-ag="hero-arrow"]
+        // opacity: 0
+        animation: ag-move 4s ease-in-out infinite
+        transform-origin: center center
+        will-change: transform
+
+
+
+@keyframes ag-move
+  0%
+    transform: translate(0, 0)
+  30%
+    transform: translate(0, 10px)
+  60%
+    transform: translate(0, 0)
         
   

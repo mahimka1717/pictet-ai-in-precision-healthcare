@@ -13,12 +13,16 @@
         flex-direction: column
         justify-content: center
         align-items: center
-
+        
         &[data-id="1-0"]
      
             .artheader
-                text-align: center
+                width: 100%
+                text-align: left
                 margin-bottom: 30px
+                @include lg
+                    text-align: center
+                    width: unset
             .text
                 text-align: center
                 max-width: 440px
@@ -28,6 +32,7 @@
                 top: 42%
                 @include lg
                     top: 46%
+                    right: -80px 
 
         &[data-id="1-1"]
             
@@ -39,6 +44,9 @@
                 font-weight: 400
                 mark
                     font-weight: 500
+                @include lg
+                    left: -60px
+                    top: 80px
             .text
                 max-width: 180px
                 position: absolute
@@ -47,7 +55,7 @@
                 top: 130px
                 @include lg
                     max-width: 220px
-                    right: 0
+                    right: -100px
                     left: unset
                     top: 50%
             .roundel
@@ -55,7 +63,7 @@
                 bottom: 5%
                 @include lg
                     bottom: 55%
-                    right: 130px
+                    right: 30px
 
         &[data-id="1-2"]
             .text
@@ -67,7 +75,7 @@
                 @include lg
                     max-width: 220px
                     right: unset
-                    left: 0
+                    left: -70px
                     top: 60px
                     background: #F8F8F4
             .roundel
@@ -75,14 +83,11 @@
                 right: 0
                 bottom: 20px
                 @include lg
-                    padding: 5px
+                    padding: 15px
                     bottom: 5%
                     right: unset
-                    left: 0
+                    left: -70px
 
-        
-        
-        
         .artheader
             font-family: Metric
             font-weight: 500
@@ -111,7 +116,6 @@
             position: absolute
             top: 0%
             left: 0%
-            // transform: translate(0%, -50%)
             width: 100%
             @include lg
                 width: unset
@@ -125,16 +129,11 @@
                 width: 60%
                 height: auto
                 left: 55%
-                
-                // width: 50%
-                // left: 50%
-
                 @include lg
                     right: unset
                     left: unset
                     width: unset
-                    // transform: translateY(35px)
-                    transform: translateY(35px) scale(0.80)
+                    // transform: translateY(35px) scale(0.80)
 
         .text
             font-family: Metric
@@ -150,7 +149,7 @@
             font-family: Metric
             position: absolute
             color: #E4C0AA
-            background-color: #000
+            background-color: #2E2E2E
             border-radius: 50%
             display: flex
             justify-content: center
@@ -180,7 +179,7 @@
             left: 0
             bottom: 0   
             @include lg
-                right: 0
+                right: -100px
                 top: 0
                 left: unset
                 bottom: unset   

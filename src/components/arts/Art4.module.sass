@@ -1,0 +1,136 @@
+.illustration
+    position: relative
+    height: 100%
+    width: 100%
+    
+    .frame
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+
+        .headers
+            position: relative
+
+            .artheader
+                font-family: Metric
+                font-weight: 400
+                font-size: 25px
+                line-height: 30px
+                text-align: center
+                margin-bottom: 30px
+                @include lg
+                    font-size: 30px
+                    line-height: 35px
+                & mark
+                    background: transparent
+                    font-weight: 500
+
+        .artheader
+            font-family: Metric
+            font-weight: 500
+            font-size: 25px
+            line-height: 30px
+            margin-bottom: 10px
+            @include lg
+                font-size: 30px
+                line-height: 35px
+            & mark
+                background: transparent
+
+
+        .texts
+            position: relative
+            height: 85px
+            width: 100%
+            margin-bottom: 20px
+
+            .text
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translate(-50%, 0)
+                width: 300px
+                text-align: center
+                font-family: Metric
+                font-weight: 400
+                font-size: 17px
+                line-height: 20px
+                @include lg
+                    width: 100%
+                    font-size: 20px
+                    line-height: 24px
+
+
+        .protein
+            z-index: -1
+            position: relative
+            margin-bottom: 40px
+            svg
+                width: 100%
+                height: auto
+                // border: 0.5px solid red
+                @include lg
+                    width: unset
+                    height: unset
+
+
+        .roundel
+            text-align: center
+            font-family: Metric
+            position: absolute
+            color: #E4C0AA
+            background-color: #2E2E2E
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 12px
+            font-size: 17px
+            line-height: 20px 
+            width: 160px
+            height: 160px
+            transform-origin: center center
+            left: 0
+            bottom: 0 
+            @include lg
+                font-size: 20px
+                line-height: 22px
+                width: 184px
+                height: 184px
+            div
+                mark
+                    color: #E4C0AA
+                    font-weight: 700
+                    background: transparent
+                    display: inline-block
+
+            &[data-ag="art4-roundel0"]
+                @include lg
+                    left: unset
+                    bottom: unset
+                    top: 200px
+                    right: -100px
+
+            &[data-ag="art4-roundel1"]
+                @include lg
+                    left: -100px
+                    bottom: 50% 
+                    width: 160px
+                    height: 160px
+                    padding: 30px
+
+            &[data-ag="art4-roundel2"]
+                left: 0
+                bottom: 39% 
+                @include lg
+                    left: unset
+                    bottom: unset
+                    top: 220px
+                    right: -100px

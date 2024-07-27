@@ -1,0 +1,113 @@
+.illustration
+    position: relative
+    height: 100%
+    width: 100%
+    
+    .frame
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        // border: 0.5px solid red
+
+
+        .headers
+            position: relative
+
+            .artheader
+                font-family: Metric
+                font-weight: 400
+                font-size: 25px
+                line-height: 30px
+                text-align: center
+                // margin-bottom: 30px
+                @include lg
+                    margin-bottom: 30px
+                    font-size: 30px
+                    line-height: 35px
+                & mark
+                    background: transparent
+                    font-weight: 500
+
+                &[data-ag="art3-header0"]
+                    position: relative
+                    font-size: 25px
+                    line-height: 30px
+                    // max-width: 300px
+                    @include lg
+                        max-width: unset
+                        font-size: 30px
+                        line-height: 35px
+                &[data-ag="art3-header1"]
+                    position: absolute
+                    width: 100%
+                    bottom: 0
+                    left: 50%
+                    transform: translate(-50%, 0%)
+                    margin-bottom: 30px
+
+
+
+        .forest
+            z-index: -1
+            position: relative
+            margin-bottom: 40px
+            svg
+                width: 100%
+                height: auto
+                // border: 0.5px solid red
+                @include lg
+                    width: unset
+                    height: unset
+
+
+        .roundel
+            text-align: center
+            font-family: Metric
+            position: absolute
+            color: #E4C0AA
+            background-color: #2E2E2E
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 12px
+            font-size: 17px
+            line-height: 20px 
+            width: 160px
+            height: 160px
+            transform-origin: center center
+            left: 0
+            bottom: 0 
+            @include lg
+                font-size: 20px
+                line-height: 22px
+                width: 184px
+                height: 184px
+            div
+                mark
+                    color: #E4C0AA
+                    font-weight: 700
+                    background: transparent
+                    display: inline-block
+            
+            &[data-ag="art3-roundel0"]
+                @include lg
+                    left: unset
+                    right: -120px
+                    bottom: unset
+                    top: 180px
+                    width: 150px
+                    height: 150px
+                    padding: 20px
+
+            &[data-ag="art3-roundel1"]
+                @include lg
+                    left: -180px
+                    bottom: 130px
+

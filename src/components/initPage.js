@@ -3,17 +3,19 @@
 // import SplitText from "./../utils/gsap/dist/SplitText";
 // import DrawSVGPlugin from "./../utils/gsap/dist/DrawSVGPlugin";
 
-
-// import { getSections } from '~/src/utils/index.js';
-
-
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitText from "gsap/dist/SplitText";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import ScrollSmoother from "gsap/dist/ScrollSmoother";
+import { get } from 'jquery';
 
+import { getSections } from '~/src/utils/index.js';
+const sections = getSections();
 
+// const sections = [1,2,3,4,5,6,7]
+const frames = [0, 8, 5, 8, 8, 5, 7, 5]
+const framesD = [0, 7, 3, 4, 7, 2, 3, 2]
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 gsap.registerPlugin(SplitText);
@@ -21,44 +23,35 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.config({
 	force3D: true,
 	nullTargetWarn: false,
-	// trialWarn: false,
 });
 let mm = gsap.matchMedia();
 
-const sections = [1,2,3,4,5,6,7]
-
 let Page
+const isTouchDevice = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
+
+
 
 export function initPage() {
 
     Page = {
         init: function(){
-
-			this.inview();
-
+			
 			document.fonts.ready.then(function () {
 				setTimeout(function(){
-					const root = document.getElementById("ag-infographic");
-					if(root)
-						root.classList.add("ag-inview");
 
+					// show infographic
+					const root = document.getElementById("ag-infographic");
+					if(root) root.classList.add("ag-inview");
+
+					// smooth scroll
 					ScrollSmoother.create({
-						smooth: 1,
-						effects: true,
-						// effectsPadding: -200,
-						onFocusIn: false,
+						smooth: isTouchDevice ? 0 : 1,
+						effects: !isTouchDevice,
+						smoothTouch: 0.1,
+						ignoreMobileResize: true,
 					});
 
-					Page.hero();
-
-					for (let i = 0; i < sections.length; i++) {
-						if (sections[i] >= 1 && sections[i] <= 7) {
-							Page.section(sections[i])
-							Page['section' + sections[i]]();
-						}
-					}
-
-					// find element with classes "pc m-pc"
+					// pin partner content
 					let pc = document.querySelector(".pc.m-pc");
 					ScrollTrigger.create({
 						trigger: pc,
@@ -68,32 +61,35 @@ export function initPage() {
 						pinSpacing: false,
 					})
 
+					// hero animations
+					Page.hero();
+
+					// sections animations
+					for (let i = 0; i < sections.length; i++) {
+						if (sections[i] >= 1 && sections[i] <= 7) {
+							// common
+							Page.section(sections[i])
+							// specific 
+							Page['section' + sections[i]]();
+							Page['art' + sections[i]]();
+						}
+					}
+
+					Page.splitText();
+
 					ScrollTrigger.refresh();
 
 				}, 100);
 			});
-
         },
 
 		hero: function(){
 			
-			let heroFigure = document.querySelector(`[data-ag="herofigure"]`);
+			let hero = document.querySelector(`[data-ag="hero"]`);
 			let heroImg = document.querySelector(`[data-ag="herofigure"] img`);
-
 			let mask = document.querySelector(`[data-ag="hero-mask"]`);
 			let svg = document.querySelector(`[data-ag="hero-content"] svg`);
-
-
-			// let herodesc = document.querySelector(`[data-ag="hero-desc"]`);
-			// let heroh1 = document.querySelector(`[data-ag="hero-h1"]`);
-			// let herotext = document.querySelector(`[data-ag="hero-text"]`);
-			// let heroh1split = new SplitText(heroh1, {type:"lines"})
-			// heroh1split.lines.forEach(line => {
-			// 	// Add a mask to the line
-			// 	line.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
-			// });
-
-
+			let arrow = document.querySelector(`[data-ag="hero-arrow"]`);
 
 			ScrollTrigger.create({
 				trigger: heroImg, 
@@ -102,81 +98,31 @@ export function initPage() {
 				end: ()=>{return "bottom 40px"},
 			});
 
-
 			let tl = gsap.timeline({})
 			tl.from(mask, { clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0 100%) ', duration: 1.5, ease: 'power2.out' }, 0)
 			tl.from(svg, { scale: 0, y: -150, opacity: 0, duration: 0.75, ease: 'power3.inOut' }, 0)
 			tl.from(heroImg, { scale: 1.2, opacity: 0, duration: 1.0, ease: 'power1.out' }, 0)
-			// tl.from(imgs[0], { opacity: 0, duration: 0, ease: 'power1.out' }, 1)
 
-
-
-
-			// tl.from(heroFigure, {opacity: 0, duration: 1	, ease: 'power2.out'}, 0)
-			// tl.from(herodesc, {opacity: 0, y: 0, duration: 1, ease: 'power1.out'}, 0.5)
-			// tl.from(heroh1split.lines, {opacity: 0, y: 20, duration: 1, ease: 'power1.out', stagger: 0.1}, 0.75)
-			// tl.from(herotext, {opacity: 0, y: 0, duration: 1, ease: 'power2.out'}, 1.25)
-
-
-
-
-			// let TL = gsap.timeline({
-			// 	scrollTrigger: {
-			// 		trigger: heroFigure,
-			// 		start: ()=>{return "0 40px"},
-			// 		end: ()=>{return "bottom 40px"},
-			// 		scrub: 1,
-			// 		// markers: true
-			// 	}
-			// })
-			// .to(circleimg, { opacity: 1, clipPath: 'circle(100%)', duration: 1, ease: 'none' }, 0)
+			const tl2 = gsap.timeline({
+				scrollTrigger: {
+					trigger: hero,
+					start: ()=>`top top`,
+					end: ()=>`bottom top+=300px`,
+					// markers: true,
+					scrub: true,
+					onUpdate: (self) => {},
+				}
+			});
+			tl2.to(svg, {opacity: 0, duration: 1, ease: 'power1.out'}, 0)
+		
 
 		},
 
 		section: function(n){
-
 			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
 			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
-			let imgs = art.querySelectorAll(`img`);
-			let slide = 0
-			const ln = imgs.length
-			
-			if(n===1)
-				Page['art' + n + 'Init']();
-
-			gsap.set(imgs[0], { opacity: 1, delay: (n===1)?1:0 })
-
-			 // mobile setup code here... 
-			mm.add("(max-width: 1023px)", () => {
-
-				ScrollTrigger.create({
-					trigger: art,
-					endTrigger: art,
-					start: ()=>`center center`,
-					end: ()=>`center+=${ln*700} bottom`,
-					pin: art,
-					pinSpacing: true,
-					onUpdate: (self) => {
-						let newSlide = Math.floor(self.progress * ln);
-						if(newSlide === ln) newSlide = ln - 1;
-						if(newSlide !== slide){
-							if(n===1)
-								Page['art' + n](slide, newSlide);
-							imgs[slide].style.opacity = 0;
-							slide = newSlide;
-							imgs[newSlide].style.opacity = 1;
-						}
-						// console.log(slide, self.progress);
-					},
-					scrub: true,
-				});
-
-			});
-
-
 			// desktop setup code here...
 			mm.add("(min-width: 1024px)", () => {
-				
 				ScrollTrigger.create({
 					trigger: section, 
 					endTrigger: section,
@@ -184,97 +130,9 @@ export function initPage() {
 					start: ()=>`top bottom`,
 					end: ()=>`bottom bottom`,
 				});
-
-
-				if(n===3){
-					gsap.set(art, { opacity: 0 })
-					ScrollTrigger.create({
-						trigger: section,
-						start: ()=>`top top-=${2*100}%`,
-						onEnter: function(){
-							gsap.to(art, {opacity: 1, duration: 0.5})
-						},
-						onLeaveBack: function(){
-							gsap.to(art, {opacity: 0, duration: 0.5})
-						},
-						scrub: true,
-					});
-				}
-
-				if(n===5){
-					// gsap.set(art, { opacity: 0 })
-					ScrollTrigger.create({
-						trigger: section,
-						start: ()=>`top top-=${1.5*100}%`,
-						onEnter: function(){
-							gsap.to(art, {opacity: 0, duration: 0.5})
-						},
-						onLeaveBack: function(){
-							gsap.to(art, {opacity: 1, duration: 0.5})
-						},
-						scrub: true,
-					});
-				}
-
-				if(n===6){
-					gsap.set(art, { opacity: 0 })
-					ScrollTrigger.create({
-						trigger: section,
-						start: ()=>`top top-=${1*100}%`,
-						onEnter: function(){
-							gsap.to(art, {opacity: 1, duration: 0.5})
-						},
-						onLeaveBack: function(){
-							gsap.to(art, {opacity: 0, duration: 0.5})
-						},
-						scrub: true,
-					});
-				}
-
-				if(n===7){
-					// gsap.set(art, { opacity: 0 })
-					ScrollTrigger.create({
-						trigger: section,
-						start: ()=>`top top-=${1*100}%`,
-						onEnter: function(){
-							gsap.to(art, {opacity: 0, duration: 0.5})
-						},
-						onLeaveBack: function(){
-							gsap.to(art, {opacity: 1, duration: 0.5})
-						},
-						scrub: true,
-					});
-				}
-
-
-				let start = (n!==3)?`top top`:`top top-=${2*100}%`;
-				let end = (n!==5)?`bottom bottom`:`bottom bottom+=${2*100}%`;
-				if(n===6) start = `top top-=${1*100}%`;
-
-				ScrollTrigger.create({
-					trigger: section,
-					start: ()=>start,
-					end: ()=>end,
-					onUpdate: (self) => {
-						let newSlide = Math.floor(self.progress * ln);
-						if(newSlide === ln) newSlide = ln - 1;
-						if(newSlide !== slide){
-							
-							if(n===1)
-								Page['art' + n](slide, newSlide);
-							
-							imgs[slide].style.opacity = 0;
-							slide = newSlide;
-							imgs[newSlide].style.opacity = 1;
-						}
-						// console.log(slide, self.progress);
-					},
-					scrub: true,
-				});
-	
 			});
-
 		},
+
 
 		section1: function(){
 			let section = document.querySelector(`[data-ag="section"][data-id="1"]`);
@@ -300,8 +158,6 @@ export function initPage() {
 					// markers: true,
 				});
 			});
-
-			// Page.art1();
 		},
 
 		section2: function(){
@@ -353,7 +209,7 @@ export function initPage() {
 					endTrigger: section,
 					pin: h1,
 					start: ()=>`center center`,
-					end: ()=>`top top-=50%`,
+					end: ()=>`top top-=100%`,
 					pinSpacing: false,
 				});
 
@@ -370,12 +226,12 @@ export function initPage() {
 					trigger: section,
 					start: ()=>`top top-=50%`,
 					onEnter: function(){
-						gsap.to(h1, {opacity: 0, duration: 0.5})
+						gsap.to(h1, {opacity: 0, duration: 0})
 						gsap.to(quotes, {opacity: 1, duration: 0.5})
 					},
 					onLeaveBack: function(){
 						gsap.to(h1, {opacity: 1, duration: 0.5})
-						gsap.to(quotes, {opacity: 0, duration: 0.5})
+						gsap.to(quotes, {opacity: 0, duration: 0})
 					},
 					scrub: true,
 				});
@@ -481,7 +337,12 @@ export function initPage() {
 
 
 
-		art1Init(){
+
+		art1: function(){
+			const n = 1;
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+		
 			let art1Header0 = document.querySelector(`[data-ag="art1-header0"]`);
 			let art1Header1 = document.querySelector(`[data-ag="art1-header1"]`);
 			let art1Cell = document.querySelector(`[data-ag="art1-cell"]`);
@@ -498,20 +359,14 @@ export function initPage() {
 			let roundel1 = document.querySelector(`[data-ag="art1-roundel1"]`);
 			let roundel2 = document.querySelector(`[data-ag="art1-roundel2"]`);
 			let chemestry = document.querySelector(`[data-ag="art1-chemestry"]`);
-			gsap.set(
-				[art1Header1, art1Dna, art1Text1, art1Text2, chemestry,
-					art1Letters, art1Labels
-
-				],
-				{ opacity: 0 }
-			)
-		
-
-			gsap.set([roundel0], {clipPath: 'circle(100% at 50% 50%)'});
-			gsap.set([roundel1, roundel2], {clipPath: 'circle(0% at 50% 50%)'});
 
 
+	
+			// init
+			gsap.set([art1Header1, art1Dna, art1Text1, art1Text2, chemestry, art1Letters, art1Labels], { opacity: 0 })
+			gsap.set([roundel0, roundel1, roundel2], {clipPath: 'circle(0% at 50% 50%)'});
 			let paths = art1Colors.querySelectorAll('path');
+			gsap.set(art1DnaSvg, {transformOrigin: 'center center'});
 			paths.forEach(path => {
 				let fill = path.getAttribute('fill');
 				if (fill !== '#FCF5EF' && fill !== '#000') {
@@ -519,12 +374,127 @@ export function initPage() {
 				  path.setAttribute('fill', '#FCF5EF');
 				}
 			});
+			// for ceil floating
+			Page.baloons()
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+  
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 1)
+
+				tl.to(art1Header0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art1Cell, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art1Text0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(nucleus, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 2)
+
+				tl.to(art1Header1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art1Dna, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art1Text1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+		
+
+				tl.to(art1Header1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(art1Text1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+
+				tl.to(art1Text2, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+				tl.to(chemestry, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1Letters, {opacity: 1, stagger: 0.025, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1DnaSvg, {scale: 0.8, x: -30, y: -40, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1Labels, {opacity: 1, stagger: 0.05, duration: 1, ease: 'power1.out'}, 5)
+				paths.forEach(path => {
+					let fill = path.getAttribute('col');
+					if(fill){
+						tl.to(path, {fill: fill, duration: 1, ease: 'power1.out'}, 5)
+					}
+				});
+			});
+
+			mm.add("(min-width: 1024px)", () => {
+  
+				gsap.set(art1DnaSvg, {transformOrigin: 'center center', scale: 0.8, y: 35});
+
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 1)
+
+				tl.to(art1Header0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art1Cell, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art1Text0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(nucleus, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 2)
+
+				tl.to(art1Header1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art1Dna, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art1Text1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+		
+
+				tl.to(art1Header1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(art1Text1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+
+				tl.to(art1Text2, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+				tl.to(chemestry, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1Letters, {opacity: 1, stagger: 0.025, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1DnaSvg, {scale: 1, y: 130, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art1Labels, {opacity: 1, stagger: 0.05, duration: 1, ease: 'power1.out'}, 5)
+				paths.forEach(path => {
+					let fill = path.getAttribute('col');
+					if(fill){
+						tl.to(path, {fill: fill, duration: 1, ease: 'power1.out'}, 5)
+					}
+				});
+
+
+
+			});
 
 		},
 
 
-		art1: function(prev, next){
-			
+
+
+
+
+
+		art11: function(){
+
+
+			const n = 1;
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+		
 			let art1Header0 = document.querySelector(`[data-ag="art1-header0"]`);
 			let art1Header1 = document.querySelector(`[data-ag="art1-header1"]`);
 			let art1Cell = document.querySelector(`[data-ag="art1-cell"]`);
@@ -532,7 +502,6 @@ export function initPage() {
 			let art1Dna = document.querySelector(`[data-ag="art1-dna"]`);
 			let art1DnaSvg = document.querySelector(`[data-ag="art1-dna-svg"]`);
 			let art1Colors = document.querySelector(`[data-ag="art1-colors"]`);
-			let paths = art1Colors.querySelectorAll('path');
 			let art1Letters = document.querySelectorAll(`[data-ag="art1-letters"] > text`);
 			let art1Labels = document.querySelectorAll(`[data-ag="art1-labels"] > g`);
 			let art1Text0 = document.querySelector(`[data-ag="art1-text0"]`);
@@ -542,192 +511,785 @@ export function initPage() {
 			let roundel1 = document.querySelector(`[data-ag="art1-roundel1"]`);
 			let roundel2 = document.querySelector(`[data-ag="art1-roundel2"]`);
 			let chemestry = document.querySelector(`[data-ag="art1-chemestry"]`);
+
+
+			mm.add(
+				{ isDesktop: `(min-width: ${breakPoint}px)`, isMobile: `(max-width: ${breakPoint - 1}px)`},
+				(context) => {
+
+					let { isDesktop, isMobile} = context.conditions;
+				
+					gsap.set([art1Header1, art1Dna, art1Text1, art1Text2, chemestry, art1Letters, art1Labels], { opacity: 0 })
+					gsap.set([roundel0, roundel1, roundel2], {clipPath: 'circle(0% at 50% 50%)'});
+					let paths = art1Colors.querySelectorAll('path');
+					gsap.set(art1DnaSvg, {transformOrigin: 'center center', scale: isDesktop?0.8:1, y: isDesktop?35:0});
+					paths.forEach(path => {
+						let fill = path.getAttribute('fill');
+						if (fill !== '#FCF5EF' && fill !== '#000') {
+						  path.setAttribute('col', fill);
+						  path.setAttribute('fill', '#FCF5EF');
+						}
+					});
+					Page.baloons()
+
+
+					// crate st
+					let st = ScrollTrigger.create({
+						trigger: isDesktop?section:art,
+						start: ()=>isDesktop?`top bottom`:`center center`,
+						end: ()=>isDesktop?`bottom bottom`:`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						markers: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+					});
+
+	
+					// create tl
+					const tl = gsap.timeline({ scrollTrigger: st });
+					tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 1)
+
+					tl.to(art1Header0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+					tl.to(art1Cell, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+					tl.to(art1Text0, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+					tl.to(nucleus, {opacity: 0, duration: 1, ease: 'power1.out'}, 2)
+					tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 2)
+	
+					tl.to(art1Header1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+					tl.to(art1Dna, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+					tl.to(art1Text1, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+					tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
 			
-			if(prev === 0 && next === 1){
-
-				gsap.killTweensOf([
-					art1Header0,
-					art1Cell,
-					art1Text0,
-					nucleus,
-					roundel0,
-					art1Header1,
-					art1Dna,
-					art1Text1,
-					roundel1
-				])
-
-				let tl = gsap.timeline()
-				tl.add(gsap.to(art1Header0, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Cell, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text0, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(nucleus, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 0.25, ease: 'power1.out'}), 0)
-
-				tl.add(gsap.to(art1Header1, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Dna, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text1, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 0.75, ease: 'power1.out'}), 0.5)
-			}
-
-			if(prev === 1 && next === 0){
-
-				gsap.killTweensOf([
-					art1Header0,
-					art1Cell,
-					art1Text0,
-					nucleus,
-					roundel0,
-					art1Header1,
-					art1Dna,
-					art1Text1,
-					roundel1
-				])
+					tl.to(art1Header1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+					tl.to(art1Text1, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+					tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+	
+					tl.to(art1Text2, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+					tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+					tl.to(chemestry, {opacity: 1, duration: 1, ease: 'power1.out'}, 5)
+					tl.to(art1Letters, {opacity: 1, stagger: 0.025, duration: 1, ease: 'power1.out'}, 5)
+					tl.to(art1DnaSvg, {scale: 0.8, x: -30, y: -40, duration: 1, ease: 'power1.out'}, 5)
+					tl.to(art1Labels, {opacity: 1, stagger: 0.05, duration: 1, ease: 'power1.out'}, 5)
+					paths.forEach(path => {
+						let fill = path.getAttribute('col');
+						if(fill){
+							tl.to(path, {fill: fill, duration: 1, ease: 'power1.out'}, 5)
+						}
+					});
 
 
-				let tl = gsap.timeline()
-				tl.add(gsap.to(art1Header0, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Cell, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text0, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(nucleus, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 0.75, ease: 'power1.out'}), 0.5)
+				
 
-				tl.add(gsap.to(art1Header1, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Dna, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text1, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 0.25, ease: 'power1.out'}), 0)
-			}
+					return () => {
+						// cleanup
+					};
+				}
+			);
 
-			if(prev === 1 && next === 2){
-
-				gsap.killTweensOf([
-					art1Header1,
-					art1Text1,
-					roundel1,
-					art1Text2,
-					roundel2,
-					chemestry,
-					art1Letters,
-					art1DnaSvg,
-					art1Labels,
-					paths,
-					art1DnaSvg
-				])
+		},
 
 
 
-				let tl = gsap.timeline()
-				tl.add(gsap.to(art1Header1, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text1, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 0.25, ease: 'power1.out'}), 0)
 
-				tl.add(gsap.to(art1Text2, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 0.75, ease: 'power1.out'}), 0.5)
-				tl.add(gsap.to(chemestry, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Letters, {opacity: 1, stagger: 0.025, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1DnaSvg, {scale: 0.8, x: -30, y: -40, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Labels, {opacity: 1, stagger: 0.05, duration: 0.75, ease: 'power1.out'}), 0)
-				paths.forEach(path => {
-					let fill = path.getAttribute('col');
-					if(fill){
-						tl.add(gsap.to(path, {fill: fill, duration: 0.5, ease: 'power1.out'}), 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+		art2: function(){
+			const n = 2;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+		
+			let art2Header0 = document.querySelector(`[data-ag="art2-header0"]`);
+			let art2Hair = document.querySelector(`[data-ag="art2-hair"]`);
+			let roundel0 = document.querySelector(`[data-ag="art2-roundel0"]`);
+			let patient = document.querySelector(`[data-ag="art2-patient"]`);
+			let scheme = document.querySelector(`[data-ag="art2-scheme"]`);
+
+			// init
+			gsap.set([art2Header0, patient], { opacity: 0 })
+			gsap.set([roundel0], {clipPath: 'circle(0% at 50% 50%)'});
+			gsap.set([scheme], { scale: 3.6, transformOrigin: 'center 6%' });
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+				tl.to(scheme, {scale: 1, duration: 2, ease: 'power1.out'}, 2)
+				tl.to(patient, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art2Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art2Hair, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+			});	
+			mm.add("(min-width: 1024px)", () => {
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+				tl.to(scheme, {scale: 1, duration: 2, ease: 'power1.out'}, 2)
+				tl.to(patient, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(art2Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
+				tl.to(art2Hair, {opacity: 0, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+			});
+
+
+		},
+
+		art3: function(){
+			const n = 3;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+		
+			let art3Header0 = document.querySelector(`[data-ag="art3-header0"]`);
+			let art3Header1 = document.querySelector(`[data-ag="art3-header1"]`);
+			let flowchart = document.querySelector(`[data-ag="art3-flowchart"]`);
+			let lvl00 = document.querySelector(`[data-ag="art3-level0-0"]`);
+			let lvl01 = document.querySelector(`[data-ag="art3-level0-1"]`);
+			let lvl10 = document.querySelector(`[data-ag="art3-level1-0"]`);
+			let lvl11 = document.querySelector(`[data-ag="art3-level1-1"]`);
+			let lvl12 = document.querySelector(`[data-ag="art3-level1-2"]`);
+			let lvl20 = document.querySelector(`[data-ag="art3-level2-0"]`);
+			let lvl30 = document.querySelector(`[data-ag="art3-level3-0"]`);
+			let lvl31 = document.querySelector(`[data-ag="art3-level3-1"]`);
+			let lvl32 = document.querySelector(`[data-ag="art3-level3-2"]`);
+			let arrows0 = document.querySelectorAll(`[data-ag="art3-arrows-0"] > g`);
+			let arrows1 = document.querySelectorAll(`[data-ag="art3-arrows-1"] > g`);
+			let arrows2 = document.querySelectorAll(`[data-ag="art3-arrows-2"]`);
+			let art3dots = document.querySelector(`[data-ag="art3-dots"]`);
+			let tree0 = document.querySelector(`[data-ag="art3-tree-0"]`);
+			let tree1 = document.querySelector(`[data-ag="art3-tree-1"]`);
+			let tree2 = document.querySelector(`[data-ag="art3-tree-2"]`);
+			let roundel0 = document.querySelector(`[data-ag="art3-roundel0"]`);
+			let roundel1 = document.querySelector(`[data-ag="art3-roundel1"]`);
+
+			// init
+			gsap.set([art3Header0, art3Header1, lvl01, lvl10, lvl11, lvl12, lvl20, lvl30, lvl31, lvl32, arrows0, arrows1, arrows2, art3dots, tree0, tree1, tree2], { opacity: 0 })
+			gsap.set([roundel0, roundel1], {clipPath: 'circle(0% at 50% 50%)'});
+			gsap.set(flowchart, { scale: 2.0, transformOrigin: 'center 0%' });
+
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
 					}
 				});
 
-			}
 
-			if(prev === 2 && next === 1){
+				tl.to(art3Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(flowchart, {scale: 1, duration: 2, ease: 'power1.out'}, 2)
+				
+				
+				tl.to(arrows0, {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				tl.to([tree0, tree1, tree2], {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				tl.to([lvl10, lvl11, lvl12], {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				
+				tl.to([art3dots], {opacity: 1, duration: 1, ease: 'power1.out'}, 2.6)
+				
+				tl.to(arrows1, {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 3)
+				tl.to(lvl20, {opacity: 1, duration: 1, ease: 'power1.out'}, 3.5)
+				tl.to(arrows2, {opacity: 1, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(lvl30, {opacity: 1, duration: 1, ease: 'power1.out'}, 4.5)
 
-				gsap.killTweensOf([
-					art1Header1,
-					art1Text1,
-					roundel1,
-					art1Text2,
-					roundel2,
-					chemestry,
-					art1Letters,
-					art1DnaSvg,
-					art1Labels,
-					paths,
-					art1DnaSvg
-				])
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 8)
+				
+				
+				tl.to(art3Header0, {opacity: 0, duration: 1, ease: 'power1.out'}, 8)
+				
+				tl.to(art3Header1, {opacity: 1, duration: 1, ease: 'power1.out'}, 9)
+				tl.to([lvl00,lvl30], {opacity: 0, stagger: 0, ease: 'power1.out'}, 9)
+				tl.to([lvl01,lvl31,lvl32], {opacity: 1, stagger: 0, ease: 'power1.out'}, 9)
 
 
-				let tl = gsap.timeline()
-				tl.add(gsap.to(art1Text2, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel2, {clipPath: 'circle(0% at 50% 50%)', duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(chemestry, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Letters, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 11)
 
-				tl.add(gsap.to(art1Header1, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Text1, {opacity: 1, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 0.75, ease: 'power1.out'}), 0.5)
+			});
 
-				tl.add(gsap.to(art1Letters, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1DnaSvg, {scale: 1, x: 0, y: 0, duration: 0.75, ease: 'power1.out'}), 0)
-				tl.add(gsap.to(art1Labels, {opacity: 0, duration: 0.25, ease: 'power1.out'}), 0)
-				paths.forEach(path => {
-					let fill = path.getAttribute('col');
-					if(fill && fill!=="none"){
-						tl.add(gsap.to(path, {fill: "#FCF5EF", duration: 0.25, ease: 'power1.out'}), 0)
+
+			mm.add("(min-width: 1024px)", () => {
+  
+
+				gsap.set([lvl00], { opacity: 0 })
+
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top-=${1*100}%`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(art3Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(lvl00, {opacity: 1, duration: 0.5, ease: 'power1.out'}, 2)
+				tl.to(flowchart, {scale: 1, duration: 2, ease: 'power1.out'}, 2)
+				
+				
+				tl.to(arrows0, {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				tl.to([tree0, tree1, tree2], {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				tl.to([lvl10, lvl11, lvl12], {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				
+				tl.to([art3dots], {opacity: 1, duration: 1, ease: 'power1.out'}, 2.6)
+				
+				tl.to(arrows1, {opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 3)
+				tl.to(lvl20, {opacity: 1, duration: 1, ease: 'power1.out'}, 3.5)
+				tl.to(arrows2, {opacity: 1, duration: 1, ease: 'power1.out'}, 4)
+				tl.to(lvl30, {opacity: 1, duration: 1, ease: 'power1.out'}, 4.5)
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 8)
+				
+				
+				tl.to(art3Header0, {opacity: 0, duration: 1, ease: 'power1.out'}, 8)
+				
+				tl.to(art3Header1, {opacity: 1, duration: 1, ease: 'power1.out'}, 9)
+				tl.to([lvl00,lvl30], {opacity: 0, stagger: 0, ease: 'power1.out'}, 9)
+				tl.to([lvl01,lvl31,lvl32], {opacity: 1, stagger: 0, ease: 'power1.out'}, 9)
+
+
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 11)
+
+
+			});
+
+		},
+
+		art4: function(){
+			const n = 4;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+			
+			let art4Header0 = document.querySelector(`[data-ag="art4-header0"]`);
+			
+			let art4Text0 = document.querySelector(`[data-ag="art4-text0"]`);
+			let art4Text1 = document.querySelector(`[data-ag="art4-text1"]`);
+			let art4Text2 = document.querySelector(`[data-ag="art4-text2"]`);
+
+			let protein0 = document.querySelector(`[data-ag="art4-protein0"]`);
+			let protein1 = document.querySelector(`[data-ag="art4-protein1"]`);
+		
+
+			let art4path = document.querySelector(`[data-ag="art4-path"]`);
+			let art4mols = document.querySelectorAll(`[data-ag="art4-mols"] > *`);
+
+		
+			let protein2 = document.querySelector(`[data-ag="art4-protein2"]`);
+	
+			let roundel0 = document.querySelector(`[data-ag="art4-roundel0"]`);
+			let roundel1 = document.querySelector(`[data-ag="art4-roundel1"]`);
+			let roundel2 = document.querySelector(`[data-ag="art4-roundel2"]`);
+
+
+			let mol = document.querySelectorAll(`[data-ag="art4-mol"]`);
+			let labels = document.querySelectorAll(`[data-ag="art4-label"]`);
+			let line = document.querySelectorAll(`[data-ag="art4-line"]`);
+			let dot = document.querySelectorAll(`[data-ag="art4-dot"]`);
+
+
+			let art4scheme = document.querySelectorAll(`[data-ag="art4-scheme2"]`);
+			let labels2 = document.querySelectorAll(`[data-ag="art4-label2"]`);
+			let line2 = document.querySelectorAll(`[data-ag="art4-line2"]`);
+			let dot2 = document.querySelectorAll(`[data-ag="art4-dot2"]`);
+
+
+			// init
+			gsap.set([art4Text0,art4Text1,art4Text2], { opacity: 0 })
+			gsap.set(art4mols, { opacity: 1, transformOrigin: '50% 50%', scale: 0 });
+			gsap.set(protein0, { scale: 4, rotation: -90, transformOrigin: '17% 0%' });
+			gsap.set([roundel0, roundel1, roundel2], {clipPath: 'circle(0% at 50% 50%)'});
+
+			gsap.set(art4path, {drawSVG: '0% 0%'});
+
+			gsap.set(mol,{scale: 0, transformOrigin: '50% 50%'});
+			gsap.set(art4scheme,{scale: 0.5, opacity: 0, transformOrigin: '50% 50%'});
+			gsap.set([labels, labels2], {opacity: 0});
+			gsap.set([dot, dot2], {opacity: 0});
+			gsap.set([line], {scaleY: 0, transformOrigin: '50% 0%'});
+			gsap.set([line2], {scale: 0, transformOrigin: '50% 50%'});
+
+
+
+
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+				const tl = gsap.timeline({	
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+			
+				tl.to(art4Text0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(protein0, { scale: 1, duration: 2, rotation:0 }, 2);
+				tl.to(art4mols, { scale: 1, duration: 0.75, stagger: 0.05, ease: 'power1.out'}, 2)
+				tl.to(art4path, {drawSVG: '0% 100%', duration: 2, ease: 'power1.out'}, 2);
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art4Text0, {opacity: 0, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(protein0, { opacity: 0, duration: 1, rotation:0 }, 5);
+
+				tl.to(mol, { scale: 1, duration: 1, stagger: 0.5, ease: 'power1.out'}, 6);
+				tl.to(labels, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 6.5);
+				tl.to(dot, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 6.5);
+				tl.to(line, { scaleY: 1, duration: 1, stagger: 0.5, ease: 'power1.out' }, 6);
+				tl.to(art4Text1, {opacity: 1, duration: 1, ease: 'power1.out'}, 6)
+
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 8)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 9)
+				tl.to(art4Text1, {opacity: 0, duration: 1, ease: 'power1.out'}, 9)
+				tl.to(protein1, { opacity: 0, duration: 1, rotation:0 }, 9);
+
+
+				tl.to(art4Text2, {opacity: 1, duration: 1, ease: 'power1.out'}, 10)
+				tl.to(art4scheme, { scale: 1, opacity: 1, duration: 1, stagger: 0.5, ease: 'power1.out'}, 10);
+				tl.to(labels2, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 10.5);
+				tl.to(dot2, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 10.5);
+				tl.to(line2, { scale: 1, duration: 1, stagger: 0.5, ease: 'power1.out' }, 10);
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 12)
+
+			});
+
+
+			mm.add("(min-width: 1024px)", () => {
+  
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(art4Text0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+				tl.to(protein0, { scale: 1, duration: 2, rotation:0 }, 2);
+				tl.to(art4mols, { scale: 1, duration: 0.75, stagger: 0.05, ease: 'power1.out'}, 2)
+				tl.to(art4path, {drawSVG: '0% 100%', duration: 2, ease: 'power1.out'}, 2);
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+				tl.to(art4Text0, {opacity: 0, duration: 1, ease: 'power1.out'}, 5)
+				tl.to(protein0, { opacity: 0, duration: 1, rotation:0 }, 5);
+
+				tl.to(mol, { scale: 1, duration: 1, stagger: 0.5, ease: 'power1.out'}, 6);
+				tl.to(labels, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 6.5);
+				tl.to(dot, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 6.5);
+				tl.to(line, { scaleY: 1, duration: 1, stagger: 0.5, ease: 'power1.out' }, 6);
+				tl.to(art4Text1, {opacity: 1, duration: 1, ease: 'power1.out'}, 6)
+
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 8)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 9)
+				tl.to(art4Text1, {opacity: 0, duration: 1, ease: 'power1.out'}, 9)
+				tl.to(protein1, { opacity: 0, duration: 1, rotation:0 }, 9);
+
+
+				tl.to(art4Text2, {opacity: 1, duration: 1, ease: 'power1.out'}, 10)
+				tl.to(art4scheme, { scale: 1, opacity: 1, duration: 1, stagger: 0.5, ease: 'power1.out'}, 10);
+				tl.to(labels2, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 10.5);
+				tl.to(dot2, { opacity: 1, duration: 0.5, stagger: 0.5, ease: 'power1.out' }, 10.5);
+				tl.to(line2, { scale: 1, duration: 1, stagger: 0.5, ease: 'power1.out' }, 10);
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 12)
+
+
+			});
+		},
+
+		art5: function(){
+			const n = 5;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+			let scene = document.querySelector(`[data-ag="art5-scene"]`);
+			let art5Header0 = document.querySelector(`[data-ag="art5-header0"]`);
+			let roundel0 = document.querySelector(`[data-ag="art5-roundel0"]`);
+			let level0 = document.querySelectorAll(`[data-ag="art5-level0"]`);
+			let level0Icons = document.querySelectorAll(`[data-ag="art5-level0-icon"]`);
+			let level1 = document.querySelectorAll(`[data-ag="art5-level1"]`);
+			let level2 = document.querySelectorAll(`[data-ag="art5-level2"]`);
+			let arrow = document.querySelector(`[data-ag="art5-arrow"]`);
+			let arrows = document.querySelectorAll(`[data-ag="art5-arrows"] > g`);
+			let art5x = document.querySelector(`[data-ag="art5-x"]`);
+
+			// init
+			gsap.set([roundel0], {clipPath: 'circle(0% at 50% 50%)'});
+			gsap.set([level1, level2, arrow, arrows], { opacity: 0 });
+			gsap.set([scene], { y: 100, scale: 1.2, transformOrigin: '50% 20%' });
+			gsap.set([art5x], { scale: 0.5, opacity: 0, transformOrigin: '50% 50%' });
+			// gsap.set([level0[0], level0Icons[0]], { x: -40 });
+			// gsap.set([level0[1], level0Icons[1]], { x: 40 });
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+				const tl = gsap.timeline({	
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+			
+				// tl.to(art5Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+
+				tl.to(scene, { y: 0, scale: 1, y: 0, duration: 2, ease: 'power1.out'}, 1)
+				tl.to(art5x, {opacity: 1, scale: 1, duration: 1, ease: 'power1.out'}, 1)
+
+				tl.to(arrow, { opacity: 1, duration: 1, ease: 'power1.out'}, 1.5)
+				tl.to(level1, { opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+
+				tl.to(arrows, { opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 3)
+				tl.to(level2, { opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 3)
+
+
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+			});
+
+
+
+			mm.add("(min-width: 1024px)", () => {
+  
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top`,
+						end: ()=>`bottom bottom+=100%`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				// tl.to(art5Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 2)
+
+				tl.to(scene, { y: 0, scale: 1, y: 0, duration: 2, ease: 'power1.out'}, 0)
+				tl.to(art5x, {opacity: 1, scale: 1, duration: 1, ease: 'power1.out'}, 0)
+
+				tl.to(arrow, { opacity: 1, duration: 1, ease: 'power1.out'}, 0.5)
+				tl.to(level1, { opacity: 1, duration: 1, ease: 'power1.out'}, 1)
+
+				tl.to(arrows, { opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+				tl.to(level2, { opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 2)
+
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+			});
+
+
+		},
+
+		art6: function(){
+			const n = 6;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+	
+			let art6header = document.querySelector(`[data-ag="art6-header0"]`);
+			let art6greed = document.querySelector(`[data-ag="art6-greed"]`);
+			let art6cards = document.querySelectorAll(`[data-ag="art6-cards"] > g`);
+			let art6level = document.querySelector(`[data-ag="art6-level"]`);
+			let art6paths = document.querySelectorAll(`[data-ag="art6-paths"] > path`);
+			let art6colors = document.querySelectorAll(`[data-ag="art6-color"] > *`);
+			let roundel0 = document.querySelector(`[data-ag="art6-roundel0"]`);
+			let roundel1 = document.querySelector(`[data-ag="art6-roundel1"]`);
+			let roundel2 = document.querySelector(`[data-ag="art6-roundel2"]`);
+
+			// init
+			gsap.set([roundel0,roundel1,roundel2], {clipPath: 'circle(0% at 50% 50%)'});
+			gsap.set([art6cards], { opacity: 1, scale: 0, transformOrigin: '50% 50%' });
+			gsap.set([art6level], { opacity: 0 });
+			gsap.set([art6colors], { opacity: 0 });
+			gsap.set(art6paths, { drawSVG: '0% 0%' });
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+				const tl = gsap.timeline({	
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+	
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+
+				tl.to(art6cards, {opacity: 1, scale: 1, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5)
+
+
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 7)
+				tl.to(art6cards, {opacity: 0, scale: 1, duration: 1, stagger: 0, ease: 'power1.out'}, 7)
+
+
+
+
+				tl.to(art6level, {opacity: 1, duration: 1, ease: 'power1.out'}, 8)
+				tl.to(art6colors, {opacity: 1, duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
+				tl.to(art6paths, {drawSVG: '0% 100%', duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
+
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 10)
+
+			});
+
+			mm.add("(min-width: 1024px)", () => {
+  
+				gsap.set([art6header, art6greed], {opacity: 0});
+
+
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
 					}
 				});
 
 
-			}
+				tl.to(art6header, {opacity: 1, ease: 'power1.out'}, 1.5)
+				tl.to(art6greed, {opacity: 1, ease: 'power1.out'}, 1.5)
 
+				tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
+				tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+
+				tl.to(art6cards, {opacity: 1, scale: 1, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5)
+
+
+				tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6)
+				tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 7)
+				tl.to(art6cards, {opacity: 0, scale: 1, duration: 1, stagger: 0, ease: 'power1.out'}, 7)
+
+
+
+
+				tl.to(art6level, {opacity: 1, duration: 1, ease: 'power1.out'}, 8)
+				tl.to(art6colors, {opacity: 1, duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
+				tl.to(art6paths, {drawSVG: '0% 100%', duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
+
+				tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 10)
+
+
+			});
+
+		},
+
+		art7: function(){
+			const n = 7;
+
+			let section = document.querySelector(`[data-ag="section"][data-id="${n}"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="${n}"]`);
+	
+			let circle = document.querySelector(`[data-ag="art7-circle"]`);
+			let arrows = document.querySelectorAll(`[data-ag="art7-arrows"] > g`);
+			let els = document.querySelectorAll(`[data-ag="art7-els"] > g`);
+			let elstxt = document.querySelectorAll('[data-ag="art7-els"] > g > g:first-child');
+			
+			// init
+			gsap.set([circle], { scale: 1.3, transformOrigin: '50% 50%' });
+			gsap.set([arrows], { opacity: 0 });
+			gsap.set([els], { opacity: 0, scale: 0, transformOrigin: '50% 50%' });
+
+			// mobile setup code here... 
+			mm.add("(max-width: 1023px)", () => {
+
+	
+				gsap.set(elstxt[1], { x: 80, y: 0 });
+				gsap.set(elstxt[2], { x: 80, y: 0 });
+				gsap.set(elstxt[4], { x: -80, y: 0 });
+				gsap.set(elstxt[5], { x: -80, y: 0 });
+
+
+
+
+
+				const tl = gsap.timeline({	
+					scrollTrigger: {
+						trigger: art,
+						endTrigger: art,
+						start: ()=>`center center`,
+						end: ()=>`center+=${frames[n]*700} bottom+=100%`,
+						pin: art,
+						pinSpacing: true,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(els, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 1)	
+				tl.to(arrows, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 2.15)	
+	
+	
+
+			});
+
+			mm.add("(min-width: 1024px)", () => {
+  
+				gsap.set([circle], { scale: 0.9, transformOrigin: '50% 50%' });
+
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top+=100%`,
+						end: ()=>`bottom bottom`,
+						scrub: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+
+				tl.to(els, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 0)	
+				tl.to(arrows, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 1.15)	
+
+
+			});
 
 
 		},
 
 
-        inview: function(){
 
-			const agFromElements = document.querySelectorAll("[class*='ag-from']");
-			agFromElements.forEach((agFromElement) => {
-				ScrollTrigger.create({
-				trigger: agFromElement, 
-				id: "inview",
-				start: () => `100px bottom`,
-				onEnter: function() {
-					if (!agFromElement.classList.contains('ag-inview')) {
-						agFromElement.classList.add('ag-inview');
-					}
-				}
+        
+
+		splitText: function(){
+
+			let splitTexts = [
+				"[data-ag='text'][data-id='2-0-2']",
+				"[data-ag='text'][data-id='2-1-1']",
+				"[data-ag='text'][data-id='6-2-1']",
+			]
+			
+			splitTexts.forEach((splitText) => {
+				
+				const split = new SplitText(document.querySelectorAll(splitText), {
+					type: 'words',
 				});
-			});
-            
-			const agFromFade2Elements = document.querySelectorAll("[class*='ag-fromfade2']");
-			agFromFade2Elements.forEach((agFromFade2Element) => {
-			  ScrollTrigger.create({
-				trigger: agFromFade2Element, 
-				id: "inview",
-				start: "top bottom",
-				onEnter: function() {
-				  if (!agFromFade2Element.classList.contains('ag-inview')) {
-					agFromFade2Element.classList.add('ag-inview');
-				  }
-				},
-				onLeaveBack: function() {
-				  if (agFromFade2Element.classList.contains('ag-inview')) {
-					agFromFade2Element.classList.remove('ag-inview');
-				  }
-				}
-			  });
-			});
+		
+				gsap.from(split.words, {
+					duration: 0.35,
+					y: 40,
+					autoAlpha: 0,
+					stagger: 0.05,
+					scrollTrigger: {
+						trigger: document.querySelectorAll(splitText),
+						scrub: 1,
+						// markers: true,
+						end: () => `top 70%`
+					},
+				});	
 
-        },
+			});
+			
+		},
 
 		baloons: function(){
 			
-			const randomX = random(1, 10);
-			const randomY = random(1, 10);
+			const randomX = random(1, 5);
+			const randomY = random(1, 5);
 			const randomDelay = random(0, 1);
 			const randomTime = random(3/1.5, 5/1.5);
 			const randomTime2 = random(5/1.5, 10/1.5);
 			const randomAngle = random(-10, 10);
 			
-			const cans = gsap.utils.toArray('[data-ag="art1-cell"]');
+			// let art1Cell = document.querySelector(`[data-ag="art1-ceil-svg"] > *`);
+
+
+			const cans = gsap.utils.toArray(`[data-ag="art1-ceil-svg"] > *`);
 			cans.forEach(can => {
 			  gsap.set(can, {
 				x: randomX(-1),
@@ -739,19 +1301,6 @@ export function initPage() {
 			  moveY(can, -1, 1);
 			  rotate(can, 1);
 			});
-
-			// const cans2 = gsap.utils.toArray('[data-ag="baloon2"]');
-			// cans2.forEach(can => {
-			//   gsap.set(can, {
-			// 	x: randomX(-1),
-			// 	y: randomX(1),
-			// 	// rotation: randomAngle(-1)
-			//   });
-			
-			//   moveX(can, 1, 2);
-			//   moveY(can, -1, 2);
-			// //   rotate(can, 1);
-			// });
 
 
 			
@@ -791,8 +1340,6 @@ export function initPage() {
 			}
 
 		},
-
-
     }
 
     Page.init();

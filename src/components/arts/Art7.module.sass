@@ -1,0 +1,50 @@
+.illustration
+    position: relative
+    height: 100%
+    width: 100%
+    
+    .frame
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+
+
+
+
+        .artheader
+            font-family: Metric
+            // font-weight: 500
+            font-size: 30px
+            line-height: 35px
+            margin-bottom: 20px
+            text-align: center
+            @include lg
+                font-size: 30px
+                line-height: 35px
+            & mark
+                background: transparent
+                font-weight: 500
+
+
+        .circle
+            z-index: -1
+            position: relative
+            margin-bottom: 40px
+            svg
+                width: 100%
+                height: auto
+                // border: 0.5px solid red
+                @include lg
+                    width: unset
+                    height: unset
+
+
+       
+            

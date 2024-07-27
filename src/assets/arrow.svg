@@ -9,11 +9,15 @@
         <circle cx="30" cy="30" r="30" stroke="none"/>
         <circle cx="30" cy="30" r="29.5" fill="none"/>
       </g>
+
+      <g data-ag="hero-arrow">
       <g id="Group_57" data-name="Group 57" transform="translate(-884.207 -855.144) rotate(-90)">
         <g id="Group_56" data-name="Group 56" transform="translate(0 0)" clip-path="url(#clip-path)">
           <line id="Line_113" data-name="Line 113" y1="115.509" transform="translate(12.862 -89.091)" fill="none" stroke="#804941" stroke-miterlimit="10" stroke-width="3"/>
           <path id="Path_6128" data-name="Path 6128" d="M24.818,0,12.409,12.409,0,0" transform="translate(0.453 15.086)" fill="none" stroke="#804941" stroke-miterlimit="10" stroke-width="3"/>
         </g>
       </g>
+      </g>
+
     </g>
   </svg>  

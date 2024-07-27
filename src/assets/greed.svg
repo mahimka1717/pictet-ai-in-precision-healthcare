@@ -1,0 +1,775 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="586.766" height="567.969" viewBox="0 0 586.766 567.969">
+    <defs>
+      <clipPath id="clip-path">
+        <rect id="Rectangle_32826" data-name="Rectangle 32826" width="475.48" height="474.072" fill="none"/>
+      </clipPath>
+      <clipPath id="clip-path-36">
+        <rect id="Rectangle_32493" data-name="Rectangle 32493" width="55.469" height="55.469" transform="translate(0 0)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+      </clipPath>
+      <clipPath id="clip-path-42">
+        <rect id="Rectangle_32495" data-name="Rectangle 32495" width="55.469" height="55.469" transform="translate(0 0)" fill="#b79681" stroke="#2e2e2e" stroke-width="1"/>
+      </clipPath>
+      <clipPath id="clip-path-45">
+        <rect id="Rectangle_32497" data-name="Rectangle 32497" width="55.469" height="55.469" transform="translate(0 0)" fill="#e4c0aa" stroke="#2e2e2e" stroke-width="1"/>
+      </clipPath>
+    </defs>
+    <g id="Grid" transform="translate(-715.5 -246.031)">
+      <g id="Rectangle_33172" data-name="Rectangle 33172" transform="translate(776 286)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="475" height="474" stroke="none"/>
+        <rect x="0.5" y="0.5" width="474" height="473" fill="none"/>
+      </g>
+      <g id="Group_532" data-name="Group 532" transform="translate(776 286)">
+        
+        <g data-ag="art6-color">
+        <path id="Path_6562" data-name="Path 6562" d="M0,0H31.585V31.585H0Z" transform="translate(412.06 379.168)" fill="#ededed" stroke="#7a7a7a" stroke-width="0.5"/>
+        <path id="Path_6561" data-name="Path 6561" d="M0,0H31.585V31.585H0Z" transform="translate(348.689 126.49)" fill="#e4c0aa" stroke="#7a7a7a" stroke-width="0.5"/>
+        <path id="Path_6560" data-name="Path 6560" d="M0,0H31.585V31.585H0Z" transform="translate(317.004 221.244)" fill="#ededed" stroke="#7a7a7a" stroke-width="0.5"/>
+        <rect id="Rectangle_32995" data-name="Rectangle 32995" width="31.585" height="31.585" transform="translate(285.319 315.998)" fill="#c7d0dc" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32932" data-name="Rectangle 32932" width="31.585" height="31.585" transform="translate(95.206 347.583)" fill="#e7dde5" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32954" data-name="Rectangle 32954" width="31.585" height="31.585" transform="translate(158.577 189.659)" fill="#ededed"/>
+        <path id="Path_6559" data-name="Path 6559" d="M0,0H31.585V31.585H0Z" transform="translate(126.892 94.905)" fill="#c7d0dc" stroke="#7a7a7a" stroke-width="0.5"/>
+        <path id="Path_6558" data-name="Path 6558" d="M0,0H31.585V31.585H0Z" transform="translate(31.836 284.414)" fill="#c7d0dc"/>
+        </g>
+        
+        <text id="A" transform="translate(69.479 150.727)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-2" data-name="A" transform="translate(101.157 150.727)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-3" data-name="A" transform="translate(101.157 87.56)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-4" data-name="A" transform="translate(132.835 87.56)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-5" data-name="A" transform="translate(164.513 119.158)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-6" data-name="A" transform="translate(132.835 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-7" data-name="A" transform="translate(164.513 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-8" data-name="A" transform="translate(196.191 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-9" data-name="A" transform="translate(259.548 87.589)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-10" data-name="A" transform="translate(259.548 182.354)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T" transform="translate(259.548 56.02)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-2" data-name="T" transform="translate(259.548 119.187)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-3" data-name="T" transform="translate(259.548 245.522)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-4" data-name="T" transform="translate(196.191 150.756)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-5" data-name="T" transform="translate(164.513 182.354)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-6" data-name="T" transform="translate(164.513 87.589)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-7" data-name="T" transform="translate(69.446 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-8" data-name="T" transform="translate(101.124 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-9" data-name="T" transform="translate(69.446 182.325)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-10" data-name="T" transform="translate(6.09 119.158)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-11" data-name="T" transform="translate(69.446 119.158)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-12" data-name="T" transform="translate(6.09 245.493)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-13" data-name="T" transform="translate(37.768 245.493)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-14" data-name="T" transform="translate(69.446 245.493)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C" transform="translate(38.952 55.991)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-2" data-name="C" transform="translate(38.952 87.589)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-3" data-name="C" transform="translate(134.019 119.187)" fill="#335282" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-4" data-name="C" transform="translate(197.376 119.187)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-5" data-name="C" transform="translate(229.054 150.785)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-6" data-name="C" transform="translate(260.732 150.785)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-7" data-name="C" transform="translate(102.309 182.384)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-8" data-name="C" transform="translate(133.986 213.982)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-9" data-name="C" transform="translate(260.732 213.982)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-10" data-name="C" transform="translate(197.376 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-11" data-name="C" transform="translate(229.054 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-12" data-name="C" transform="translate(102.309 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-13" data-name="C" transform="translate(229.054 119.246)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-14" data-name="C" transform="translate(197.376 87.647)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-15" data-name="C" transform="translate(229.054 87.647)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-16" data-name="C" transform="translate(38.952 182.413)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-17" data-name="C" transform="translate(7.274 150.815)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-18" data-name="C" transform="translate(38.952 150.815)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-19" data-name="C" transform="translate(38.952 119.217)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G" transform="translate(229.054 55.049)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-2" data-name="G" transform="translate(7.241 55.049)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-3" data-name="G" transform="translate(70.597 86.647)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-11" data-name="A" transform="translate(354.549 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-12" data-name="A" transform="translate(386.227 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-15" data-name="T" transform="translate(417.905 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-20" data-name="C" transform="translate(292.377 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-21" data-name="C" transform="translate(450.8 245.58)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-4" data-name="G" transform="translate(324.055 244.58)" fill="#2e2e2e" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-5" data-name="G" transform="translate(102.243 118.246)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-13" data-name="A" transform="translate(449.583 214.011)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-16" data-name="T" transform="translate(291.16 214.011)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-17" data-name="T" transform="translate(354.516 214.011)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-22" data-name="C" transform="translate(419.089 214.011)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-23" data-name="C" transform="translate(324.022 214.011)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-6" data-name="G" transform="translate(387.378 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-14" data-name="A" transform="translate(449.55 150.844)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-18" data-name="T" transform="translate(291.127 150.844)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-19" data-name="T" transform="translate(354.483 150.844)" fill="#bc5a1d" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-24" data-name="C" transform="translate(419.057 150.844)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-25" data-name="C" transform="translate(323.989 150.844)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-7" data-name="G" transform="translate(387.345 149.844)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-8" data-name="G" transform="translate(133.855 149.844)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-9" data-name="G" transform="translate(133.855 181.442)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-10" data-name="G" transform="translate(165.533 149.844)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="T-20" data-name="T" transform="translate(69.282 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-26" data-name="C" transform="translate(102.177 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-27" data-name="C" transform="translate(133.855 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="A-15" data-name="A" transform="translate(322.772 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-21" data-name="T" transform="translate(164.349 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-22" data-name="T" transform="translate(227.705 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-28" data-name="C" transform="translate(292.279 340.345)" fill="#335282" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-29" data-name="C" transform="translate(197.211 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-11" data-name="G" transform="translate(260.567 339.345)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="C-30" data-name="C" transform="translate(355.634 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="T-23" data-name="T" transform="translate(386.128 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-24" data-name="T" transform="translate(449.485 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-31" data-name="C" transform="translate(418.991 340.345)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-12" data-name="G" transform="translate(7.077 339.345)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-13" data-name="G" transform="translate(38.755 339.345)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="T-25" data-name="T" transform="translate(69.249 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-32" data-name="C" transform="translate(102.144 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-33" data-name="C" transform="translate(133.822 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="A-16" data-name="A" transform="translate(322.739 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-26" data-name="T" transform="translate(164.316 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-27" data-name="T" transform="translate(227.672 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-34" data-name="C" transform="translate(292.246 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-35" data-name="C" transform="translate(197.178 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-14" data-name="G" transform="translate(260.534 276.178)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-15" data-name="G" transform="translate(7.044 276.178)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-16" data-name="G" transform="translate(38.722 276.178)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-17" data-name="A" transform="translate(354.385 56.079)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-18" data-name="A" transform="translate(386.062 56.079)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="C-36" data-name="C" transform="translate(292.213 56.079)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-37" data-name="C" transform="translate(323.891 56.079)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-17" data-name="G" transform="translate(418.958 55.079)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-18" data-name="G" transform="translate(450.636 55.079)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-19" data-name="G" transform="translate(197.145 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-20" data-name="G" transform="translate(228.823 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-21" data-name="G" transform="translate(7.011 86.647)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-22" data-name="G" transform="translate(7.011 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-23" data-name="G" transform="translate(7.011 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-24" data-name="G" transform="translate(38.689 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-25" data-name="G" transform="translate(70.367 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-26" data-name="G" transform="translate(165.434 213.011)" fill="#2e2e2e" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-27" data-name="G" transform="translate(197.112 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-28" data-name="G" transform="translate(133.756 244.609)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-29" data-name="G" transform="translate(165.434 244.609)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="T-28" data-name="T" transform="translate(290.962 119.275)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-29" data-name="T" transform="translate(322.641 119.275)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-38" data-name="C" transform="translate(450.603 119.275)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-39" data-name="C" transform="translate(355.536 119.275)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-30" data-name="G" transform="translate(387.214 118.275)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-31" data-name="G" transform="translate(418.892 118.275)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-19" data-name="A" transform="translate(164.217 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-30" data-name="T" transform="translate(259.284 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-31" data-name="T" transform="translate(5.794 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-32" data-name="T" transform="translate(69.15 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-40" data-name="C" transform="translate(133.723 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-41" data-name="C" transform="translate(197.08 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-42" data-name="C" transform="translate(228.757 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-43" data-name="C" transform="translate(38.656 308.777)" fill="#335282" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-32" data-name="G" transform="translate(102.012 307.777)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="T-33" data-name="T" transform="translate(291.929 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-34" data-name="T" transform="translate(322.608 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-44" data-name="C" transform="translate(450.57 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-45" data-name="C" transform="translate(355.503 308.777)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-33" data-name="G" transform="translate(387.181 307.777)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-34" data-name="G" transform="translate(418.859 307.777)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="C-46" data-name="C" transform="translate(450.537 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-47" data-name="C" transform="translate(355.47 277.178)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-35" data-name="G" transform="translate(387.148 276.178)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-36" data-name="G" transform="translate(418.826 276.178)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-37" data-name="G" transform="translate(228.725 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-38" data-name="G" transform="translate(101.979 213.011)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="C-48" data-name="C" transform="translate(323.792 182.413)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-49" data-name="C" transform="translate(450.537 182.413)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-39" data-name="G" transform="translate(355.47 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-40" data-name="G" transform="translate(387.148 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-41" data-name="G" transform="translate(418.826 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-42" data-name="G" transform="translate(292.081 181.413)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-20" data-name="A" transform="translate(69.084 371.915)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-21" data-name="A" transform="translate(100.762 371.915)" fill="#8d4c82" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="A-22" data-name="A" transform="translate(259.186 403.513)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <g id="Group_601" data-name="Group 601">
+          <g id="Group_600" data-name="Group 600" clip-path="url(#clip-path)">
+            <text id="T-35" data-name="T" transform="translate(259.591 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+          </g>
+        </g>
+        <text id="T-36" data-name="T" transform="translate(196.221 371.821)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-37" data-name="T" transform="translate(164.542 403.419)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-38" data-name="T" transform="translate(69.475 403.419)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <g id="Group_603" data-name="Group 603">
+          <g id="Group_602" data-name="Group 602" clip-path="url(#clip-path)">
+            <text id="T-39" data-name="T" transform="translate(6.109 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="T-40" data-name="T" transform="translate(37.787 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="T-41" data-name="T" transform="translate(69.465 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+          </g>
+        </g>
+        <text id="C-50" data-name="C" transform="translate(229.113 371.821)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-51" data-name="C" transform="translate(260.791 371.821)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-52" data-name="C" transform="translate(102.368 403.419)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-53" data-name="C" transform="translate(134.046 435.017)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-54" data-name="C" transform="translate(260.791 435.017)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <g id="Group_605" data-name="Group 605">
+          <g id="Group_604" data-name="Group 604" clip-path="url(#clip-path)">
+            <text id="C-55" data-name="C" transform="translate(197.428 466.575)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="C-56" data-name="C" transform="translate(229.106 466.575)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="C-57" data-name="C" transform="translate(102.36 466.575)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+          </g>
+        </g>
+        <text id="C-58" data-name="C" transform="translate(39.001 403.406)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-59" data-name="C" transform="translate(7.323 371.808)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-60" data-name="C" transform="translate(39.001 371.808)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <g id="Group_607" data-name="Group 607">
+          <g id="Group_606" data-name="Group 606" clip-path="url(#clip-path)">
+            <text id="A-23" data-name="A" transform="translate(354.648 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="A-24" data-name="A" transform="translate(386.326 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="T-42" data-name="T" transform="translate(418.004 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="C-61" data-name="C" transform="translate(292.476 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="C-62" data-name="C" transform="translate(450.899 466.574)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="G-43" data-name="G" transform="translate(324.154 465.574)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+          </g>
+        </g>
+        <text id="A-25" data-name="A" transform="translate(449.703 434.99)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-43" data-name="T" transform="translate(291.28 434.99)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-44" data-name="T" transform="translate(354.636 434.99)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-63" data-name="C" transform="translate(419.209 434.99)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-64" data-name="C" transform="translate(324.142 434.99)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-44" data-name="G" transform="translate(387.499 433.99)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="A-26" data-name="A" transform="translate(449.671 371.823)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+        <text id="T-45" data-name="T" transform="translate(291.247 371.823)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="T-46" data-name="T" transform="translate(354.603 371.823)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+        <text id="C-65" data-name="C" transform="translate(419.177 371.823)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-66" data-name="C" transform="translate(324.11 371.823)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-45" data-name="G" transform="translate(387.466 370.823)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-46" data-name="G" transform="translate(133.975 370.823)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-47" data-name="G" transform="translate(133.975 402.421)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-48" data-name="G" transform="translate(165.653 370.823)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-49" data-name="G" transform="translate(197.331 402.421)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-50" data-name="G" transform="translate(229.01 402.421)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-51" data-name="G" transform="translate(7.197 402.421)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-52" data-name="G" transform="translate(7.197 434.019)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-53" data-name="G" transform="translate(38.875 434.019)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-54" data-name="G" transform="translate(70.553 434.019)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-55" data-name="G" transform="translate(165.621 434.019)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-56" data-name="G" transform="translate(197.299 434.019)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <g id="Group_609" data-name="Group 609">
+          <g id="Group_608" data-name="Group 608" clip-path="url(#clip-path)">
+            <text id="G-57" data-name="G" transform="translate(134.058 465.575)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+            <text id="G-58" data-name="G" transform="translate(165.736 465.575)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+          </g>
+        </g>
+        <text id="G-59" data-name="G" transform="translate(229.113 433.99)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-60" data-name="G" transform="translate(102.368 433.99)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="C-67" data-name="C" transform="translate(324.18 403.392)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-68" data-name="C" transform="translate(450.926 403.392)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-61" data-name="G" transform="translate(355.858 402.392)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-62" data-name="G" transform="translate(387.536 402.392)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-63" data-name="G" transform="translate(419.215 402.392)" fill="#2e2e2e" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-64" data-name="G" transform="translate(292.469 402.392)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="C-69" data-name="C" transform="translate(324.147 87.556)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="C-70" data-name="C" transform="translate(450.893 87.556)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+        <text id="G-65" data-name="G" transform="translate(355.825 86.556)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-66" data-name="G" transform="translate(387.503 86.556)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-67" data-name="G" transform="translate(419.182 86.556)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <text id="G-68" data-name="G" transform="translate(292.436 86.556)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+        <g id="Group_611" data-name="Group 611">
+          <g id="Group_610" data-name="Group 610" clip-path="url(#clip-path)">
+            <text id="A-27" data-name="A" transform="translate(6.109 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="A-28" data-name="A" transform="translate(132.854 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="A-29" data-name="A" transform="translate(196.21 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="T-47" data-name="T" transform="translate(227.889 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="T-48" data-name="T" transform="translate(259.566 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="C-71" data-name="C" transform="translate(38.971 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="C-72" data-name="C" transform="translate(70.649 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="C-73" data-name="C" transform="translate(165.717 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="G-69" data-name="G" transform="translate(102.361 23.388)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+            <text id="A-30" data-name="A" transform="translate(449.701 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            <text id="T-49" data-name="T" transform="translate(354.634 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+            <text id="C-74" data-name="C" transform="translate(292.462 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+            <text id="G-70" data-name="G" transform="translate(324.14 23.388)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+            <text id="G-71" data-name="G" transform="translate(387.496 23.388)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+            <text id="G-72" data-name="G" transform="translate(419.174 23.388)" fill="#7a7a7a" font-size="27" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+          </g>
+        </g>
+        <g id="Group_613" data-name="Group 613">
+          <g id="Group_612" data-name="Group 612" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32832" data-name="Rectangle 32832" width="31.585" height="31.585" transform="translate(412.06 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32833" data-name="Rectangle 32833" width="31.585" height="31.585" transform="translate(0.15 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32834" data-name="Rectangle 32834" width="31.585" height="31.585" transform="translate(126.892 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32835" data-name="Rectangle 32835" width="31.585" height="31.585" transform="translate(190.262 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32836" data-name="Rectangle 32836" width="31.585" height="31.585" transform="translate(221.948 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32837" data-name="Rectangle 32837" width="31.585" height="31.585" transform="translate(253.633 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32838" data-name="Rectangle 32838" width="31.585" height="31.585" transform="translate(31.836 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32839" data-name="Rectangle 32839" width="31.585" height="31.585" transform="translate(63.521 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32840" data-name="Rectangle 32840" width="31.585" height="31.585" transform="translate(158.577 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32841" data-name="Rectangle 32841" width="31.585" height="31.585" transform="translate(95.206 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32842" data-name="Rectangle 32842" width="31.585" height="31.585" transform="translate(443.745 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32843" data-name="Rectangle 32843" width="31.585" height="31.585" transform="translate(348.689 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32844" data-name="Rectangle 32844" width="31.585" height="31.585" transform="translate(285.319 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32845" data-name="Rectangle 32845" width="31.585" height="31.585" transform="translate(317.004 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32846" data-name="Rectangle 32846" width="31.585" height="31.585" transform="translate(380.375 0.151)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32848" data-name="Rectangle 32848" width="31.585" height="31.585" transform="translate(285.319 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32849" data-name="Rectangle 32849" width="31.585" height="31.585" transform="translate(348.689 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32850" data-name="Rectangle 32850" width="31.585" height="31.585" transform="translate(412.06 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32851" data-name="Rectangle 32851" width="31.585" height="31.585" transform="translate(317.004 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32852" data-name="Rectangle 32852" width="31.585" height="31.585" transform="translate(380.375 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32853" data-name="Rectangle 32853" width="31.585" height="31.585" transform="translate(126.892 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32854" data-name="Rectangle 32854" width="31.585" height="31.585" transform="translate(126.892 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32855" data-name="Rectangle 32855" width="31.585" height="31.585" transform="translate(158.577 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32856" data-name="Rectangle 32856" width="31.585" height="31.585" transform="translate(190.262 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32857" data-name="Rectangle 32857" width="31.585" height="31.585" transform="translate(221.948 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_615" data-name="Group 615">
+          <g id="Group_614" data-name="Group 614" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32858" data-name="Rectangle 32858" width="31.585" height="31.585" transform="translate(0.15 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32859" data-name="Rectangle 32859" width="31.585" height="31.585" transform="translate(0.15 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32861" data-name="Rectangle 32861" width="31.585" height="31.585" transform="translate(31.836 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32862" data-name="Rectangle 32862" width="31.585" height="31.585" transform="translate(63.521 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32863" data-name="Rectangle 32863" width="31.585" height="31.585" transform="translate(158.577 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32864" data-name="Rectangle 32864" width="31.585" height="31.585" transform="translate(190.262 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_617" data-name="Group 617">
+          <g id="Group_616" data-name="Group 616" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32865" data-name="Rectangle 32865" width="31.585" height="31.585" transform="translate(126.892 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32866" data-name="Rectangle 32866" width="31.585" height="31.585" transform="translate(158.577 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32868" data-name="Rectangle 32868" width="31.585" height="31.585" transform="translate(221.948 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32869" data-name="Rectangle 32869" width="31.585" height="31.585" transform="translate(95.206 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32870" data-name="Rectangle 32870" width="31.585" height="31.585" transform="translate(317.004 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_619" data-name="Group 619">
+          <g id="Group_618" data-name="Group 618" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32871" data-name="Rectangle 32871" width="31.585" height="31.585" transform="translate(443.745 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32873" data-name="Rectangle 32873" width="31.585" height="31.585" transform="translate(348.689 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32874" data-name="Rectangle 32874" width="31.585" height="31.585" transform="translate(380.375 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32876" data-name="Rectangle 32876" width="31.585" height="31.585" transform="translate(285.319 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32877" data-name="Rectangle 32877" width="31.585" height="31.585" transform="translate(317.004 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_621" data-name="Group 621">
+          <g id="Group_620" data-name="Group 620" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32878" data-name="Rectangle 32878" width="31.585" height="31.585" transform="translate(443.745 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32880" data-name="Rectangle 32880" width="31.585" height="31.585" transform="translate(348.689 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32881" data-name="Rectangle 32881" width="31.585" height="31.585" transform="translate(380.375 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32882" data-name="Rectangle 32882" width="31.585" height="31.585" transform="translate(412.06 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32883" data-name="Rectangle 32883" width="31.585" height="31.585" transform="translate(285.319 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_623" data-name="Group 623">
+          <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32884" data-name="Rectangle 32884" width="31.585" height="31.585" transform="translate(95.206 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32886" data-name="Rectangle 32886" width="31.585" height="31.585" transform="translate(31.836 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_625" data-name="Group 625">
+          <g id="Group_624" data-name="Group 624" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32887" data-name="Rectangle 32887" width="31.585" height="31.585" transform="translate(0.15 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32889" data-name="Rectangle 32889" width="31.585" height="31.585" transform="translate(31.836 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_627" data-name="Group 627">
+          <g id="Group_626" data-name="Group 626" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32890" data-name="Rectangle 32890" width="31.585" height="31.585" transform="translate(348.689 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32891" data-name="Rectangle 32891" width="31.585" height="31.585" transform="translate(380.375 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32892" data-name="Rectangle 32892" width="31.585" height="31.585" transform="translate(412.06 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32893" data-name="Rectangle 32893" width="31.585" height="31.585" transform="translate(285.319 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32894" data-name="Rectangle 32894" width="31.585" height="31.585" transform="translate(443.745 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32895" data-name="Rectangle 32895" width="31.585" height="31.585" transform="translate(317.004 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32896" data-name="Rectangle 32896" width="31.585" height="31.585" transform="translate(443.745 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32898" data-name="Rectangle 32898" width="31.585" height="31.585" transform="translate(285.319 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32899" data-name="Rectangle 32899" width="31.585" height="31.585" transform="translate(348.689 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32900" data-name="Rectangle 32900" width="31.585" height="31.585" transform="translate(412.06 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32901" data-name="Rectangle 32901" width="31.585" height="31.585" transform="translate(317.004 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32902" data-name="Rectangle 32902" width="31.585" height="31.585" transform="translate(380.375 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_629" data-name="Group 629">
+          <g id="Group_628" data-name="Group 628" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32903" data-name="Rectangle 32903" width="31.585" height="31.585" transform="translate(443.745 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32905" data-name="Rectangle 32905" width="31.585" height="31.585" transform="translate(190.262 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32906" data-name="Rectangle 32906" width="31.585" height="31.585" transform="translate(158.577 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32907" data-name="Rectangle 32907" width="31.585" height="31.585" transform="translate(63.521 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_631" data-name="Group 631">
+          <g id="Group_630" data-name="Group 630" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32908" data-name="Rectangle 32908" width="31.585" height="31.585" transform="translate(0.15 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32909" data-name="Rectangle 32909" width="31.585" height="31.585" transform="translate(31.836 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32910" data-name="Rectangle 32910" width="31.585" height="31.585" transform="translate(63.521 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32912" data-name="Rectangle 32912" width="31.585" height="31.585" transform="translate(221.948 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32913" data-name="Rectangle 32913" width="31.585" height="31.585" transform="translate(253.633 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32914" data-name="Rectangle 32914" width="31.585" height="31.585" transform="translate(95.206 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32915" data-name="Rectangle 32915" width="31.585" height="31.585" transform="translate(126.892 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32916" data-name="Rectangle 32916" width="31.585" height="31.585" transform="translate(253.633 410.753)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_633" data-name="Group 633">
+          <g id="Group_632" data-name="Group 632" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32917" data-name="Rectangle 32917" width="31.585" height="31.585" transform="translate(190.262 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32918" data-name="Rectangle 32918" width="31.585" height="31.585" transform="translate(221.948 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32920" data-name="Rectangle 32920" width="31.585" height="31.585" transform="translate(380.375 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32921" data-name="Rectangle 32921" width="31.585" height="31.585" transform="translate(412.06 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32922" data-name="Rectangle 32922" width="31.585" height="31.585" transform="translate(221.948 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32923" data-name="Rectangle 32923" width="31.585" height="31.585" transform="translate(95.206 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32924" data-name="Rectangle 32924" width="31.585" height="31.585" transform="translate(317.004 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_635" data-name="Group 635">
+          <g id="Group_634" data-name="Group 634" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32925" data-name="Rectangle 32925" width="31.585" height="31.585" transform="translate(443.745 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32927" data-name="Rectangle 32927" width="31.585" height="31.585" transform="translate(348.689 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32928" data-name="Rectangle 32928" width="31.585" height="31.585" transform="translate(380.375 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32929" data-name="Rectangle 32929" width="31.585" height="31.585" transform="translate(412.06 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32930" data-name="Rectangle 32930" width="31.585" height="31.585" transform="translate(285.319 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32931" data-name="Rectangle 32931" width="31.585" height="31.585" transform="translate(63.521 347.583)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32933" data-name="Rectangle 32933" width="31.585" height="31.585" transform="translate(253.633 379.168)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_637" data-name="Group 637">
+          <g id="Group_636" data-name="Group 636" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32934" data-name="Rectangle 32934" width="31.585" height="31.585" transform="translate(253.633 442.337)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32936" data-name="Rectangle 32936" width="31.585" height="31.585" transform="translate(63.521 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32937" data-name="Rectangle 32937" width="31.585" height="31.585" transform="translate(126.892 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32938" data-name="Rectangle 32938" width="31.585" height="31.585" transform="translate(190.262 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32939" data-name="Rectangle 32939" width="31.585" height="31.585" transform="translate(221.948 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32941" data-name="Rectangle 32941" width="31.585" height="31.585" transform="translate(95.206 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32942" data-name="Rectangle 32942" width="31.585" height="31.585" transform="translate(285.319 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32943" data-name="Rectangle 32943" width="31.585" height="31.585" transform="translate(317.004 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_639" data-name="Group 639">
+          <g id="Group_638" data-name="Group 638" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32944" data-name="Rectangle 32944" width="31.585" height="31.585" transform="translate(443.745 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32946" data-name="Rectangle 32946" width="31.585" height="31.585" transform="translate(348.689 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32947" data-name="Rectangle 32947" width="31.585" height="31.585" transform="translate(380.375 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32948" data-name="Rectangle 32948" width="31.585" height="31.585" transform="translate(412.06 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_641" data-name="Group 641">
+          <g id="Group_640" data-name="Group 640" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32949" data-name="Rectangle 32949" width="31.585" height="31.585" transform="translate(443.745 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32951" data-name="Rectangle 32951" width="31.585" height="31.585" transform="translate(348.689 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32952" data-name="Rectangle 32952" width="31.585" height="31.585" transform="translate(31.836 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32953" data-name="Rectangle 32953" width="31.585" height="31.585" transform="translate(63.521 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32955" data-name="Rectangle 32955" width="31.585" height="31.585" transform="translate(190.262 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32956" data-name="Rectangle 32956" width="31.585" height="31.585" transform="translate(126.892 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32957" data-name="Rectangle 32957" width="31.585" height="31.585" transform="translate(158.577 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32958" data-name="Rectangle 32958" width="31.585" height="31.585" transform="translate(285.319 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32959" data-name="Rectangle 32959" width="31.585" height="31.585" transform="translate(317.004 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_643" data-name="Group 643">
+          <g id="Group_642" data-name="Group 642" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32960" data-name="Rectangle 32960" width="31.585" height="31.585" transform="translate(443.745 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32962" data-name="Rectangle 32962" width="31.585" height="31.585" transform="translate(348.689 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32963" data-name="Rectangle 32963" width="31.585" height="31.585" transform="translate(380.375 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32964" data-name="Rectangle 32964" width="31.585" height="31.585" transform="translate(412.06 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32965" data-name="Rectangle 32965" width="31.585" height="31.585" transform="translate(158.577 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32966" data-name="Rectangle 32966" width="31.585" height="31.585" transform="translate(253.633 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_645" data-name="Group 645">
+          <g id="Group_644" data-name="Group 644" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32967" data-name="Rectangle 32967" width="31.585" height="31.585" transform="translate(0.15 284.414)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32969" data-name="Rectangle 32969" width="31.585" height="31.585" transform="translate(158.577 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32970" data-name="Rectangle 32970" width="31.585" height="31.585" transform="translate(221.948 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32971" data-name="Rectangle 32971" width="31.585" height="31.585" transform="translate(285.319 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32972" data-name="Rectangle 32972" width="31.585" height="31.585" transform="translate(190.262 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32973" data-name="Rectangle 32973" width="31.585" height="31.585" transform="translate(253.633 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_647" data-name="Group 647">
+          <g id="Group_646" data-name="Group 646" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32974" data-name="Rectangle 32974" width="31.585" height="31.585" transform="translate(0.15 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32976" data-name="Rectangle 32976" width="31.585" height="31.585" transform="translate(31.836 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32977" data-name="Rectangle 32977" width="31.585" height="31.585" transform="translate(348.689 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32978" data-name="Rectangle 32978" width="31.585" height="31.585" transform="translate(380.375 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32979" data-name="Rectangle 32979" width="31.585" height="31.585" transform="translate(285.319 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32980" data-name="Rectangle 32980" width="31.585" height="31.585" transform="translate(317.004 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32981" data-name="Rectangle 32981" width="31.585" height="31.585" transform="translate(412.06 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_649" data-name="Group 649">
+          <g id="Group_648" data-name="Group 648" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32982" data-name="Rectangle 32982" width="31.585" height="31.585" transform="translate(443.745 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32984" data-name="Rectangle 32984" width="31.585" height="31.585" transform="translate(190.262 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32985" data-name="Rectangle 32985" width="31.585" height="31.585" transform="translate(221.948 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_651" data-name="Group 651">
+          <g id="Group_650" data-name="Group 650" clip-path="url(#clip-path)">
+            <rect id="Rectangle_32986" data-name="Rectangle 32986" width="31.585" height="31.585" transform="translate(0.15 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32987" data-name="Rectangle 32987" width="31.585" height="31.585" transform="translate(0.15 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+            <rect id="Rectangle_32988" data-name="Rectangle 32988" width="31.585" height="31.585" transform="translate(0.15 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_32990" data-name="Rectangle 32990" width="31.585" height="31.585" transform="translate(95.206 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32991" data-name="Rectangle 32991" width="31.585" height="31.585" transform="translate(126.892 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32992" data-name="Rectangle 32992" width="31.585" height="31.585" transform="translate(317.004 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32993" data-name="Rectangle 32993" width="31.585" height="31.585" transform="translate(158.577 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32994" data-name="Rectangle 32994" width="31.585" height="31.585" transform="translate(221.948 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32996" data-name="Rectangle 32996" width="31.585" height="31.585" transform="translate(190.262 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32997" data-name="Rectangle 32997" width="31.585" height="31.585" transform="translate(253.633 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32998" data-name="Rectangle 32998" width="31.585" height="31.585" transform="translate(348.689 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_32999" data-name="Rectangle 32999" width="31.585" height="31.585" transform="translate(380.375 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_653" data-name="Group 653">
+          <g id="Group_652" data-name="Group 652" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33000" data-name="Rectangle 33000" width="31.585" height="31.585" transform="translate(443.745 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33002" data-name="Rectangle 33002" width="31.585" height="31.585" transform="translate(412.06 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_655" data-name="Group 655">
+          <g id="Group_654" data-name="Group 654" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33003" data-name="Rectangle 33003" width="31.585" height="31.585" transform="translate(0.15 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33005" data-name="Rectangle 33005" width="31.585" height="31.585" transform="translate(31.836 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33006" data-name="Rectangle 33006" width="31.585" height="31.585" transform="translate(63.521 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33007" data-name="Rectangle 33007" width="31.585" height="31.585" transform="translate(95.206 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33008" data-name="Rectangle 33008" width="31.585" height="31.585" transform="translate(126.892 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33009" data-name="Rectangle 33009" width="31.585" height="31.585" transform="translate(317.004 252.829)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33010" data-name="Rectangle 33010" width="31.585" height="31.585" transform="translate(285.319 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33011" data-name="Rectangle 33011" width="31.585" height="31.585" transform="translate(348.689 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33012" data-name="Rectangle 33012" width="31.585" height="31.585" transform="translate(412.06 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33013" data-name="Rectangle 33013" width="31.585" height="31.585" transform="translate(317.004 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33014" data-name="Rectangle 33014" width="31.585" height="31.585" transform="translate(380.375 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_657" data-name="Group 657">
+          <g id="Group_656" data-name="Group 656" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33015" data-name="Rectangle 33015" width="31.585" height="31.585" transform="translate(443.745 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33017" data-name="Rectangle 33017" width="31.585" height="31.585" transform="translate(285.319 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33019" data-name="Rectangle 33019" width="31.585" height="31.585" transform="translate(412.06 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33020" data-name="Rectangle 33020" width="31.585" height="31.585" transform="translate(317.004 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33021" data-name="Rectangle 33021" width="31.585" height="31.585" transform="translate(380.375 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33022" data-name="Rectangle 33022" width="31.585" height="31.585" transform="translate(126.892 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33023" data-name="Rectangle 33023" width="31.585" height="31.585" transform="translate(126.892 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33024" data-name="Rectangle 33024" width="31.585" height="31.585" transform="translate(158.577 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33025" data-name="Rectangle 33025" width="31.585" height="31.585" transform="translate(63.521 315.998)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33026" data-name="Rectangle 33026" width="31.585" height="31.585" transform="translate(31.836 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33027" data-name="Rectangle 33027" width="31.585" height="31.585" transform="translate(221.948 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_659" data-name="Group 659">
+          <g id="Group_658" data-name="Group 658" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33028" data-name="Rectangle 33028" width="31.585" height="31.585" transform="translate(0.15 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33030" data-name="Rectangle 33030" width="31.585" height="31.585" transform="translate(63.521 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33031" data-name="Rectangle 33031" width="31.585" height="31.585" transform="translate(348.689 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33032" data-name="Rectangle 33032" width="31.585" height="31.585" transform="translate(380.375 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33033" data-name="Rectangle 33033" width="31.585" height="31.585" transform="translate(412.06 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33034" data-name="Rectangle 33034" width="31.585" height="31.585" transform="translate(285.319 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_661" data-name="Group 661">
+          <g id="Group_660" data-name="Group 660" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33035" data-name="Rectangle 33035" width="31.585" height="31.585" transform="translate(443.745 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33038" data-name="Rectangle 33038" width="31.585" height="31.585" transform="translate(95.206 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_663" data-name="Group 663">
+          <g id="Group_662" data-name="Group 662" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33039" data-name="Rectangle 33039" width="31.585" height="31.585" transform="translate(443.745 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33042" data-name="Rectangle 33042" width="31.585" height="31.585" transform="translate(190.262 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33043" data-name="Rectangle 33043" width="31.585" height="31.585" transform="translate(221.948 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33044" data-name="Rectangle 33044" width="31.585" height="31.585" transform="translate(253.633 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33045" data-name="Rectangle 33045" width="31.585" height="31.585" transform="translate(95.206 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33046" data-name="Rectangle 33046" width="31.585" height="31.585" transform="translate(126.892 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33047" data-name="Rectangle 33047" width="31.585" height="31.585" transform="translate(253.633 189.659)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33048" data-name="Rectangle 33048" width="31.585" height="31.585" transform="translate(190.262 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33049" data-name="Rectangle 33049" width="31.585" height="31.585" transform="translate(221.948 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33050" data-name="Rectangle 33050" width="31.585" height="31.585" transform="translate(95.206 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33051" data-name="Rectangle 33051" width="31.585" height="31.585" transform="translate(221.948 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33052" data-name="Rectangle 33052" width="31.585" height="31.585" transform="translate(190.262 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33053" data-name="Rectangle 33053" width="31.585" height="31.585" transform="translate(221.948 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33054" data-name="Rectangle 33054" width="31.585" height="31.585" transform="translate(31.836 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_665" data-name="Group 665">
+          <g id="Group_664" data-name="Group 664" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33055" data-name="Rectangle 33055" width="31.585" height="31.585" transform="translate(0.15 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33057" data-name="Rectangle 33057" width="31.585" height="31.585" transform="translate(31.836 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33058" data-name="Rectangle 33058" width="31.585" height="31.585" transform="translate(253.633 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33059" data-name="Rectangle 33059" width="31.585" height="31.585" transform="translate(253.633 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33060" data-name="Rectangle 33060" width="31.585" height="31.585" transform="translate(253.633 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33061" data-name="Rectangle 33061" width="31.585" height="31.585" transform="translate(190.262 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33062" data-name="Rectangle 33062" width="31.585" height="31.585" transform="translate(158.577 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33063" data-name="Rectangle 33063" width="31.585" height="31.585" transform="translate(158.577 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33064" data-name="Rectangle 33064" width="31.585" height="31.585" transform="translate(63.521 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33065" data-name="Rectangle 33065" width="31.585" height="31.585" transform="translate(95.206 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33066" data-name="Rectangle 33066" width="31.585" height="31.585" transform="translate(63.521 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_667" data-name="Group 667">
+          <g id="Group_666" data-name="Group 666" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33067" data-name="Rectangle 33067" width="31.585" height="31.585" transform="translate(0.15 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33069" data-name="Rectangle 33069" width="31.585" height="31.585" transform="translate(63.521 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <g id="Group_669" data-name="Group 669">
+          <g id="Group_668" data-name="Group 668" clip-path="url(#clip-path)">
+            <rect id="Rectangle_33070" data-name="Rectangle 33070" width="31.585" height="31.585" transform="translate(0.15 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+        </g>
+        <rect id="Rectangle_33072" data-name="Rectangle 33072" width="31.585" height="31.585" transform="translate(31.836 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33073" data-name="Rectangle 33073" width="31.585" height="31.585" transform="translate(63.521 221.244)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33074" data-name="Rectangle 33074" width="31.585" height="31.585" transform="translate(31.836 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33075" data-name="Rectangle 33075" width="31.585" height="31.585" transform="translate(31.836 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33076" data-name="Rectangle 33076" width="31.585" height="31.585" transform="translate(63.521 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33077" data-name="Rectangle 33077" width="31.585" height="31.585" transform="translate(95.206 126.49)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33078" data-name="Rectangle 33078" width="31.585" height="31.585" transform="translate(95.206 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33079" data-name="Rectangle 33079" width="31.585" height="31.585" transform="translate(126.892 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33080" data-name="Rectangle 33080" width="31.585" height="31.585" transform="translate(158.577 94.905)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33081" data-name="Rectangle 33081" width="31.585" height="31.585" transform="translate(126.892 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33082" data-name="Rectangle 33082" width="31.585" height="31.585" transform="translate(158.577 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33083" data-name="Rectangle 33083" width="31.585" height="31.585" transform="translate(190.262 31.736)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33084" data-name="Rectangle 33084" width="31.585" height="31.585" transform="translate(253.633 63.32)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+        <rect id="Rectangle_33085" data-name="Rectangle 33085" width="31.585" height="31.585" transform="translate(253.633 158.075)" fill="none" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/>
+      </g>
+
+
+
+      <g data-ag="art6-paths">
+      <path id="Path_6365" data-name="Path 6365" d="M23493.746-2950.24v135.272h54.117" transform="translate(-22608.863 3614.857)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6373" data-name="Path 6373" d="M23493.746-2950.24v381.146h20.494" transform="translate(-22575.24 3362.617)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6369" data-name="Path 6369" d="M23493.748-2950.24V-2746.1h115.592" transform="translate(-22670.34 3553.189)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6366" data-name="Path 6366" d="M23608.664-2950.24v110.71h-114.918" transform="translate(-22407.746 3646.621)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6367" data-name="Path 6367" d="M23505.191-2654.625h-11.441v-295.614h7.363" transform="translate(-22566.406 3440.965)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6374" data-name="Path 6374" d="M23503.146-2781.1h8.541v-169.138h-11.541" transform="translate(-22416.719 3567.44)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6368" data-name="Path 6368" d="M23513.945-2950.24v252.493h-20.2" transform="translate(-22407.746 3491.27)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      <path id="Path_6372" data-name="Path 6372" d="M23545.377-2950.24v356.3h-51.633" transform="translate(-22407.746 3393.829)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5"/>
+      </g>
+      
+      <g data-ag="art6-level">
+        <g id="Cancer_Drivers" data-name="Cancer Drivers" transform="translate(3.629 -59)">
+            <g id="Group_286" data-name="Group 286" transform="translate(935.469 845.328)">
+            <text id="Cancer_drivers-2" data-name="Cancer drivers" transform="translate(0)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="16.263" y="18">Cancer drivers</tspan></text>
+            </g>
+            <g id="Rectangle_32498" data-name="Rectangle 32498" transform="translate(935.371 839)" fill="none" stroke="#2e2e2e" stroke-width="1" opacity="0.5">
+            <rect width="147" height="34" stroke="none"/>
+            <rect x="0.5" y="0.5" width="146" height="33" fill="none"/>
+            </g>
+        </g>
+      </g>
+
+    </g>
+    <g id="Group_48465" data-name="Group 48465" transform="translate(-715 -245.499)">
+        <g data-ag="art6-cards">
+            <g id="A-31" data-name="A" transform="translate(725.5 254.766)">
+            <g id="Group_285" data-name="Group 285">
+            <rect id="Rectangle_32490" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+            <text id="A-32" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+            </g>
+            </g>
+            <g id="A-33" data-name="A" transform="translate(720 249.268)">
+                <g id="Group_285-2" data-name="Group 285">
+                <rect id="Rectangle_32490-2" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+                <text id="A-34" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+                </g>
+            </g>
+            <g id="A-35" data-name="A" transform="translate(714 245.266)">
+                <g id="Group_285-3" data-name="Group 285">
+                <rect id="Rectangle_32490-3" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+                <text id="A-36" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+                </g>
+            </g>
+            <g id="A-37" data-name="A" transform="translate(1228.5 258.768)">
+                <g id="Group_285-4" data-name="Group 285">
+                <rect id="Rectangle_32490-4" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+                <text id="A-38" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+                </g>
+            </g>
+            <g id="A-39" data-name="A" transform="translate(1233.797 254.766)">
+                <g id="Group_285-5" data-name="Group 285">
+                <rect id="Rectangle_32490-5" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+                <text id="A-40" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+                </g>
+            </g>
+            <g id="A-41" data-name="A" transform="translate(1240.297 249.268)">
+                <g id="Group_285-6" data-name="Group 285">
+                <rect id="Rectangle_32490-6" data-name="Rectangle 32490" width="52.469" height="52.469" transform="translate(1.5 1.5)" fill="#e7dde5" stroke="#2e2e2e" stroke-miterlimit="10" stroke-width="1"/>
+                <text id="A-42" data-name="A" transform="translate(11.398 43.234)" fill="#8d4c82" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text>
+                </g>
+            </g>
+            <g id="C-75" data-name="C" transform="translate(727 374)">
+                <g id="Group_279" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-76" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="C-77" data-name="C" transform="translate(722 379)">
+                <g id="Group_279-2" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198-2" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-78" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="C-79" data-name="C" transform="translate(715.5 385)">
+                <g id="Group_279-3" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198-3" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-80" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="C-81" data-name="C" transform="translate(1235.297 391)">
+                <g id="Group_279-4" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198-4" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-82" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="C-83" data-name="C" transform="translate(1240.297 385)">
+                <g id="Group_279-5" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198-5" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-84" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="C-85" data-name="C" transform="translate(1246.297 379)">
+                <g id="Group_279-6" data-name="Group 279" clip-path="url(#clip-path-36)">
+                <path id="Path_10198-6" data-name="Path 10198" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#c7d0dc" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="C-86" data-name="C" transform="translate(13.402 43.233)" fill="#335282" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text>
+                </g>
+            </g>
+            <g id="G-73" data-name="G" transform="translate(1146.531 650)">
+                <g id="Group_281" data-name="Group 281" clip-path="url(#clip-path-42)">
+                <path id="Path_6539" data-name="Path 6539" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#f7f7f7" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="G-74" data-name="G" transform="translate(13.403 43.234)" fill="#2e2e2e" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+                </g>
+            </g>
+            <g id="G-75" data-name="G" transform="translate(1152.531 657)">
+                <g id="Group_281-2" data-name="Group 281" clip-path="url(#clip-path-42)">
+                <path id="Path_6539-2" data-name="Path 6539" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#f7f7f7" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="G-76" data-name="G" transform="translate(13.403 43.234)" fill="#2e2e2e" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+                </g>
+            </g>
+            <g id="G-77" data-name="G" transform="translate(1157.531 663)">
+                <g id="Group_281-3" data-name="Group 281" clip-path="url(#clip-path-42)">
+                <path id="Path_6539-3" data-name="Path 6539" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#f7f7f7" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="G-78" data-name="G" transform="translate(13.403 43.234)" fill="#2e2e2e" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">G</tspan></text>
+                </g>
+            </g>
+            <g id="T-50" data-name="T" transform="translate(727 744)">
+                <g id="Group_283" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-51" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+            <g id="T-52" data-name="T" transform="translate(722 748)">
+                <g id="Group_283-2" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199-2" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-53" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+            <g id="T-54" data-name="T" transform="translate(717 753)">
+                <g id="Group_283-3" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199-3" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-55" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+            <g id="T-56" data-name="T" transform="translate(1230 589)">
+                <g id="Group_283-4" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199-4" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-57" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+            <g id="T-58" data-name="T" transform="translate(1235.297 594.531)">
+                <g id="Group_283-5" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199-5" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-59" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+            <g id="T-60" data-name="T" transform="translate(1240.297 601.531)">
+                <g id="Group_283-6" data-name="Group 283" clip-path="url(#clip-path-45)">
+                <path id="Path_10199-6" data-name="Path 10199" d="M0,0H52.469V52.469H0Z" transform="translate(1.5 1.5)" fill="#fdebe0" stroke="#2e2e2e" stroke-width="1"/>
+                <text id="T-61" data-name="T" transform="translate(12.397 43.233)" fill="#bc5a1d" font-size="48.558" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">T</tspan></text>
+                </g>
+            </g>
+        </g>
+    </g>
+  </svg>
+  

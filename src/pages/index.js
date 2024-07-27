@@ -11,11 +11,14 @@ import Hero from "~/src/components/Hero"
 import Section from "~/src/components/Section"
 import Sources from "~/src/components/Sources"
 import { initPage } from '../components/initPage';
+
 import { getSections } from '~/src/utils/index.js';
+
 
 export default function Home() {  
 
   const sections = getSections();
+  // const sections = [1,2,3,4,5,6,7];
 
   useEffect(() => {
     initPage()
@@ -36,13 +39,12 @@ export default function Home() {
                 case 'hero':
                   return <Hero key={i} data={el} />;
                 case 'section':
-
                   if (sections.includes(i)) {
                     return ( <Section key={i} data={el.data} dataId={i}/> );
                   }
-
-                // case 'sources':
-                //   return <Sources key={i} data={el} />;        
+                  return null;
+                case 'sources':
+                  return <Sources key={i} data={el} />;        
               }
             })}
           </article>
