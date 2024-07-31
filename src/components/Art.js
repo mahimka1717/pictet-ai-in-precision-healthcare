@@ -23,7 +23,7 @@ const Art = ({id}) => {
                 { (id===5) && <Art5 />}
                 { (id===6) && <Art6 />}
                 { (id===7) && <Art7 />}
-                <div className={s.source}>
+                <div className={s.source} data-ag={"source"}>
                     Source: <a href={data.art[id-1].src} target="_blank">{data.art[id-1].text}</a>
                 </div>
             </div>

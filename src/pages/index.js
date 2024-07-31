@@ -12,8 +12,8 @@ import Section from "~/src/components/Section"
 import Sources from "~/src/components/Sources"
 import { initPage } from '../components/initPage';
 
+import Eyebrow from '../components/Eyebrow';
 import { getSections } from '~/src/utils/index.js';
-
 
 export default function Home() {  
 
@@ -47,6 +47,12 @@ export default function Home() {
                   return <Sources key={i} data={el} />;        
               }
             })}
+
+   
+
+
+            <Eyebrow />
+
           </article>
         </div>
     </>

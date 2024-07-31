@@ -1,2 +1,33 @@
 .eyebrow
-    position: relative
+    position: absolute
+    top: 0px
+    left: 0px
+    color: #BC5A1D
+    font-size: 15px
+    line-height: 20px
+    font-family: $font-title
+    z-index: 7
+    width: 100%
+    padding: 16px 16px 16px 16px
+    background: #F8F8F4
+    height: 52px
+    @media screen and (min-height: 720px)
+        height: 72px
+    @include lg
+        font-size: 17px
+        line-height: 27px
+        padding: 40px
+        display: inline-block
+        width: auto
+        background: transparent
+        height: 95px
+
+    div
+
+        @media screen and (min-height: 720px)
+            max-width: 220px
+        @include lg
+            max-width: unset
+            padding-right: 10px
+            background: #F8F8F4
+

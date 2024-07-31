@@ -4,6 +4,7 @@ import Art from '~/src/components/Art'
 import s from '~/src/components/Section.module.sass'
 
 import Quotes from '~/src/assets/quotes.svg'
+import Woman from '~/src/assets/woman.svg'
 
 const Section = ({ data, dataId }) => {
   
@@ -32,6 +33,13 @@ const Section = ({ data, dataId }) => {
                   return <Text key={j} data={e} dataId={`${dataId}-${i}-${j}`}/>
                 })
               }
+
+              {
+                ((dataId === 2 && i === 0)) && <div className={s.svg2} data-ag="art2-woman">
+                  <Woman />
+                </div>
+              }
+
             </div>
           )
         })}

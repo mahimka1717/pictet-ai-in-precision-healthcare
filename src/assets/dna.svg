@@ -1,7 +1,18 @@
-<svg data-ag="art1-dna-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="347.109" height="1176.911" viewBox="0 0 347.109 1176.911">
+<svg data-ag="art1-dna-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="947.109" height="1176.911" viewBox="0 0 947.109 1176.911">
 
-    <g id="DNA_Base_Pairs" data-name="DNA_Base Pairs" transform="translate(18325.113 12721.729)">
-      <g id="Group_671" data-name="Group 671" transform="translate(-18325.113 -12721.729)">
+
+
+
+
+
+
+
+<g transform="translate(300 0)">
+
+
+
+    <g transform="translate(18325.113 12721.729)">
+      <g transform="translate(-18325.113 -12721.729)">
         <g data-ag="art1-colors">
           <path id="Path_6563" data-name="Path 6563" d="M147.837,609.954C92.545,569.437.5,496.981.5,409.759V362.921C3.3,454.964,98.77,518.357,147.837,554.31c55.292,40.517,147.334,112.973,147.334,200.2l-9.677,0c-25.929-67.095-97.408-115.056-137.658-144.549" transform="translate(0.58 421.326)" fill="#fcf5ef"/>
           <path id="Path_6564" data-name="Path 6564" d="M147.837,609.954C92.545,569.437.5,496.981.5,409.759V362.921C3.3,454.964,98.77,518.357,147.837,554.31c55.292,40.517,147.334,112.973,147.334,200.2l-9.677,0C259.565,687.408,188.086,639.446,147.837,609.954Z" transform="translate(0.58 421.326)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
@@ -133,19 +144,47 @@
     </g>
 
 
-<g data-ag="art1-labels">
-    <g id="Group_48463" data-name="Group 48463" transform="translate(-857.891 -55.271)">
-      <text id="Sugar-phosphate_backbone" data-name="Sugar-phosphate backbone" transform="translate(1117 241)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="18">Sugar-</tspan><tspan x="0" y="40">phosphate </tspan><tspan x="0" y="62">backbone</tspan></text>
-      <path id="Path_10629" data-name="Path 10629" d="M-17626.062-13184.788l-62.072-22.072" transform="translate(18743.063 13451.36)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+    <g data-ag="art1-labels-desktop">
+        
+        <g id="Group_48463" data-name="Group 48463" transform="translate(-857.891 -55.271)">
+          <text id="Sugar-phosphate_backbone" data-name="Sugar-phosphate backbone" transform="translate(1117 241)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="18">Sugar-</tspan><tspan x="0" y="40">phosphate </tspan><tspan x="0" y="62">backbone</tspan></text>
+          <path id="Path_10629" data-name="Path 10629" d="M-17626.062-13184.788l-62.072-22.072" transform="translate(18743.063 13451.36)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+        </g>
+        <g id="Group_48464" data-name="Group 48464" transform="translate(-857.891 -55.271)">
+          <text id="Base_pairs" data-name="Base pairs" transform="translate(1117 645)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="18">Base </tspan><tspan x="0" y="40">pairs</tspan></text>
+          <path id="Path_6514" data-name="Path 6514" d="M-17617.562-13156.577l-70.572-50.283" transform="translate(18729.135 13811.819)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+          <path id="Path_10628" data-name="Path 10628" d="M-17688.137-13160.437l61.172-46.424" transform="translate(18738.537 13884.437)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+        </g>
     </g>
-    <g id="Group_48464" data-name="Group 48464" transform="translate(-857.891 -55.271)">
-      <text id="Base_pairs" data-name="Base pairs" transform="translate(1117 645)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="18">Base </tspan><tspan x="0" y="40">pairs</tspan></text>
-      <path id="Path_6514" data-name="Path 6514" d="M-17617.562-13156.577l-70.572-50.283" transform="translate(18729.135 13811.819)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
-      <path id="Path_10628" data-name="Path 10628" d="M-17688.137-13160.437l61.172-46.424" transform="translate(18738.537 13884.437)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
-    </g>
+
+
 </g>
 
 
 
-  </svg>
+
+  <g transform="scale(1.3)">
+
+    <g id="Group_48463" data-name="Group 48463" transform="translate(-575 -138.559)">
+      
+      <g data-ag="art1-labels-mobile">
+      
+      <g data-ag="art1-labels-mobile-el">
+        <text id="Base_pairs" data-name="Base pairs" transform="translate(658 460.707)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="15">Base </tspan><tspan x="0" y="35">pairs</tspan></text>
+        <path id="Path_10692" data-name="Path 10692" d="M121.082,16.787,0,0" transform="translate(838.744 506.537) rotate(180)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+        <path id="Path_10693" data-name="Path 10693" d="M0,18.021,121.084,0" transform="translate(838.744 478.727) rotate(180)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+      </g>
+
+      <g data-ag="art1-labels-mobile-el">
+        <text id="Sugar-phosphate_backbone" data-name="Sugar-phosphate backbone" transform="translate(655 392.559)" fill="#2e2e2e" font-size="20" font-family="Metric-Medium, Metric" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="15">Sugar-phosphate </tspan><tspan x="0" y="35">backbone</tspan></text>
+        <path id="Path_10694" data-name="Path 10694" d="M-17626.062-13184.788l-62.072-22.072" transform="translate(18430.225 13632.383)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+      </g>
+
+    </g>
+
+    </g>
+
+  </g>
+
+</svg>
   

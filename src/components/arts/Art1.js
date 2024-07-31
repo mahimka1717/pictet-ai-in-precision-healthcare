@@ -35,8 +35,8 @@ const Art1 = () => {
                 <div className={s.text} data-ag="art1-text2">{`Each “rung” of the DNA ladder is a nucleotide, which (in simple terms) comes in two parts: a sugar backbone and nitrogenous bases (A,T,C,G)`}</div>
                
                 <div className={s.chemestry} data-ag="art1-chemestry">
-                    <div className={s.chemestryHeader}>Nitrogenous bases</div>
-                    <div className={s.chemestryBox}>
+                    <div className={s.chemestryHeader} data-ag="art1-chemestry-header">Nitrogenous bases</div>
+                    <div className={s.chemestryBox} data-ag="art1-chemestry-boxes">
                         <Chemestry0 />
                         <Chemestry1 />
                         <Chemestry2 />

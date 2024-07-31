@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="586.766" height="567.969" viewBox="0 0 586.766 567.969">
+    <g transform="translate(-715.5 -246.031)">
+      <g transform="translate(776 286)">
+        <g data-ag="art6-squares">
+        
+          <g data-ag="sq-0.15-0.151"><rect id="Rectangle_32833" data-name="Rectangle 32833" width="31.585" height="31.585" transform="translate(0.15 0.151)" fill="white" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/><text id="A-27" data-name="A" transform="translate(6.109 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text></g>
+          <g data-ag="sq-31.836-0.151"><rect id="Rectangle_32838" data-name="Rectangle 32838" width="31.585" height="31.585" transform="translate(31.836 0.151)" fill="white" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width="0.5"/><text id="C-71" data-name="C" transform="translate(38.971 24.388)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text></g>
+         
+        </g>
+      </g>
+    </g>
+  </svg>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="586.766" height="567.969">
+    <g data-ag="art6-squares">
+      <g data-ag="sq-0.15-0.151"><path data-name="Rectangle 32833" fill="#fff" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width=".5" d="M60.65 40.12h31.585v31.585H60.65z"/><text data-name="A" transform="translate(66.609 64.357)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">A</tspan></text></g>
+      <g data-ag="sq-31.836-0.151"><path data-name="Rectangle 32838" fill="#fff" stroke="#7a7a7a" stroke-miterlimit="10" stroke-width=".5" d="M92.336 40.12h31.585v31.585H92.336z"/><text data-name="C" transform="translate(99.471 64.357)" fill="#7a7a7a" font-size="28" font-family="Metric-Medium, Metric" font-weight="500"><tspan x="0" y="0">C</tspan></text></g>
+    </g>
+</svg>

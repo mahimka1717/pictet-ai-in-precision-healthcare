@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "ft-pwc-demo",
+			"path": "../../../ft-pwc-demo"
+		},
+		{
+			"name": "ft-macallan",
+			"path": "../../../ft-macallan"
+		},
+		{
+			"name": "pictet-ai-in-precision-healthcare",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

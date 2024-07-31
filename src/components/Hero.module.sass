@@ -63,20 +63,25 @@
     flex-direction: column
     padding: 16px 16px 16px 16px
     @include xs
-      padding: 16px 16px 96px 16px
+      padding: 16px 16px 16px 16px
     @include sm
       padding: 96px 70px 96px 70px
     @include lg
       padding: 65px 150px
     .mask
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)  
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+      max-width: 320px
+      @include xs
+        max-width: 260px
+      @include lg
+        max-width: unset
 
       .desc
         position: relative
         font-weight: 700
         color: #E4C0AA
-        font-size: 18px
-        line-height: 27px
+        font-size: 16px
+        line-height: 25px
         font-family: $font-title
         @include lg
           font-size: 20px
@@ -88,8 +93,9 @@
         font-size: 48px
         line-height: 55px
         @include xs
-          font-size: 55px
-          line-height: 65px
+          // max-width: 300px
+          font-size: 48px
+          line-height: 55px
         width: 100%
         margin-bottom: 15px
         font-weight: 400
@@ -103,18 +109,18 @@
           margin-bottom: 30px
       
       .text
-        color: #E7DDE5
+        color: #fff
         position: relative
-        @include xs
-          max-width: 240px
+        // @include xs
+        //   max-width: 240px
         margin-bottom: 20px
         font-size: 18px
         line-height: 24px
         z-index: 1
         font-weight: 400
 
-        @include sm
-          max-width: 340px
+        // @include sm
+        //   max-width: 340px
         @include lg
           max-width: 582px
           font-size: 20px
@@ -122,6 +128,11 @@
           margin-bottom: unset
 
     svg
+      position: relative
+      // @include xs
+      //   margin-top: -80px
+      @include md
+        margin-top: unset
       min-width: 60px
       min-height: 60px
       position: relative

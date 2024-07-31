@@ -2,6 +2,14 @@
     position: relative
     height: 100%
     width: 100%
+    @include sm
+        max-width: 494px
+        margin-left: auto
+        margin-right: auto
+    @include lg
+        max-width: 494px
+        margin-left: 0
+        margin-right: auto
     
     .frame
         position: absolute
@@ -71,11 +79,11 @@
                 position: absolute
                 right: unset
                 left: 0 
-                top: 60px
+                top: 0px
                 @include lg
                     max-width: 220px
                     right: unset
-                    left: -70px
+                    left: -100px
                     top: 60px
                     background: #F8F8F4
             .roundel
@@ -86,7 +94,7 @@
                     padding: 15px
                     bottom: 5%
                     right: unset
-                    left: -70px
+                    left: -30px
 
         .artheader
             font-family: Metric
@@ -126,9 +134,9 @@
             svg
                 transform-origin: center center
                 position: relative
-                width: 60%
+                width: 150%
                 height: auto
-                left: 55%
+                left: 10%
                 @include lg
                     right: unset
                     left: unset
@@ -202,9 +210,11 @@
                     display: block
                     background: #fff
                     border: 0.5px solid #000
-                    width: 100px
                     height: auto
+                    width: 80px
+                    @include xs
+                        width: 100px
                     @include lg
                         margin: 2px 0
                         width: 160px
-                        height: auto
+                       

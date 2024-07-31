@@ -2,6 +2,14 @@
     position: relative
     height: 100%
     width: 100%
+    @include sm
+        max-width: 494px
+        margin-left: auto
+        margin-right: auto
+    @include lg
+        max-width: 494px
+        margin-left: 0
+        margin-right: auto
     
     .frame
         position: absolute
@@ -37,10 +45,15 @@
             z-index: -1
             position: relative
             margin-bottom: 40px
+            display: flex
+            justify-content: center
             svg
                 width: 100%
                 height: auto
                 // border: 0.5px solid red
+                @media screen and (max-height: 720px)
+                    height: auto
+                    width: 70%
                 @include lg
                     width: unset
                     height: unset
