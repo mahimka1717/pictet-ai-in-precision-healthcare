@@ -165,7 +165,7 @@ export function initPage() {
 					endTrigger: section,
 					pin: text,
 					start: ()=>`center center`,
-					end: ()=>`bottom bottom+=50%`,
+					end: ()=>`bottom bottom`,
 					// markers: true,
 				});
 			});
@@ -228,14 +228,12 @@ export function initPage() {
 			let txtgroup3 = document.querySelector(`[data-ag="textgroup"][data-id="3-3"]`);
 			let txtgroup4 = document.querySelector(`[data-ag="textgroup"][data-id="3-4"]`);
 
-			mm.add("(max-width: 1023px)", () => {
 
-			});
 
 			// desktop setup code here...
 			mm.add("(min-width: 1024px)", () => {
 
-				gsap.set(quotes, { opacity: 0 })
+				// gsap.set(quotes, { opacity: 0 })
 
 				ScrollTrigger.create({
 					trigger: h1, 
@@ -255,21 +253,41 @@ export function initPage() {
 					pinSpacing: false,
 				});
 
-				ScrollTrigger.create({
-					trigger: section,
-					start: ()=>`top top-=50%`,
-					onEnter: function(){
-						gsap.killTweensOf([h1, quotes])
-						gsap.to(h1, {opacity: 0, duration: 0})
-						gsap.to(quotes, {opacity: 1, duration: 0.5})
-					},
-					onLeaveBack: function(){
-						gsap.killTweensOf([h1, quotes])
-						gsap.to(h1, {opacity: 1, duration: 0.5})
-						gsap.to(quotes, {opacity: 0, duration: 0})
-					},
-					scrub: true,
+
+
+
+				let t0 = document.querySelectorAll(`[data-ag='textgroup'][data-id='3-1'] > div > svg`);
+				let t1 = document.querySelectorAll(`[data-ag='text'][data-id='3-1-0'] > p`);
+				let t2 = document.querySelectorAll(`[data-ag='text'][data-id='3-1-1'] > p`);
+
+				const split = new SplitText(t1, { type: 'lines, words' });
+				split.lines.forEach((target) => {
+					gsap.set(target, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' });
 				});
+
+
+
+				const tl = gsap.timeline({	
+					scrollTrigger: {
+						trigger: section,
+						start: ()=>`top top-=50%`,
+						end: ()=>`top top-=100%`,
+						scrub: true,
+						// markers: true,
+						onUpdate: (self) => {
+							// console.log(self.progress);
+						},
+						// snap: 1 / (frames[n] - 1)
+					}
+				});
+				tl.to(h1, {opacity: 0, duration: 1, ease: 'power1.out'}, 0)
+				// tl.to(quotes, { opacity: 1, duration: 1, ease: 'power1.out' }, 1);
+
+				tl.from(t0, { duration: 0.5, autoAlpha: 0, scale: 0.7, transformOrigin: '50% 50%', ease: 'power1.out' }, 1);
+				tl.from(split.words, {duration: 0.5, y: 30, autoAlpha: 0, stagger: 0.05, ease: 'power1.out'}, 1.2)
+				tl.from(t2, { duration: 0.5, autoAlpha: 0, ease: 'power1.out' }, 3.2)
+
+
 
 
 				ScrollTrigger.create({
@@ -368,6 +386,24 @@ export function initPage() {
 		},
 
 		section7: function(){
+
+			let section = document.querySelector(`[data-ag="section"][data-id="7"]`);
+			let art = document.querySelector(`[data-ag="art"][data-id="7"]`);
+
+			let txtgroup0 = document.querySelector(`[data-ag="textgroup"][data-id="7-0"]`);
+
+			ScrollTrigger.create({
+				trigger: txtgroup0, 
+				endTrigger: section,
+				pin: txtgroup0,
+				start: ()=>`center center`,
+				end: ()=>`bottom bottom`,
+				pinSpacing: true,
+				// markers: true,
+			});
+
+
+
 		},
 
 
@@ -481,6 +517,8 @@ export function initPage() {
 					});
 					tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 7)
 
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'}, (isDesktop?9:7))
+
 					// tl.set(roundel2, {opacity: 1}, 10)
 
 					return () => {
@@ -541,6 +579,8 @@ export function initPage() {
 					tl.to(art2Header0, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
 					tl.to(source, {opacity: 1, duration: 1, ease: 'power1.out'}, 4)
 					tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5)
+
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'}, (isDesktop?6:5))
 
 					return () => {
 						// cleanup
@@ -639,6 +679,8 @@ export function initPage() {
 					tl.to([lvl01,lvl31,lvl32], {opacity: 1, stagger: 0, ease: 'power1.out'}, 9 + delay)
 	
 					tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 11 + delay)
+
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'},  (isDesktop?18:11))
 
 					return () => {
 						// cleanup
@@ -748,6 +790,8 @@ export function initPage() {
 					tl.to(line2, { scale: 1, duration: 1, stagger: 0.5, ease: 'power1.out' }, 10);
 					tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 12)
 
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'},  (isDesktop?14:12))
+
 
 					return () => {
 						// cleanup
@@ -812,6 +856,8 @@ export function initPage() {
 					tl.to(level2, { opacity: 1, duration: 1, stagger: 0.3, ease: 'power1.out'}, 3 + delay)
 					tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 5 + delay)
 					tl.to(source, {opacity: 1, duration: 1, ease: 'power1.out'}, 5 + delay )
+
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'},  (isDesktop?7:5))
 
 					return () => {
 						// cleanup
@@ -896,10 +942,14 @@ export function initPage() {
 					gsap.set([art6colors], { opacity: 0 });
 					gsap.set(art6paths, { drawSVG: '0% 0%' });
 					gsap.set(art6Stacked, { opacity: 0, transformOrigin: '50% 50%', transformStyle: 'preserve-3d' });
-					gsap.set([art6header, art6greed], {opacity: isDesktop?0:1});
+					gsap.set([art6header], {opacity: isDesktop?0:1});
+			
 					
 					gsap.set(squares, { autoAlpha: 0, scale: 1.5, x: 20, y: 20, rotation: 10, transformOrigin: '50% 50%' });
 					// gsap.set(squares, {display: `none`})
+
+
+					let delay = ((isDesktop)?5:0)
 
 					// tl
 					const tl = gsap.timeline({	
@@ -917,30 +967,33 @@ export function initPage() {
 						}
 					});
 	
-					tl.to(squares, {autoAlpha: 1, duration: 0, stagger: 0.0075, ease: 'power1.out'}, 1)
-					tl.to(squares, {scale: 1, rotation: 0, x: 0, y: 0, duration: 1, stagger: 0.0075, ease: 'power1.out'}, 1)
+					tl.to(squares, {autoAlpha: 1, duration: 0, stagger: 0.0075, ease: 'power1.out'}, 1 + delay)
+					tl.to(squares, {scale: 1, rotation: 0, x: 0, y: 0, duration: 1, stagger: 0.0075, ease: 'power1.out'}, 1 + delay)
+					tl.to(art6header, {opacity: 1, duration: 1, ease: 'power1.out'}, 1 + delay)
+
+
+					tl.to(source, {opacity: 1, duration: 1, ease: 'power1.out'}, 3 + delay)
+					tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3 + delay)
+					tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4 + delay)
 	
-		
-					tl.to(source, {opacity: 1, duration: 1, ease: 'power1.out'}, 3)
-					tl.to(roundel0, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 3)
-					tl.to(roundel0, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 4)
+					tl.to(art6Stacked, {opacity: 1, scale: 2, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5 + delay)
+					tl.to(secondGs, {x: 3, y: -3, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5 + delay)
+					tl.to(secondGs2, {x: 6, y: -6, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5 + delay)
 	
-					tl.to(art6Stacked, {opacity: 1, scale: 2, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5)
-					tl.to(secondGs, {x: 3, y: -3, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5)
-					tl.to(secondGs2, {x: 6, y: -6, duration: 1, stagger: 0.025, ease: 'power1.out'}, 5)
+					tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6 + delay)
+					tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 7 + delay)
+					tl.to(art6Stacked, {scale: 1, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7 + delay)
 	
-					tl.to(roundel1, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 6)
-					tl.to(roundel1, {clipPath: 'circle(0% at 50% 50%)', duration: 1, ease: 'power1.out'}, 7)
-					tl.to(art6Stacked, {scale: 1, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7)
+					tl.to(secondGs, {x: 0, y: 0, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7 + delay)
+					tl.to(secondGs2, {x: 0, y: 0, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7 + delay)
 	
-					tl.to(secondGs, {x: 0, y: 0, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7)
-					tl.to(secondGs2, {x: 0, y: 0, duration: 1, stagger: 0.025, ease: 'power1.out'}, 7)
+					tl.to(art6level, {opacity: 1, duration: 1, ease: 'power1.out'}, 8 + delay)
+					tl.to(art6colors, {opacity: 1, duration: 1, stagger: 0.05, ease: 'power1.out'}, 8 + delay)
+					tl.to(art6paths, {drawSVG: '0% 100%', duration: 1, stagger: 0.05, ease: 'power1.out'}, 8 + delay)
 	
-					tl.to(art6level, {opacity: 1, duration: 1, ease: 'power1.out'}, 8)
-					tl.to(art6colors, {opacity: 1, duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
-					tl.to(art6paths, {drawSVG: '0% 100%', duration: 1, stagger: 0.05, ease: 'power1.out'}, 8)
-	
-					tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 10)
+					tl.to(roundel2, {clipPath: 'circle(100% at 50% 50%)', duration: 1, ease: 'power1.out'}, 10 + delay)
+
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'},  (isDesktop?17:10))
 
 
 					return () => {
@@ -1010,7 +1063,8 @@ export function initPage() {
 					tl.to(els, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 1 + delay)	
 					tl.to(arrows, { scale: 1, opacity: 1, duration: 2, stagger: 0.3, ease: 'power1.out'}, 2.15 + delay)	
 					tl.to(source, {opacity: 1, duration: 1, ease: 'power1.out'}, 4 + delay)
-
+					
+					tl.to(art, {opacity: (isDesktop?0:1), duration: 1, ease: 'power1.out'},  (isDesktop?6:4))
 
 					return () => {
 						// cleanup
@@ -1069,15 +1123,21 @@ export function initPage() {
 			
 			let splitTexts = [
 				[
+					`[data-ag='textgroup'][data-id='5-0'] > div > svg`,	
 					`[data-ag='text'][data-id='5-0-0'] > p`,
 					`[data-ag='text'][data-id='5-0-1'] > p`,
-					`[data-ag='textgroup'][data-id='5-0'] > div > svg`	
 				],
 				[
+					`[data-ag='textgroup'][data-id='5-3'] > div > svg`,	
 					`[data-ag='text'][data-id='5-3-0'] > p`,
 					`[data-ag='text'][data-id='5-3-1'] > p`,
-					`[data-ag='textgroup'][data-id='5-3'] > div > svg`	
 				]
+				// ,
+				// [
+				// 	`[data-ag='textgroup'][data-id='3-1'] > div > svg`,	
+				// 	`[data-ag='text'][data-id='3-1-0'] > p`,
+				// 	`[data-ag='text'][data-id='3-1-1'] > p`,	
+				// ]
 			]
 			
 			splitTexts.forEach((splitText) => {
@@ -1086,51 +1146,57 @@ export function initPage() {
 				let t1 = document.querySelectorAll(splitText[1]);
 				let t2 = document.querySelectorAll(splitText[2]);
 
-				const split = new SplitText(t0, {
-					type: 'lines',
+				const split = new SplitText(t1, { type: 'lines, words' });
+				split.lines.forEach((target) => {
+					gsap.set(target, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' });
 				});
 	
-				gsap.from(t1, {
-					duration: 0.5,
-					autoAlpha: 0,
-					scrollTrigger: {
-						trigger: t1,
-						scrub: 1,
-						// markers: true,
-						end: () => `top 60%`
-					},
-				});
-
-				gsap.from(t2, {
+				// svg
+				gsap.from(t0, {
 					duration: 0.5,
 					autoAlpha: 0,
 					scale: 0.7,
 					transformOrigin: '50% 50%',
 					scrollTrigger: {
-						trigger: t2,
+						trigger: t0,
 						scrub: 1,
 						// markers: true,
+						start: () => `top 90%`,
 						end: () => `top 70%`
 					},
 				});
 
-				split.lines.forEach((target) => {
-					gsap.set(target, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' });
-					gsap.from(target, {
+				// quote
+				split.words.forEach((word) => {
+					gsap.from(word, {
 						duration: 0.5,
-						y: 50,
+						y: 30,
 						autoAlpha: 0,
 						scrollTrigger: {
-							trigger: target,
+							trigger: word,
 							scrub: 1,
 							markers: false,
+							start: () => `top 90%`,
 							end: () => `top 70%`
 						},
 					});
 				});
 
-			});
+				// author
+				gsap.from(t2, {
+					duration: 0.5,
+					autoAlpha: 0,
+					scrollTrigger: {
+						trigger: t2,
+						scrub: 1,
+						y: 30,
+						// markers: true,
+						start: () => `top 80%`,
+						end: () => `top 60%`
+					},
+				});
 
+			});
 		},
 
 		splitText: function(){

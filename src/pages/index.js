@@ -13,12 +13,13 @@ import Sources from "~/src/components/Sources"
 import { initPage } from '../components/initPage';
 
 import Eyebrow from '../components/Eyebrow';
-import { getSections } from '~/src/utils/index.js';
+
+// import { getSections } from '~/src/utils/index.js';
 
 export default function Home() {  
 
-  const sections = getSections();
-  // const sections = [1,2,3,4,5,6,7];
+  // const sections = getSections();
+  const sections = [1,2,3,4,5,6,7];
 
   useEffect(() => {
     initPage()
